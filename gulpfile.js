@@ -172,7 +172,7 @@ gulp.task('ghpages', function() {
   return gulp
     .src(dirs.dist + '**/*')
     .pipe(ghpages({
-      remoteUrl: pkg.repository.url,
+      remoteUrl: 'git@github.com:sircus/sircus.github.io.git',
       branch: 'gh-pages'
     }))
 })
