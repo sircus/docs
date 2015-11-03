@@ -1,0 +1,76 @@
+---
+title: Tools Layout
+description:
+name: tools-layout
+layout: page
+base_url: "../../"
+---
+{{#extend "page"}}
+{{#content "content"}}
+
+<p class="t-mb0">v{{tools.layout.pkg.version}}</p>
+<p class="docs-moduleName">{{tools.layout.pkg.description}}</p>
+
+<section class="t-clear">
+  <h2>Example</h2>
+  <h3>Float</h3>
+  <div class="Demo-field">
+    <div class="t-clear">
+      <div class="t-pullLeft t-gutter Demo-fixture">Left</div>
+      <div class="t-pullRight t-gutter Demo-fixture">Right</div>
+      <div class="t-pullNone Demo-fixture">None</div>
+    </div>
+  </div>
+{{#markdown}}
+```html
+<div class="t-pullLeft">Left</div>
+<div class="t-pullRight">Right</div>
+<div class="t-pullNone">None</div>
+```
+{{/markdown}}
+
+  <h3>Position</h3>
+  <div class="Demo-field">
+    <div class="t-relative" style="height:300px;">
+      <div class="t-static t-gutter Demo-fixture">static</div>
+      <div class="t-absolute t-gutter Demo-fixture" style="bottom:0;">absolute: style="bottom:0;"</div>
+      <div class="t-fixed t-gutter Demo-fixture">fixed</div>
+      <div class="t-relative t-gutter Demo-fixture">relative</div>
+    </div>
+  </div>
+{{#markdown}}
+```html
+<div class="t-relative">
+  <div class="t-static">...</div>
+  <div class="t-absolute">...</div>
+  <div class="t-fixed">...</div>
+</div>
+```
+{{/markdown}}
+
+  <h3>Center Block</h3>
+  <div class="Demo-field">
+    <div class="t-center Demo-fixture" style="max-width:300px;">e.g: max-width:300px;</div>
+  </div>
+{{#markdown}}
+```html
+<div class="t-center">e.g: max-width:300px;</div>
+```
+{{/markdown}}
+</section>
+
+
+<section class="t-clear">
+  <h2>Rule Settings</h2>
+{{#markdown}}
+```css
+{{{tools.layout.css}}}
+```
+{{/markdown}}
+  <p>
+    <a href="responsive/">Responsive rules</a>
+  </p>
+</section>
+
+{{/content}}
+{{/extend}}

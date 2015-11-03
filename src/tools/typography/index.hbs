@@ -1,0 +1,182 @@
+---
+title: Tools Typography
+description:
+name: tools-typography
+layout: page
+base_url: "../../"
+---
+{{#extend "page"}}
+{{#content "content"}}
+
+<p class="t-mb0">v{{tools.typography.pkg.version}}</p>
+<p class="docs-moduleName">{{tools.typography.pkg.description}}</p>
+
+<section class="t-clear">
+  <h2>Example</h2>
+
+  <h3 clss="Demo-comment">Font weight and style</h3>
+  <div class="Demo-field">
+    <span class="t-normal">normal</span>
+    <span class="t-bold">bold</span>
+    <span class="t-bolder">bolder</span>
+    <span class="t-lighter">lighter</span>
+    <span class="t-italic">italic</span>
+  </div>
+{{#markdown}}
+```html
+<span class="t-normal">normal</span>
+<span class="t-bold">bold</span>
+<span class="t-bolder">bolder</span>
+<span class="t-lighter">lighter</span>
+<span class="t-italic">italic</span>
+```
+{{/markdown}}
+
+  <h3 clss="Demo-comment">Decoration</h3>
+  <div class="Demo-field">
+    <span class="t-decoNone">decoNone</span>
+    <span class="t-underline">underline</span>
+    <span class="t-overline">overline</span>
+    <span class="t-through">through</span>
+  </div>
+{{#markdown}}
+```html
+<span class="t-decoNone">decoNone</span>
+<span class="t-underline">underline</span>
+<span class="t-overline">overline</span>
+<span class="t-through">through</span>
+```
+{{/markdown}}
+
+  <h3 clss="Demo-comment">text-transform</h3>
+  <div class="Demo-field">
+    <span class="t-lowercase">LOWERCASE</span>
+    <span class="t-uppercase">uppercase</span>
+    <span class="t-capitalize">capitalize</span>
+  </div>
+{{#markdown}}
+```html
+<span class="t-lowercase">LOWERCASE</span>
+<span class="t-uppercase">uppercase</span>
+<span class="t-capitalize">capitalize</span>
+```
+{{/markdown}}
+
+  <h3 clss="Demo-comment">white-space</h3>
+  <div class="Demo-field">
+    <h3>nowrap</h3>
+    <p class="t-nowrap">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+    <h3>pre</h3>
+    <p class="t-pre">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+  </div>
+{{#markdown}}
+```html
+<p class="t-nowrap">...</p>
+<p class="t-pre">...</p>
+```
+{{/markdown}}
+
+  <h3 clss="Demo-comment">font-family En</h3>
+  <div class="Demo-field">
+    <h3>Sans <code>t-enSans</code></h3>
+    <p class="t-enSans">
+      Typography
+    </p>
+    <h3>Serif <code>t-enSerif</code></h3>
+    <p class="t-enSerif">
+      Typography
+    </p>
+    <h3>Monospace <code>t-enMonospace</code></h3>
+    <p class="t-enMonospace">
+      Typography
+    </p>
+  </div>
+{{#markdown}}
+```html
+<p class="t-enSans">...</p>
+<p class="t-enSerif">...</p>
+<p class="t-enMonospace">...</p>
+```
+{{/markdown}}
+
+  <h3 clss="Demo-comment">font-family Ja</h3>
+  <div class="Demo-field">
+    <h3>Sans <code>t-jaSans</code></h3>
+    <p class="t-jaSans">
+      アイデアと移動距離は比例する by 高城剛氏
+    </p>
+    <h3>Serif <code>t-jaSerif</code></h3>
+    <p class="t-jaSerif">
+      アイデアと移動距離は比例する by 高城剛氏
+    </p>
+    <h3>Monospace <code>t-jaMonospace</code></h3>
+    <p class="t-jaMonospace">
+      アイデアと移動距離は比例する by 高城剛氏
+    </p>
+  </div>
+{{#markdown}}
+```html
+<p class="t-jaSans">...</p>
+<p class="t-jaSerif">...</p>
+<p class="t-jaMonospace">...</p>
+```
+{{/markdown}}
+
+
+  <h3 clss="Demo-comment">line-height</h3>
+  <div class="Demo-field">
+    <p class="t-lineHeightSm Demo-fixture">sm</p>
+    <p class="t-lineHeightMd Demo-fixture">md</p>
+    <p class="t-lineHeightLg Demo-fixture">lg</p>
+  </div>
+{{#markdown}}
+```html
+<p class="t-lineHeightSm">...</p>
+<p class="t-lineHeightMd">...</p>
+<p class="t-lineHeightLg">...</p>
+```
+{{/markdown}}
+
+
+
+  <h3 clss="Demo-comment">Font scale</h3>
+  <div class="Demo-field">
+    <p class="t-fontGt">Font scale tool</p>
+    <p class="t-fontHg">Font scale tool</p>
+    <p class="t-fontXl">Font scale tool</p>
+    <p class="t-fontLg">Font scale tool</p>
+    <p class="t-fontMd">Font scale tool</p>
+    <p class="t-fontSm">Font scale tool</p>
+    <p class="t-fontXs">Font scale tool</p>
+  </div>
+{{#markdown}}
+```html
+<p class="t-fontGt">...</p>
+<p class="t-fontHg">...</p>
+<p class="t-fontXl">...</p>
+<p class="t-fontLg">...</p>
+<p class="t-fontMd">...</p>
+<p class="t-fontSm">...</p>
+<p class="t-fontXs">...</p>
+```
+{{/markdown}}
+
+</section>
+
+
+
+<section class="t-clear">
+  <h2>Rule Settings</h2>
+{{#markdown}}
+```css
+{{{tools.typography.css}}}
+```
+{{/markdown}}
+</section>
+
+{{/content}}
+{{/extend}}

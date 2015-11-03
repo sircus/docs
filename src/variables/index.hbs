@@ -1,0 +1,120 @@
+---
+title: Variables
+description:
+name: variables
+layout: page
+base_url: "../"
+---
+{{#extend "page"}}
+{{#content "content"}}
+
+<p class="t-mb0">v{{variables.pkg.version}}</p>
+<p class="docs-moduleName">{{variables.pkg.description}}</p>
+
+<section class="t-clear">
+  <h2>Color</h2>
+  <h3>Primary color</h3>
+  <div class="Demo-field">
+    <div class="t-fillPrimaryDark t-ptXs t-colorWhite t-gutter Demo-fixture--height8x">
+      Dark: <small><code>--g-primary-dark</code></small>
+    </div>
+    <div class="t-fillPrimary t-ptXs t-colorWhite t-gutter Demo-fixture--height8x">
+      Normal: <small><code>--g-primary</code></small>
+    </div>
+    <div class="t-fillPrimaryLight t-ptXs t-gutter Demo-fixture--height8x">
+      Light: <small><code>--g-primary-light</code></small>
+    </div>
+  </div>
+
+  <h3>States color</h3>
+  <div class="Demo-field">
+    <div class="Grid t-gutterReset">
+      <div class="Grid-col t-widthHalf">
+        <h4>Notice</h4>
+        <div class="t-fillNoticeDark  t-ptXs  t-colorWhite t-gutter Demo-fixture--height4x">
+          Dark: <small><code>--g-notice-dark</code></small>
+        </div>
+        <div class="t-fillNotice t-ptXs  t-colorWhite t-gutter Demo-fixture--height4x">
+          Normal: <small><code>--g-notice</code></small>
+        </div>
+        <div class="t-fillNoticeLight t-ptXs t-gutter Demo-fixture--height4x">
+          Light: <small><code>--g-notice-light</code></small>
+        </div>
+      </div>
+      <div class="Grid-col t-widthHalf">
+        <h4>Success</h4>
+        <div class="t-fillSuccessDark t-ptXs t-gutter t-colorWhite Demo-fixture--height4x">
+          Dark: <small><code>--g-success-dark</code></small>
+        </div>
+        <div class="t-fillSuccess t-ptXs t-gutter t-colorWhite Demo-fixture--height4x">
+          Normal: <small><code>--g-success-dark</code></small>
+        </div>
+        <div class="t-fillSuccessLight t-ptXs t-gutter Demo-fixture--height4x">
+          Light: <small><code>--g-success-dark</code></small>
+        </div>
+      </div>
+      <div class="Grid-col t-widthHalf">
+        <h4>Warning</h4>
+        <div class="t-fillWarningDark t-ptXs t-colorWhite t-gutter Demo-fixture--height4x">
+          Dark: <small><code>--g-warning-dark</code></small>
+        </div>
+        <div class="t-fillWarning t-ptXs t-gutter t-colorWhite Demo-fixture--height4x">
+          Normal: <small><code>--g-warning-dark</code></small>
+        </div>
+        <div class="t-fillWarningLight t-ptXs t-gutter Demo-fixture--height4x">
+          Light: <small><code>--g-warning-dark</code></small>
+        </div>
+      </div>
+      <div class="Grid-col t-widthHalf">
+        <h4>Error</h4>
+        <div class="t-fillErrorDark t-ptXs t-colorWhite t-gutter Demo-fixture--height4x">
+          Dark: <small><code>--g-error-dark</code></small>
+        </div>
+        <div class="t-fillError t-ptXs t-gutter t-colorWhite Demo-fixture--height4x">
+          Normal: <small><code>--g-error-dark</code></small>
+        </div>
+        <div class="t-fillErrorLight t-ptXs t-gutter Demo-fixture--height4x">
+          Light: <small><code>--g-error-dark</code></small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h3>Gray scale</h3>
+  <div class="Demo-field">
+    <div class="t-fillGray90 t-colorWhite t-ptXs t-gutter Demo-fixture--height4x">
+      <small><code>var(--g-gray-90)</code></small>
+    </div>
+    <div class="t-fillGray80 t-colorWhite t-ptXs t-gutter Demo-fixture--height4x">
+      <small><code>var(--g-gray-80)</code></small>
+    </div>
+    <div class="t-fillGray60 t-colorWhite t-ptXs t-gutter Demo-fixture--height4x">
+      <small><code>var(--g-gray-60)</code></small>
+    </div>
+    <div class="t-fillGray40 t-colorWhite t-ptXs t-gutter Demo-fixture--height4x">
+      <small><code>var(--g-gray-40)</code></small>
+    </div>
+    <div class="t-fillGray20 t-ptXs t-gutter Demo-fixture--height4x">
+      <small><code>var(--g-gray-20)</code></small>
+    </div>
+    <div class="t-fillGray10 t-ptXs t-gutter Demo-fixture--height4x">
+      <small><code>var(--g-gray-10)</code></small>
+    </div>
+    <div class="t-fillGray5 t-ptXs t-gutter Demo-fixture--height4x">
+      <small><code>var(--g-gray-90)</code></small>
+    </div>
+  </div>
+</section>
+
+
+<section class="t-clear">
+  <h2>Rule Settings</h2>
+{{#markdown}}
+```css
+{{{variables.css}}}
+```
+{{/markdown}}
+</section>
+
+{{/content}}
+{{/extend}}

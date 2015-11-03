@@ -1,0 +1,178 @@
+---
+title: Components Table
+description:
+name: components-table
+layout: page
+base_url: "../../"
+---
+{{#extend "page"}}
+{{#content "content"}}
+
+<p class="t-mb0">v{{components.table.pkg.version}}</p>
+<p class="docs-moduleName">{{components.table.pkg.description}}</p>
+
+<section class="t-clear">
+  <h2>Example</h2>
+  <h3>Nomal</h3>
+  <div class="Demo-field">
+    <table class="Table">
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Color</th>
+          <th>Size</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Jacket</td>
+          <td>Navy</td>
+          <td>M</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Pants</td>
+          <td>Indigo</td>
+          <td>32</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Boots</td>
+          <td>Brown</td>
+          <td>9</td>
+          <td>-</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>Type</th>
+          <th>Color</th>
+          <th>Size</th>
+          <th>Price</th>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+{{#markdown}}
+```html
+  <table class="Table">
+    ...
+  </table>
+```
+{{/markdown}}
+
+
+  <h3>Even</h3>
+  <div class="Demo-field">
+    <table class="Table Table--even">
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Color</th>
+          <th>Size</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Jacket</td>
+          <td>Navy</td>
+          <td>M</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Pants</td>
+          <td>Indigo</td>
+          <td>32</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Boots</td>
+          <td>Brown</td>
+          <td>9</td>
+          <td>-</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>Type</th>
+          <th>Color</th>
+          <th>Size</th>
+          <th>Price</th>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+{{#markdown}}
+```html
+<table class="Table Table--even">
+...
+</table>
+```
+{{/markdown}}
+
+
+
+  <h3>Border</h3>
+  <div class="Demo-field">
+    <table class="Table Table--border">
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Color</th>
+          <th>Size</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Jacket</td>
+          <td>Navy</td>
+          <td>M</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Pants</td>
+          <td>Indigo</td>
+          <td>32</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Boots</td>
+          <td>Brown</td>
+          <td>9</td>
+          <td>-</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>Type</th>
+          <th>Color</th>
+          <th>Size</th>
+          <th>Price</th>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+{{#markdown}}
+```html
+<table class="Table Table--border">
+...
+</table>
+```
+{{/markdown}}
+</section>
+
+
+<section class="t-clear">
+  <h2>Rule Settings</h2>
+{{#markdown}}
+```css
+{{{components.table.css}}}
+```
+{{/markdown}}
+</section>
+
+{{/content}}
+{{/extend}}

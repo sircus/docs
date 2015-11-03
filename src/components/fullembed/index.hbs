@@ -1,0 +1,90 @@
+---
+title: Components FullEmbed
+description:
+name: components-fullembed
+layout: page
+base_url: "../../"
+---
+{{#extend "page"}}
+{{#content "content"}}
+
+<p class="t-mb0">v{{components.fullembed.pkg.version}}</p>
+<p class="docs-moduleName">{{components.fullembed.pkg.description}}</p>
+
+<section class="t-clear">
+
+  <h2>Example</h2>
+
+  <h3>16:9</h3>
+  <div class="Demo-field">
+    <div class="FullEmbed FullEmbed--16by9">
+      <iframe src="https://www.youtube.com/embed/6roX9u4sQVk" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+{{#markdown}}
+```html
+<div class="FullEmbed FullEmbed--16by9">
+  <iframe src="https://www.youtube.com/embed/6roX9u4sQVk" frameborder="0" allowfullscreen></iframe>
+</div>
+```
+{{/markdown}}
+
+
+  <h3>4:3</h3>
+  <div class="Demo-field">
+    <div class="FullEmbed FullEmbed--4by3">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/gCfGmLvWu4A" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+{{#markdown}}
+```html
+<div class="FullEmbed FullEmbed--4by3">
+  <iframe src="https://www.youtube.com/embed/6roX9u4sQVk" frameborder="0" allowfullscreen></iframe>
+</div>
+```
+{{/markdown}}
+
+
+  <h3>3:1</h3>
+  <div class="Demo-field">
+    <div class="FullEmbed FullEmbed--3by1">
+      <iframe src="https://player.vimeo.com/video/77453937" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+  </div>
+{{#markdown}}
+```html
+<div class="FullEmbed FullEmbed--3by1">
+  <iframe src="https://player.vimeo.com/video/77453937" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
+```
+{{/markdown}}
+
+
+
+  <h3>2:1</h3>
+  <div class="Demo-field">
+    <div class="FullEmbed FullEmbed--2by1">
+      <iframe src="https://player.vimeo.com/video/43044223" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+  </div>
+{{#markdown}}
+```html
+<div class="FullEmbed FullEmbed--2by1">
+  <iframe src="https://www.youtube.com/embed/6roX9u4sQVk" frameborder="0" allowfullscreen></iframe>
+</div>
+```
+{{/markdown}}
+</section>
+
+
+<section class="t-clear">
+  <h2>Rule Settings</h2>
+{{#markdown}}
+```css
+{{{components.fillembed.css}}}
+```
+{{/markdown}}
+</section>
+
+{{/content}}
+{{/extend}}

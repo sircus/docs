@@ -1,0 +1,26 @@
+---
+title: Tools Space Responsive
+description:
+name: tools-space-responsive
+layout: page
+base_url: "../../../"
+---
+{{#extend "page"}}
+{{#content "content"}}
+
+<p class="t-mb0">v{{tools.space.responsive.pkg.version}}</p>
+<p class="docs-moduleName">{{tools.space.responsive.pkg.description}}</p>
+
+<section class="t-clear">
+  <h2>Rule Settings</h2>
+{{#markdown}}
+```css
+{{{tools.space.responsive.sm}}}
+{{{tools.space.responsive.md}}}
+{{{tools.space.responsive.lg}}}
+```
+{{/markdown}}
+</section>
+
+{{/content}}
+{{/extend}}

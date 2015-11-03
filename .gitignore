@@ -1,0 +1,6 @@
+*.log
+~*
+node_modules
+publish
+.publish
+sircus.json

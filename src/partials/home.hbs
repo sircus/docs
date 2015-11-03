@@ -1,0 +1,37 @@
+{{> head}}
+<body class="t-gutter">
+
+<header class="Container t-clear t-mtHg t-mbGt" role="banner">
+  <div class="Flex Flex--bottom t-flex">
+    <div class="Flex-col t-width9of12">
+      <p class="t-fontXl t-bold t-lineHeightSm">
+        <a class="docs-link" href="{{file.meta.base_url}}">{{site.title}}</a>
+      </p>
+    </div>
+  </div>
+</header>
+
+
+<div class="Container">
+
+  {{{block "content"}}}
+
+</div>
+
+<footer class="Container docs-footer t-borderGray30 t-borderTop2x" role="contentinfo">
+  <div class="t-sm-flex Flex t-mtXl t-pbLg t-gutterReset">
+    <div class="Flex-col t-sm-width3of12">
+      <p>Create by <a class="docs-link" href="http://blivesta.com" target="_blank">blivesta</a>.</p>
+    </div>
+    <div class="Flex-col t-sm-width9of12">
+      <p class="t-sm-alignRight">Code licensed under the MIT.</p>
+    </div>
+  </div>
+</footer>
+
+<div class="docs-Carbon">
+  {{> carbon}}
+</div>
+
+</body>
+</html>

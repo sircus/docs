@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+  - 0.10
+notifications:
+  slack: blivesta:ygWmRLL4fyU0s7FFlVHSsJnS
+  email: false
+
+before_script:
+  - npm install -g gulp
+
+script: gulp build

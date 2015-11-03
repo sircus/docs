@@ -1,0 +1,35 @@
+---
+title: Tools Boxsizing
+description:
+name: tools-boxsizing
+layout: page
+base_url: "../../"
+---
+{{#extend "page"}}
+{{#content "content"}}
+
+<p class="t-mb0">v{{tools.boxsizing.pkg.version}}</p>
+<p class="docs-moduleName">{{tools.boxsizing.pkg.description}}</p>
+
+<section class="t-clear">
+  <h2>Example</h2>
+{{#markdown}}
+```html
+<div class="t-borderBox">...</div>
+<div class="t-contentBox">...</div>
+```
+{{/markdown}}
+</section>
+
+
+<section class="t-clear">
+  <h2>Rule Settings</h2>
+{{#markdown}}
+```css
+{{{tools.boxsizing.css}}}
+```
+{{/markdown}}
+</section>
+
+{{/content}}
+{{/extend}}

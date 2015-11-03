@@ -1,0 +1,60 @@
+---
+title: Components Button Fill
+description:
+name: components-button-fill
+layout: page
+base_url: "../../../"
+---
+{{#extend "page"}}
+{{#content "content"}}
+
+<p class="t-mb0">v{{components.button.fill.pkg.version}}</p>
+<p class="docs-moduleName">{{components.button.fill.pkg.description}}</p>
+
+<section class="t-clear">
+  <h2>Example</h2>
+
+  <h3>Normal</h3>
+  <div class="Demo-field">
+    <a class="Button Button--fill" href="#">Button</a>
+    <button type="button" class="Button Button--fill">Button</button>
+    <button type="button" class="Button Button--fill is-active">Active</button>
+    <button type="button" class="Button Button--fill is-disabled">Disabled</button>
+  </div>
+  {{#markdown}}
+  ```html
+  <a class="Button Button--fill" href="#">a.Button</a>
+  <button type="button" class="Button Button--fill">button.Button</button>
+  <button type="button" class="Button Button--fill is-active">button.Button</button>
+  <button type="button" class="Button Button--fill is-disabled">button.Button.is-disabled</button>
+  ```
+  {{/markdown}}
+
+  <h3>Color</h3>
+  <div class="Demo-field">
+    <a class="Button Button--fill Button--primary" href="#">Button</a>
+    <button type="button" class="Button Button--fill Button--primary">Button</button>
+    <button type="button" class="Button Button--fill Button--primary is-active">Active</button>
+    <button type="button" class="Button Button--fill Button--primary is-disabled">Disabled</button>
+  </div>
+{{#markdown}}
+```html
+<button type="button" class="Button Button--fill Button--primary">Button</button>
+<button type="button" class="Button Button--fill Button--primary is-active">Active</button>
+<button type="button" class="Button Button--fill Button--primary is-disabled">Disabled</button>
+```
+{{/markdown}}
+</section>
+
+
+<section class="t-clear">
+  <h2>Rule Settings</h2>
+{{#markdown}}
+```css
+{{{components.button.fill.css}}}
+```
+{{/markdown}}
+</section>
+
+{{/content}}
+{{/extend}}

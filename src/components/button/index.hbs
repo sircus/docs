@@ -1,0 +1,77 @@
+---
+title: Components Button
+description:
+name: components-button
+layout: page
+base_url: "../../"
+---
+{{#extend "page"}}
+{{#content "content"}}
+
+<p class="t-mb0">v{{components.button.pkg.version}}</p>
+<p class="docs-moduleName">{{components.button.pkg.description}}</p>
+
+<section class="t-clear">
+<h2>Example</h2>
+
+<h3>Base</h3>
+<div class="Demo-field">
+  <a class="Button" href="#">Button</a>
+  <button type="button" class="Button t-borderRadiusPill">Button</button>
+  <button type="button" class="Button is-active">active</button>
+  <button type="button" class="Button is-disabled">disabled</button>
+</div>
+{{#markdown}}
+```html
+<a class="Button" href="#">Button</a>
+<button type="button" class="Button">Button</button>
+<button type="button" class="Button is-active">Active</button>
+<button type="button" class="Button is-disabled">Disabled</button>
+```
+{{/markdown}}
+
+
+<h3>Color</h3>
+<div class="Demo-field">
+  <a class="Button Button--primary" href="#">Button</a>
+  <button type="button" class="Button Button--primary">Button</button>
+  <button type="button" class="Button Button--primary is-active">Active</button>
+  <button type="button" class="Button Button--primary is-disabled">Disabled</button>
+</div>
+{{#markdown}}
+```html
+<a class="Button Button--primary" href="#">Button</a>
+<button type="button" class="Button Button--primary">Button</button>
+<button type="button" class="Button Button--primary is-active">Active</button>
+<button type="button" class="Button Button--primary is-disabled">Disabled</button>
+```
+{{/markdown}}
+
+
+<h3>Full width</h3>
+<div class="Demo-field">
+  <button type="button" class="Button t-widthFull t-mbMi">Button</button>
+  <button type="button" class="Button t-widthFull t-mbMi is-active">Active</button>
+  <button type="button" class="Button t-widthFull t-mbMi is-disabled">Disabled</button>
+</div>
+{{#markdown}}
+```html
+<button type="button" class="Button t-widthFull t-mbMi">Button</button>
+<button type="button" class="Button t-widthFull t-mbMi is-active">Active</button>
+<button type="button" class="Button t-widthFull t-mbMi is-disabled">Disabled</button>
+```
+{{/markdown}}
+</section>
+
+
+<section class="t-clear">
+<h2>Rule Settings</h2>
+{{#markdown}}
+```css
+{{{components.button.css}}}
+```
+{{/markdown}}
+</section>
+
+{{/content}}
+{{/extend}}

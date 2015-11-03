@@ -1,0 +1,181 @@
+---
+title: Elements
+description:
+name: elements
+layout: page
+base_url: "../"
+---
+{{#extend "page"}}
+{{#content "content"}}
+
+<p class="t-mb0">v{{elements.pkg.version}}</p>
+<p class="docs-moduleName">{{elements.pkg.description}}</p>
+
+<section class="t-clear">
+  <h2>Headdings</h2>
+  <div class="Demo-field t-clear">
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+  </div>
+{{#markdown}}
+```html
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+```
+{{/markdown}}
+</section>
+
+
+<section class="t-clear">
+  <h2>Paragraph</h2>
+  <div class="Demo-field t-clear">
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
+  </div>
+{{#markdown}}
+```html
+<p>...</p>
+```
+{{/markdown}}
+</section>
+
+
+
+<section class="t-clear">
+  <h2>Links</h2>
+  <div class="Demo-field t-clear">
+    <a href="#">navigation item #1</a>
+  </div>
+{{#markdown}}
+```html
+<a href="#">...</a>
+```
+{{/markdown}}
+</section>
+
+
+
+<section class="t-clear">
+  <div class="t-sm-flex Flex t-gutterReset">
+    <div class="Flex-col t-gutter t-sm-widthHalf">
+      <h2>Unordered list</h2>
+      <div class="Demo-field t-clear">
+        <ul>
+          <li>Elements</li>
+          <li>Components
+            <ul>
+              <li>Container</li>
+              <li>Grid
+                <ul>
+                  <li>Column</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>Tools</li>
+        </ul>
+      </div>
+{{#markdown}}
+```html
+<ul>
+  <li>...</li>
+</ul>
+```
+{{/markdown}}
+    </div>
+
+    <div class="Flex-col t-gutter t-sm-widthHalf">
+      <h2>Ordered list</h2>
+      <div class="Demo-field t-clear">
+        <ol>
+          <li>Elements</li>
+          <li>Components
+            <ol>
+              <li>Container</li>
+              <li>Grid
+                <ol>
+                  <li>Column</li>
+                </ol>
+              </li>
+            </ol>
+          </li>
+          <li>Tools</li>
+        </ol>
+      </div>
+{{#markdown}}
+```html
+<ol>
+  <li>...</li>
+</ol>
+```
+{{/markdown}}
+    </div>
+  </div>
+</section>
+
+
+<section class="t-clear">
+  <div class="Flex t-sm-flex t-gutterReset">
+    <div class="Flex-col t-sm-widthHalf">
+      <h2>Image</h2>
+      <div class="Demo-field t-clear">
+        <img src="http://placehold.it/1024x1024">
+      </div>
+{{#markdown}}
+```html
+<img src="your-image.png">
+```
+{{/markdown}}
+    </div>
+    <div class="Flex-col t-sm-widthHalf">
+      <h2>Svg</h2>
+      <div class="Demo-field t-clear">
+        <svg viewBox='0 0 64 64' width="1024"  xmlns='http://www.w3.org/2000/svg'><path d='M32 1.134l7.555 23.25H64L44.225 38.75 51.777 62 32 47.63 12.223 62l7.554-23.25L0 24.384h24.447L32 1.134z'/></svg>
+      </div>
+{{#markdown}}
+```html
+<svg viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'><path d='your-path'/></svg>
+```
+{{/markdown}}
+    </div>
+  </div>
+</section>
+
+
+<section class="t-clear">
+  <h2>Rule Settings</h2>
+{{#markdown}}
+Body
+```css
+{{{elements.body.css}}}
+```
+Headings
+```css
+{{{elements.heading.css}}}
+```
+Image
+```css
+{{{elements.image.css}}}
+```
+Link
+```css
+{{{elements.link.css}}}
+```
+
+Vertical Space
+```css
+{{{elements.space.css}}}
+```
+{{/markdown}}
+</section>
+
+{{/content}}
+{{/extend}}

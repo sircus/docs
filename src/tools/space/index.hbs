@@ -1,0 +1,35 @@
+---
+title: Tools Space
+description:
+name: tools-space
+layout: page
+base_url: "../../"
+---
+{{#extend "page"}}
+{{#content "content"}}
+
+<p class="t-mb0">v{{tools.space.pkg.version}}</p>
+<p class="docs-moduleName">{{tools.space.pkg.description}}</p>
+
+<section class="t-clear">
+  <h2>Abbreviations</h2>
+  <p>
+    <a href="{{file.meta.base_url}}rules/abbreviations/">Size level Suffix</a>
+  </p>
+</section>
+
+
+<section class="t-clear">
+  <h2>Rule Settings</h2>
+{{#markdown}}
+```css
+{{{tools.space.css}}}
+```
+{{/markdown}}
+  <p>
+    <a href="responsive/">Responsive rules</a>
+  </p>
+</section>
+
+{{/content}}
+{{/extend}}

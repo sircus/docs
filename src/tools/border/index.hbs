@@ -1,0 +1,177 @@
+---
+title: Tools Border
+description:
+name: tools-border
+layout: page
+base_url: "../../"
+---
+{{#extend "page"}}
+{{#content "content"}}
+
+<p class="t-mb0">v{{tools.border.pkg.version}}</p>
+<p class="docs-moduleName">{{tools.border.pkg.description}}</p>
+
+<section class="t-clear">
+  <h2>Example</h2>
+
+  <h3>Borders</h3>
+  <div class="Demo-field">
+
+    <div class="Grid t-gutterReset t-mbMd">
+      <div class="Grid-col t-md-width2of10">
+        <div class="t-border">border</div>
+      </div>
+      <div class="Grid-col t-md-width2of10">
+        <div class="t-borderTop">borderTop</div>
+      </div>
+      <div class="Grid-col t-md-width2of10">
+        <div class="t-borderLeft">borderLeft</div>
+      </div>
+      <div class="Grid-col t-md-width2of10">
+        <div class="t-borderBottom">borderBottom</div>
+      </div>
+      <div class="Grid-col t-md-width2of10">
+        <div class="t-borderRight">borderRight</div>
+      </div>
+    </div>
+
+    <div class="Grid t-gutterReset t-mbMd">
+      <div class="Grid-col t-md-width2of10">
+        <div class="t-border2x">border2x</div>
+      </div>
+      <div class="Grid-col t-md-width2of10">
+        <div class="t-borderTop2x">borderTop2x</div>
+      </div>
+      <div class="Grid-col t-md-width2of10">
+        <div class="t-borderLeft2x">borderLeft2x</div>
+      </div>
+      <div class="Grid-col t-md-width2of10">
+        <div class="t-borderBottom2x">borderBottom2x</div>
+      </div>
+      <div class="Grid-col t-md-width2of10">
+        <div class="t-borderRight2x">borderRight2x</div>
+      </div>
+    </div>
+
+    <div class="Grid t-gutterReset t-mbMd">
+      <div class="Grid-col t-md-width2of10">
+        <div class="t-border3x">border3x</div>
+      </div>
+      <div class="Grid-col t-md-width2of10">
+        <div class="t-borderTop3x">borderTop3x</div>
+      </div>
+      <div class="Grid-col t-md-width2of10">
+        <div class="t-borderLeft3x">borderLeft3x</div>
+      </div>
+      <div class="Grid-col t-md-width2of10">
+        <div class="t-borderBottom3x">borderBottom3x</div>
+      </div>
+      <div class="Grid-col t-md-width2of10">
+        <div class="t-borderRight3x">borderRight3x</div>
+      </div>
+    </div>
+
+    <div class="Grid t-gutterReset t-mbMd">
+      <div class="Grid-col t-md-width2of10">
+        <div class="t-border4x">border4x</div>
+      </div>
+      <div class="Grid-col t-md-width2of10">
+        <div class="t-borderTop4x">borderTop4x</div>
+      </div>
+      <div class="Grid-col t-md-width2of10">
+        <div class="t-borderLeft4x">borderLeft4x</div>
+      </div>
+      <div class="Grid-col t-md-width2of10">
+        <div class="t-borderBottom4x">borderBottom4x</div>
+      </div>
+      <div class="Grid-col t-md-width2of10">
+        <div class="t-borderRight4x">borderRight4x</div>
+      </div>
+    </div>
+  </div>
+{{#markdown}}
+```html
+<div class="t-border">...</div>
+<div class="t-borderTop">...</div>
+<div class="t-borderLeft">...</div>
+<div class="t-borderBottom">...</div>
+<div class="t-borderRight">...</div>
+
+<div class="t-border2x">...</div>
+<div class="t-borderTop2x">...</div>
+<div class="t-borderLeft2x">...</div>
+<div class="t-borderBottom2x">...</div>
+<div class="t-borderRight2x">...</div>
+
+<div class="t-border3x">...</div>
+<div class="t-borderTop3x">...</div>
+<div class="t-borderLeft3x">...</div>
+<div class="t-borderBottom3x">...</div>
+<div class="t-borderRight3x">...</div>
+
+<div class="t-border4x">...</div>
+<div class="t-borderTop4x">...</div>
+<div class="t-borderLeft4x">...</div>
+<div class="t-borderBottom4x">...</div>
+<div class="t-borderRight4x">...</div>
+
+<div class="t-border0">...</div>
+<div class="t-borderTop0">...</div>
+<div class="t-borderLeft0">...</div>
+<div class="t-borderBottom0">...</div>
+<div class="t-borderRight0">...</div>
+```
+{{/markdown}}
+
+
+  <h3>Border radius</h3>
+  <div class="Demo-field">
+    <div class="Grid t-gutterReset t-mbMd">
+      <div class="Grid-col t-md-widthHalf">
+        <div class="t-borderRadiusXs Demo-fixture t-gutter t-mbMd" style="height:100px;">borderRadiusXs</div>
+      </div>
+      <div class="Grid-col t-md-widthHalf">
+        <div class="t-borderRadiusSm Demo-fixture  t-gutter t-mbMd" style="height:100px;">borderRadiusSm</div>
+      </div>
+      <div class="Grid-col t-md-widthHalf">
+        <div class="t-borderRadiusMd Demo-fixture  t-gutter t-mbMd" style="height:100px;">borderRadius(or borderRadiusMd)</div>
+      </div>
+      <div class="Grid-col t-md-widthHalf">
+        <div class="t-borderRadiusLg Demo-fixture  t-gutter t-mbMd" style="height:100px;">borderRadiusLg</div>
+      </div>
+      <div class="Grid-col t-md-widthHalf">
+        <div class="t-borderRadiusXl Demo-fixture t-gutter  t-mbMd" style="height:100px;">borderRadiusXl</div>
+      </div>
+      <div class="Grid-col t-md-widthHalf">
+        <div class="t-borderRadiusCircle Demo-fixture t-mbMd" style="width:100px; height:100px;"></div>
+      </div>
+    </div>
+  </div>
+{{#markdown}}
+```html
+<div class="t-borderRadius">...</div>
+<div class="t-borderRadiusXs">...</div>
+<div class="t-borderRadiusSm">...</div>
+<div class="t-borderRadiusMd">...</div>
+<div class="t-borderRadiusLg">...</div>
+<div class="t-borderRadiusXl">...</div>
+<div class="t-borderRadiusCircle" style="width:100px; height:100px;">...</div>
+```
+{{/markdown}}
+</section>
+
+
+<section class="t-clear">
+  <h2>Rule Settings</h2>
+{{#markdown}}
+```css
+{{{tools.border.css}}}
+```
+{{/markdown}}
+  <p>
+    <a href="responsive/">Responsive rules</a>
+  </p>
+</section>
+
+{{/content}}
+{{/extend}}

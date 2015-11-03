@@ -1,0 +1,169 @@
+---
+title: Rules
+description:
+name:
+layout: page
+base_url: "../../"
+---
+{{#extend "page"}}
+{{#content "content"}}
+
+
+<section class="t-clear">
+  <!-- <h2>Variables module</h2> -->
+{{#markdown}}
+## Variables module
+```css
+/* CSS Custom Properties */
+--g-variablesName-propertyName
+/* e.g: */
+--g-primary-dark
+```
+{{/markdown}}
+
+  <h3>Viewports</h3>
+  <table class="Table Table--border Table--even">
+    <thead>
+      <tr>
+        <th>Custom Properties</th>
+        <th>width</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>--g-viewport-sm</code></td>
+        <td>40em = 640px</td>
+      </tr>
+      <tr>
+        <td><code>--g-viewport-md</code></td>
+        <td>64em = 1024px</td>
+      </tr>
+      <tr>
+        <td><code>--g-viewport-lg</code></td>
+        <td>75em = 1200px</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+
+<section class="t-clear">
+  <h2>Elements module</h2>
+{{#markdown}}
+```css
+/* CSS Custom Properties */
+--elementsName-propertyName
+/* e.g: */
+--body-fontFamily
+```
+{{/markdown}}
+</section>
+
+
+<section class="t-clear">
+  <h2>Components module</h2>
+{{#markdown}}
+```css
+/* CSS Custom Properties */
+--ConmponentName-propertyName
+/* e.g: */
+--Button-fontSize
+```
+{{/markdown}}
+  <h3>Classies</h3>
+  <p>
+    Inspired by <a href="https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md"  target="_blank">SUIT CSS naming conventions</a>
+  </p>
+</section>
+
+
+<section class="t-clear">
+  <h2>Tools Module</h2>
+  <p>
+    toolsは変数は使用しない。
+  </p>
+  <h3>Responsive classies</h3>
+{{#markdown}}
+```css
+.t-[sm-|md|lg-]toolName
+/* e.g: */
+.t-xs-width2of12 { }
+```
+{{/markdown}}
+  <h3>Naming conventions</h3>
+  <p>
+    Inspired by <a href="https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md"  target="_blank">SUIT CSS naming conventions</a>
+  </p>
+</section>
+
+
+<section class="t-clear">
+  <h2>Abbreviations</h2>
+  <h3>Size level Suffix</h3>
+
+  <table class="Table Table--border Table--even">
+    <thead>
+      <tr>
+        <th>abbr (Suffix)</th>
+        <th>Base</th>
+        <th>Level</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>*-gt</code></td>
+        <td>Gargantuan</td>
+        <td>+4</td>
+      </tr>
+      <tr>
+        <td><code>*-hg</code></td>
+        <td>Huge</td>
+        <td>+3</td>
+      </tr>
+      <tr>
+        <td><code>*-xl</code></td>
+        <td>Extra Large</td>
+        <td>+2</td>
+      </tr>
+      <tr>
+        <td><code>*-lg</code></td>
+        <td>Large</td>
+        <td>+3</td>
+      </tr>
+      <tr>
+        <td><code>*-bs(md)</code></td>
+        <td>Base (Medium)</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td><code>*-sm</code></td>
+        <td>Small</td>
+        <td>-1</td>
+      </tr>
+      <tr>
+        <td><code>*-xs</code></td>
+        <td>Extra Small</td>
+        <td>-2</td>
+      </tr>
+      <tr>
+        <td><code>*-tn</code></td>
+        <td>Tiny</td>
+        <td>-3</td>
+      </tr>
+      <tr>
+        <td><code>*-mi</code></td>
+        <td>Minimal</td>
+        <td>-4</td>
+      </tr>
+      <tr>
+        <td><code>*-nn or 0</code></td>
+        <td>None</td>
+        <td>-</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+
+{{/content}}
+{{/extend}}

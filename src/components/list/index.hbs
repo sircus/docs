@@ -1,0 +1,128 @@
+---
+title: Components List
+description:
+layout: page
+name: components-list
+base_url: "../../"
+---
+{{#extend "page"}}
+{{#content "content"}}
+
+<p class="t-mb0">v{{components.list.pkg.version}}</p>
+<p class="docs-moduleName">{{components.list.pkg.description}}</p>
+
+<h2>Example</h2>
+
+<section class="t-clear">
+
+  <div class="t-flex Flex t-gutterReset">
+    <div class="Flex-col t-sm-widthHalf">
+      <h4>Unordered list</h4>
+      <div class="Demo-field t-clear">
+        <ul class="List">
+          <li>Elements</li>
+          <li>Components
+            <ul>
+              <li>Container</li>
+              <li>Grid
+                <ul>
+                  <li>Column</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>Tools</li>
+        </ul>
+      </div>
+{{#markdown}}
+```html
+<ul class="List">
+  <li>...</li>
+</ul>
+```
+{{/markdown}}
+    </div>
+
+    <div class="Flex-col t-sm-widthHalf">
+      <h4>Ordered list</h4>
+      <div class="Demo-field t-clear">
+        <ol class="List">
+          <li>Elements</li>
+          <li>Components
+            <ol>
+              <li>Container</li>
+              <li>Grid
+                <ol>
+                  <li>Column</li>
+                </ol>
+              </li>
+            </ol>
+          </li>
+          <li>Tools</li>
+        </ol>
+      </div>
+{{#markdown}}
+```html
+<ol class="List">
+  <li>...</li>
+</ol>
+```
+{{/markdown}}
+    </div>
+  </div>
+
+
+  <h3>ListInline</h3>
+  <div class="Demo-field">
+    <ul class="ListInline">
+      <li>Property</li>
+      <li>Elements</li>
+      <li>Components</li>
+      <li>Tools</li>
+    </ul>
+  </div>
+{{#markdown}}
+```html
+<ul class="ListInline">
+  <li>...</li>
+</ul>
+```
+{{/markdown}}
+
+  <h3>ListReset</h3>
+  <div class="Demo-field">
+    <ul class="ListReset">
+      <li>Global</li>
+      <li>Elements</li>
+      <li>Components
+        <ul>
+          <li>Grid</li>
+          <li>Container</li>
+        </ul>
+      </li>
+      <li>Tools</li>
+    </ul>
+  </div>
+{{#markdown}}
+```html
+<ul class="ListInline">
+  <li>...</li>
+</ul>
+```
+{{/markdown}}
+</section>
+
+
+<section class="t-clear">
+  <h2>Rule Settings</h2>
+{{#markdown}}
+```css
+{{{components.list.css}}}
+```
+{{/markdown}}
+</section>
+
+
+
+{{/content}}
+{{/extend}}

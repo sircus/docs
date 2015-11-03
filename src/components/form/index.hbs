@@ -1,0 +1,109 @@
+---
+title: Components Form
+description:
+name: components-form
+layout: page
+base_url: "../../"
+---
+{{#extend "page"}}
+{{#content "content"}}
+
+<p class="t-mb0">v{{components.form.pkg.version}}</p>
+<p class="docs-moduleName">{{components.form.pkg.description}}</p>
+
+<section class="t-clear">
+
+  <h2>Example</h2>
+
+  <h3>Form</h3>
+  <div class="Demo-field">
+    <div class="Flex t-sm-flex t-gutterReset">
+      <div class="Flex-col t-sm-width4of12">
+        <input type="text" class="Input" value="Default">
+      </div>
+      <div class="Flex-col t-sm-width4of12">
+        <input type="text" class="Input is-focus" value="Focus">
+      </div>
+      <div class="Flex-col t-sm-width4of12">
+        <input type="text" class="Input is-disabled" value="Disabled">
+      </div>
+    </div>
+  </div>
+{{#markdown}}
+```html
+<input type="text" class="Input" value="Default">
+<input type="text" class="Input is-focus" value="Focus">
+<input type="text" class="Input is-disabled" value="Disabled">
+```
+{{/markdown}}
+
+
+  <h3>Select</h3>
+  <div class="Demo-field">
+    <div class="Flex t-sm-flex t-gutterReset">
+      <div class="Flex-col t-sm-width4of12">
+        <select class="Select"><option>Default</option><option>Option 02</option></select>
+      </div>
+      <div class="Flex-col t-sm-width4of12">
+        <select class="Select is-focus"><option>Active</option><option>Option 02</option></select>
+      </div>
+      <div class="Flex-col t-sm-width4of12">
+        <select class="Select is-disabled"><option>Disabled</option><option>Option 02</option></select>
+      </div>
+    </div>
+  </div>
+{{#markdown}}
+```html
+<select class="Select">
+  <option>Default</option>
+  <option>...</option>
+</select>
+
+<select class="Select is-focus">
+  <option>Active</option>
+  <option>...</option>
+</select>
+
+<select class="Select is-disabled">
+  <option>Disabled</option>
+  <option>...</option>
+</select>
+```
+{{/markdown}}
+
+
+  <h3>Textarea</h3>
+  <div class="Demo-field">
+    <div class="Flex t-sm-flex t-gutterReset">
+      <div class="Flex-col t-sm-width4of12">
+        <textarea class="Textarea"></textarea>
+      </div>
+      <div class="Flex-col t-sm-width4of12">
+        <textarea class="Textarea is-focus"></textarea>
+      </div>
+      <div class="Flex-col t-sm-width4of12">
+        <textarea class="Textarea is-disabled"></textarea>
+      </div>
+    </div>
+  </div>
+{{#markdown}}
+```html
+<textarea class="Textarea"></textarea>
+<textarea class="Textarea is-focus"></textarea>
+<textarea class="Textarea is-disabled"></textarea>
+```
+{{/markdown}}
+</section>
+
+
+<section class="t-clear">
+  <h2>Rule Settings</h2>
+{{#markdown}}
+```css
+{{{components.form.css}}}
+```
+{{/markdown}}
+</section>
+
+{{/content}}
+{{/extend}}

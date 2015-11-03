@@ -1,0 +1,45 @@
+pre {
+  font-family: var(--g-fontFamily-monospaceEn);
+  display: block;
+  padding-top: var(--g-space-xs);
+  padding-bottom: var(--g-space-xs);
+  padding-left: var(--g-gutter);
+  padding-right: var(--g-gutter);
+  text-align: left;
+  word-wrap: break-word;
+  word-break: break-all;
+  border: var(--g-border);
+  border-radius: var(--g-borderRadius);
+}
+pre code[class*="language-"] {
+  white-space: pre-wrap;
+}
+
+.Demo-field {
+  border: var(--g-border);
+  padding: var(--g-gutter);
+  border-radius: var(--g-borderRadius);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.Demo-field:after {}
+
+.Demo-field + pre {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-top: 0;
+}
+
+.Demo-fixture {
+  border: 1px solid rgb(0,153,255);
+  background: rgba(0,153,255, .2);
+}
+
+.Demo-fixture--height4x {
+  min-height:4rem;
+}
+
+.Demo-fixture--height8x {
+  min-height:8rem;
+}

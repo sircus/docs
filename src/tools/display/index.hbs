@@ -1,0 +1,27 @@
+---
+title: Tools Display
+description:
+name: tools-display
+layout: page
+base_url: "../../"
+---
+{{#extend "page"}}
+{{#content "content"}}
+
+<p class="t-mb0">v{{tools.display.pkg.version}}</p>
+<p class="docs-moduleName">{{tools.display.pkg.description}}</p>
+
+<section class="t-clear">
+  <h2>Rule Settings</h2>
+{{#markdown}}
+```css
+{{{tools.display.css}}}
+```
+{{/markdown}}
+  <p>
+    <a href="responsive/">Responsive rules</a>
+  </p>
+</section>
+
+{{/content}}
+{{/extend}}

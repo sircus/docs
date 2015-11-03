@@ -1,0 +1,51 @@
+---
+title: Components Container
+description:
+name: components-container
+layout: page
+base_url: "../../"
+---
+{{#extend "page"}}
+{{#content "content"}}
+
+<p class="t-mb0">v{{components.container.pkg.version}}</p>
+<p class="docs-moduleName">{{components.container.pkg.description}}</p>
+
+<section class="t-clear">
+  <h2>Example</h2>
+  <h3>Base</h3>
+  <div class="Demo-field">
+    <div class="Container Demo-fixture" style="height:100px;">
+      .Container
+    </div>
+  </div>
+{{#markdown}}
+```html
+  <div class="Container">...</div>
+```
+{{/markdown}}
+  <h3>Modofier Slim</h3>
+  <div class="Demo-field">
+    <div class="Container Container--slim Demo-fixture"  style="height:100px;">
+      .Container.Container--slim
+    </div>
+  </div>
+{{#markdown}}
+```html
+<div class="Container Container--slim">...</div>
+```
+{{/markdown}}
+</section>
+
+<section class="t-clear">
+<h2>Rule Settings</h2>
+{{#markdown}}
+```css
+{{{components.container.css}}}
+```
+{{/markdown}}
+
+</section>
+
+{{/content}}
+{{/extend}}

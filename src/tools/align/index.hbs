@@ -1,0 +1,75 @@
+---
+title: Tools Align
+description:
+name: tools-align
+layout: page
+base_url: "../../"
+---
+{{#extend "page"}}
+{{#content "content"}}
+
+<p class="t-mb0">v{{tools.align.pkg.version}}</p>
+<p class="docs-moduleName">{{tools.align.pkg.description}}</p>
+
+<section class="t-clear">
+  <h2>Example</h2>
+  <div class="Demo-field">
+    <p class="t-alignLeft">Left</p>
+    <p class="t-alignRight">Right</p>
+    <p class="t-alignCenter">Center</p>
+  </div>
+{{#markdown}}
+```html
+<p class="t-alignLeft">Left</p>
+<p class="t-alignRight">Right</p>
+<p class="t-alignCenter">Center</p>
+```
+{{/markdown}}
+
+  <div class="Demo-field">
+    <h4>Default</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <h4>Justify</h4>
+    <p class="t-alignJustify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+{{#markdown}}
+```html
+<p class="t-alignJustify">Justify</p>
+```
+{{/markdown}}
+
+  <div class="Demo-field">
+    <span class="t-alignTop">Top</span>
+    <span class="t-alignMiddle ">Middle</span>
+    <span class="t-alignBottom">Bottom</span>
+    <span class="t-alignBaseline">Baseline</span>
+    <span class="t-alignTextTop">TextTop</span>
+    <span class="t-alignTextBottom">TextBottom</span>
+  </div>
+{{#markdown}}
+```html
+<span class="t-alignTop">Top</span>
+<span class="t-alignMiddle ">Middle</span>
+<span class="t-alignBottom">Bottom</span>
+<span class="t-alignBaseline">Baseline</span>
+<span class="t-alignTextTop">TextTop</span>
+<span class="t-alignTextBottom">TextBottom</span>
+```
+{{/markdown}}
+</section>
+
+
+<section class="t-clear">
+  <h2>Rule Settings</h2>
+{{#markdown}}
+```css
+{{{tools.align.css}}}
+```
+{{/markdown}}
+  <p>
+    <a href="responsive/">Tools Align Responsive</a>
+  </p>
+</section>
+
+{{/content}}
+{{/extend}}

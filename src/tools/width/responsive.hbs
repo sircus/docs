@@ -1,0 +1,26 @@
+---
+title: Tools Width Responsive
+description:
+name: tools-width-responsive
+layout: page
+base_url: "../../../"
+---
+{{#extend "page"}}
+{{#content "content"}}
+
+<p class="t-mb0">v{{tools.width.responsive.pkg.version}}</p>
+<p class="docs-moduleName">{{tools.width.responsive.pkg.description}}</p>
+
+<section class="t-clear">
+  <h2>Rule Settings</h2>
+{{#markdown}}
+```css
+{{{tools.width.responsive.sm}}}
+{{{tools.width.responsive.md}}}
+{{{tools.width.responsive.lg}}}
+```
+{{/markdown}}
+</section>
+
+{{/content}}
+{{/extend}}

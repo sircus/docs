@@ -1,0 +1,26 @@
+---
+title: Tools Gutter Responsive
+description:
+name: tools-gutter-responsive
+layout: page
+base_url: "../../../"
+---
+{{#extend "page"}}
+{{#content "content"}}
+
+<p class="t-mb0">v{{tools.gutter.responsive.pkg.version}}</p>
+<p class="docs-moduleName">{{tools.gutter.responsive.pkg.description}}</p>
+
+<section class="t-clear">
+  <h2>Rule Settings</h2>
+{{#markdown}}
+```css
+{{{tools.gutter.responsive.sm}}}
+{{{tools.gutter.responsive.md}}}
+{{{tools.gutter.responsive.lg}}}
+```
+{{/markdown}}
+</section>
+
+{{/content}}
+{{/extend}}

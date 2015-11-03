@@ -1,0 +1,66 @@
+---
+title: Tools Gutter
+description:
+name: tools-gutter
+layout: page
+base_url: "../../"
+---
+{{#extend "page"}}
+{{#content "content"}}
+
+<p class="t-mb0">v{{tools.gutter.pkg.version}}</p>
+<p class="docs-moduleName">{{tools.gutter.pkg.description}}</p>
+
+<section class="t-clear">
+  <h2>Example</h2>
+  <div class="Demo-field">
+    <div class="Demo-fixture">
+      <div class="Demo-fixture">
+        <p>none</p>
+      </div>
+    </div>
+    <div class="t-gutter Demo-fixture">
+      <div class="Demo-fixture">
+        <p>gutter</p>
+      </div>
+    </div>
+    <div class="t-gutterReset Demo-fixture">
+      <div class="Demo-fixture">
+        <p>gutterReset</p>
+      </div>
+    </div>
+    <div class="t-gutter2x Demo-fixture">
+      <div class="Demo-fixture">
+        <p>gutter2x</p>
+      </div>
+    </div>
+    <div class="t-gutter2xReset Demo-fixture">
+      <div class="Demo-fixture">
+        <p>gutter2xReset</p>
+      </div>
+    </div>
+  </div>
+{{#markdown}}
+```html
+<div class="t-gutter">...</div>
+<div class="t-gutterReset">...</div>
+<div class="t-gutter2x">...</div>
+<div class="t-gutter2xReset">...</div>
+```
+{{/markdown}}
+</section>
+
+<section class="t-clear">
+  <h2>Rule Settings</h2>
+{{#markdown}}
+```css
+{{{tools.gutter.css}}}
+```
+{{/markdown}}
+  <p>
+    <a href="responsive/">Responsive rules</a>
+  </p>
+</section>
+
+{{/content}}
+{{/extend}}

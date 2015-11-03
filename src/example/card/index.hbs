@@ -1,0 +1,171 @@
+---
+title: UI Pattern Card
+description:
+name:
+layout: page
+base_url: "../../"
+---
+{{#extend "page"}}
+{{#content "content"}}
+
+<section class="t-clear">
+  <h2>Example</h2>
+
+  <h3>Card</h3>
+  <div class="Demo-field">
+
+    <div class="Grid">
+      <div class="Grid-col t-widthHalf">
+        <div class="t-border t-borderGray30 t-gutter">
+          <div class="t-gutterReset">
+            <img src="http://placehold.it/640x420">
+          </div>
+          <h2>Normal</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <a class="t-mbMd Button" href="#">Button</a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+{{#markdown}}
+```html
+<div class="t-border t-borderGray30 t-gutter">
+  <div class="t-gutterReset">
+    <img src="http://placehold.it/640x360">
+  </div>
+  <h2>...</h2>
+  <p>...</p>
+  <a class="t-mbMd Button" href="#">...</a>
+</div>
+```
+{{/markdown}}
+
+
+  <h3>Simple</h3>
+  <div class="Demo-field">
+    <div class="t-border t-borderGray20 t-gutter t-clear">
+      <h2>Box</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+  </div>
+{{#markdown}}
+```html
+<div class="t-border t-borderGray20 t-gutter t-clear">
+  <h2>...</h2>
+  <p>...</p>
+</div>
+```
+{{/markdown}}
+
+
+
+  <h3>Gray</h3>
+  <div class="Demo-field">
+    <div class="t-fillGray10 t-gutter t-clear">
+      <h2>Box</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+  </div>
+{{#markdown}}
+```html
+<div class="t-fillGray10 t-gutter t-clear">
+  <h2>...</h2>
+  <p>...</p>
+</div>
+```
+{{/markdown}}
+
+
+  <h3>Primary color</h3>
+  <div class="Demo-field">
+    <div class="t-fillPrimaryLight t-gutter t-border t-borderPrimary t-borderRadiusMd t-clear">
+      <h2 class="t-colorPrimaryDark">Box</h2>
+      <p class="t-colorPrimary">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+  </div>
+{{#markdown}}
+```html
+<div class="t-fillPrimaryLight t-gutter t-border t-borderPrimary t-borderRadiusMd t-clear">
+  <h2 class="t-colorPrimaryDark">...</h2>
+  <p class="t-colorPrimary">...</p>
+</div>
+```
+{{/markdown}}
+
+
+  <h3>Success color</h3>
+  <div class="Demo-field">
+    <div class="t-fillSuccessLight t-gutter t-border2x t-borderSuccess t-borderRadiusXl t-clear">
+      <h2 class="t-colorSuccessDark">Box</h2>
+      <p class="t-colorSuccess">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+  </div>
+{{#markdown}}
+```html
+<div class="t-fillSuccessLight t-gutter t-border2x t-borderSuccess t-borderRadiusXl t-clear">
+  <h2 class="t-colorSuccessDark">...</h2>
+  <p class="t-colorSuccess">...</p>
+</div>
+```
+{{/markdown}}
+
+
+
+  <h3>Notice color</h3>
+  <div class="Demo-field">
+    <div class="t-fillNoticeLight t-gutter t-border3x t-borderNotice t-borderRadiusXl t-clear">
+      <h2 class="t-colorNoticeDark">Box</h2>
+      <p class="t-colorNotice">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+  </div>
+{{#markdown}}
+```html
+<div class="t-fillNoticeLight t-gutter t-border3x t-borderNotice t-borderRadiusXl t-clear">
+  <h2 class="t-colorNoticeDark">...</h2>
+  <p class="t-colorNotice">...</p>
+</div>
+```
+{{/markdown}}
+
+
+
+  <h3>Warning color</h3>
+  <div class="Demo-field">
+    <div class="t-fillWarningLight t-gutter t-border4x t-borderWarning t-borderRadiusXl t-clear">
+      <h2 class="t-colorWarningDark">Box</h2>
+      <p class="t-colorWarning">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+  </div>
+{{#markdown}}
+```html
+<div class="t-fillWarningLight t-gutter t-border4x t-borderWarning t-borderRadiusXl t-clear">
+  <h2 class="t-colorWarningDark">...</h2>
+  <p class="t-colorWarning">...</p>
+</div>
+```
+{{/markdown}}
+
+
+  <h3>Error color</h3>
+  <div class="Demo-field">
+    <div class="t-fillErrorLight t-gutter t-border4x t-borderError t-borderRadiusXl t-clear">
+      <h2 class="t-colorErrorDark">Box</h2>
+      <p class="t-colorError">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+  </div>
+{{#markdown}}
+```html
+<div class="t-fillErrorLight t-gutter t-border4x t-borderError t-borderRadiusXl t-clear">
+  <h2 class="t-colorErrorDark">...</h2>
+  <p class="t-colorError">...</p>
+</div>
+```
+{{/markdown}}
+
+</section>
+
+
+{{/content}}
+{{/extend}}

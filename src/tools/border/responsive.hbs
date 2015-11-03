@@ -1,0 +1,26 @@
+---
+title: Tools Border Responsive
+description:
+name: tools-border-responsive
+layout: page
+base_url: "../../../"
+---
+{{#extend "page"}}
+{{#content "content"}}
+
+<p class="t-mb0">v{{tools.border.responsive.pkg.version}}</p>
+<p class="docs-moduleName">{{tools.border.responsive.pkg.description}}</p>
+
+<section class="t-clear">
+  <h2>Rule Settings</h2>
+{{#markdown}}
+```css
+{{{tools.border.responsive.sm}}}
+{{{tools.border.responsive.md}}}
+{{{tools.border.responsive.lg}}}
+```
+{{/markdown}}
+</section>
+
+{{/content}}
+{{/extend}}
