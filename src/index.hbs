@@ -11,14 +11,14 @@ base_url: "./"
   <h1 class="t-mt0 t-mbGt t-sm-width7of12">{{sircus.pkg.description}}</h1>
 
   <div class="Flex Flex--middle t-flex t-gutterReset t-ptGt t-pbXs t-borderGray30 t-borderTop2x ">
-    <div class="Flex-col t-sm-width3of12 t-ptTn">
-      {{> social-buttons}}
-    </div>
-    <div class="Flex-col t-sm-width3of12">
+    <div class="Flex-col t-widthFull t-sm-width3of12">
       <a class="docs-link" href="{{file.meta.base_url}}get-started/">Get Started</a>
     </div>
-    <div class="Flex-col t-sm-width6of12">
+    <div class="Flex-col t-widthFull t-sm-width3of12">
       <a class="docs-link" href="https://github.com/sircus/sircus" target="_blank">Download on GitHub</a>
+    </div>
+    <div class="Flex-col t-widthFull t-sm-width6of12 t-ptTn">
+      {{> social-buttons}}
     </div>
   </div>
 
@@ -27,7 +27,7 @@ base_url: "./"
       <div class="t-borderTop2">
         <div class="t-flex Flex t-gutterReset">
           <div class="Flex-col t-widthHalf t-sm-width3of12">
-            <p>v<strong>{{sircus.pkg.version}}</strong></p>
+            <p>Version: <strong>{{sircus.pkg.version}}</strong></p>
           </div>
           <div class="Flex-col t-widthHalf t-sm-width3of12">
             <p>Gzipped size: <strong>{{sircus.stats.gzippedSize}} B</strong></p>
@@ -49,7 +49,7 @@ base_url: "./"
 
 <section class="t-clear t-ptLg t-gutter">
   <h2 class="t-pbXs t-borderGray30 t-borderBottom2x ">34 Modules</h2>
-  <div class="Flex t-flex t-gutterReset">
+  <div class="Flex t-flex t-gutterReset t-ptLg t-pbLg">
     <div class="Flex-col Flex-col--fit">
       <div class="t-flex Flex t-gutterReset">
         <div class="Flex-col t-sm-widthHalf">
