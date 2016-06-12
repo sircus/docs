@@ -14,6 +14,7 @@ var rename = require('gulp-rename')
 var runSequence = require('run-sequence')
 var sitemap = require('gulp-sitemap')
 var stylestats = require('gulp-stylestats')
+var postcss = require('gulp-postcss')
 
 var banner = [
   '/*!',
@@ -88,20 +89,21 @@ gulp.task('sitemap', function() {
 // ----------------------------------------------------------------
 
 gulp.task('css', function() {
+  const processors = [
+    require('postcss-import'),
+    require('postcss-cssnext'),
+    require('postcss-browser-reporter')({ selector: 'body:before' }),
+    require('postcss-reporter')({ clearMessages: true }),
+  ]
+
   return gulp
     .src(dirs.src + '/css/' + pkg.name + '.css')
     .pipe(header(banner, {
       pkg: pkg
     }))
-    .pipe(cssnext({
-      browsers: ['last 2 versions'],
-      sourcemap: true,
-      compress: true,
-      features : {
-        colorRgba: false,
-        rem: false
-      }
-    }))
+    .pipe(postcss(processors))
+
+
     .pipe(gulp.dest(dirs.dist + 'css'))
 })
 
