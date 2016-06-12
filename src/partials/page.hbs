@@ -9,7 +9,7 @@
     <main role="main">
       <p class="t-mt0 t-fontSm">
         {{#isnot file.meta.name ""}}
-        <!-- <a class="docs-link" href="https://github.com/sircus/{{file.meta.name}}" target="_blank">
+        <!-- <a class="docs-link" href="{{tools.align.pkg.repository}}" target="_blank">
           Repository
         </a> -->
         {{else}}
@@ -26,12 +26,6 @@
   <div class="Flex-col Flex-col--first t-gutter docs-columnSmall">
     {{> nav}}
   </div><!-- /.FLex-col -->
-
-  <!-- <div class="Flex-col Flex-col--last t-gutter t-fontXs t-ptGt" style="width:160px">
-  {{> carbon}}
-  </div> -->
-
-  <!-- /.FLex-col -->
 
 </div><!-- /.FLex -->
 

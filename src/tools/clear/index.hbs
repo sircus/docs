@@ -9,11 +9,23 @@ base_url: "../../"
 {{#content "content"}}
 
 <h2 class="t-mtXs t-mbMi t-fontMd t-normal">{{tools.clear.pkg.description}}</h2>
-<p class="t-mbGt t-mt0 t-fontSm"><a class="docs-link" href="https://github.com/sircus/{{file.meta.name}}" target="_blank">{{tools.clear.pkg.name}}</a> | v{{tools.clear.pkg.version}}</p>
+<p class="t-mbGt t-mt0 t-fontSm"><a class="docs-link" href="{{tools.align.pkg.repository}}" target="_blank">{{tools.clear.pkg.name}}</a> | v{{tools.clear.pkg.version}}</p>
 
 
 <section class="t-clear">
 {{#markdown}}
+### Install
+
+```
+npm install {{tools.clear.pkg.name}}
+```
+
+### CSS import
+
+```css
+@import "{{tools.clear.pkg.name}}";
+```
+
 ### CSS
 
 ```css

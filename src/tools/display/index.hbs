@@ -9,11 +9,25 @@ base_url: "../../"
 {{#content "content"}}
 
 <h2 class="t-mtXs t-mbMi t-fontMd t-normal">{{tools.display.pkg.description}}</h2>
-<p class="t-mbGt t-mt0 t-fontSm"><a class="docs-link" href="https://github.com/sircus/{{file.meta.name}}" target="_blank">{{tools.display.pkg.name}}</a> | v{{tools.display.pkg.version}}</p>
+<p class="t-mbGt t-mt0 t-fontSm"><a class="docs-link" href="{{tools.align.pkg.repository}}" target="_blank">{{tools.display.pkg.name}}</a> | v{{tools.display.pkg.version}}</p>
 
 
 <section class="t-clear">
 {{#markdown}}
+### Install
+
+```
+npm install {{tools.display.pkg.name}} sircus-variables
+```
+
+### CSS import
+
+```css
+@import "{{tools.display.pkg.name}}";
+@import "{{tools.display.pkg.name}}/responsive";
+@import "sircus-variables";
+```
+
 ### CSS
 
 ```css

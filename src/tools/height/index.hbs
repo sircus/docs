@@ -9,7 +9,7 @@ base_url: "../../"
 {{#content "content"}}
 
 <h2 class="t-mtXs t-mbMi t-fontMd t-normal">{{tools.height.pkg.description}}</h2>
-<p class="t-mbGt t-mt0 t-fontSm"><a class="docs-link" href="https://github.com/sircus/{{file.meta.name}}" target="_blank">{{tools.height.pkg.name}}</a> | v{{tools.height.pkg.version}}</p>
+<p class="t-mbGt t-mt0 t-fontSm"><a class="docs-link" href="{{tools.align.pkg.repository}}" target="_blank">{{tools.height.pkg.name}}</a> | v{{tools.height.pkg.version}}</p>
 
 <section class="t-clear">
   <h3>height</h3>
@@ -50,6 +50,20 @@ base_url: "../../"
 
 <section class="t-clear">
 {{#markdown}}
+### Install
+
+```
+npm install {{tools.height.pkg.name}} sircus-variables
+```
+
+### CSS import
+
+```css
+@import "{{tools.height.pkg.name}}";
+@import "{{tools.height.pkg.name}}/responsive";
+@import "sircus-variables";
+```
+
 ### CSS
 
 ```css

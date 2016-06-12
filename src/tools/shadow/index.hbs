@@ -9,7 +9,7 @@ base_url: "../../"
 {{#content "content"}}
 
 <h2 class="t-mtXs t-mbMi t-fontMd t-normal">{{tools.shadow.pkg.description}}</h2>
-<p class="t-mbGt t-mt0 t-fontSm"><a class="docs-link" href="https://github.com/sircus/{{file.meta.name}}" target="_blank">{{tools.shadow.pkg.name}}</a> | v{{tools.shadow.pkg.version}}</p>
+<p class="t-mbGt t-mt0 t-fontSm"><a class="docs-link" href="{{tools.align.pkg.repository}}" target="_blank">{{tools.shadow.pkg.name}}</a> | v{{tools.shadow.pkg.version}}</p>
 
 
 <section class="t-clear">
@@ -18,29 +18,29 @@ base_url: "../../"
 
   <h4 class="t-uppercase t-normal t-fontSm t-letterSpacingLg">border-radius</h4>
   <div class="Demo-field">
-    <div class="t-boxShadowXs t-gutter Demo-fixture--height4x">
-      <small><code>.t-boxShadowXs</code></small>
+    <div class="t-shadowXs t-gutter Demo-fixture--height4x">
+      <small><code>.t-shadowXs</code></small>
     </div>
-    <div class="t-boxShadowSm t-gutter Demo-fixture--height4x t-mtLg">
-      <small><code>.t-boxShadowSm</code></small>
+    <div class="t-shadowSm t-gutter Demo-fixture--height4x t-mtLg">
+      <small><code>.t-shadowSm</code></small>
     </div>
-    <div class="t-boxShadowMd t-gutter Demo-fixture--height4x t-mtLg">
-      <small><code>t-boxShadowMd</code></small>
+    <div class="t-shadowMd t-gutter Demo-fixture--height4x t-mtLg">
+      <small><code>t-shadowMd</code></small>
     </div>
-    <div class="t-boxShadowLg t-gutter Demo-fixture--height4x t-mtLg">
-      <small><code>t-boxShadowLg</code></small>
+    <div class="t-shadowLg t-gutter Demo-fixture--height4x t-mtLg">
+      <small><code>t-shadowLg</code></small>
     </div>
-    <div class="t-boxShadowXl t-gutter Demo-fixture--height4x t-mtLg">
-      <small><code>t-boxShadowXl</code></small>
+    <div class="t-shadowXl t-gutter Demo-fixture--height4x t-mtLg">
+      <small><code>t-shadowXl</code></small>
     </div>
   </div>
 {{#markdown}}
 ```html
-<div class="t-boxShadowXs">...</div>
-<div class="t-boxShadowSm">...</div>
-<div class="t-boxShadowMd">...</div>
-<div class="t-boxShadowLg">...</div>
-<div class="t-boxShadowXl">...</div>
+<div class="t-shadowXs">...</div>
+<div class="t-shadowSm">...</div>
+<div class="t-shadowMd">...</div>
+<div class="t-shadowLg">...</div>
+<div class="t-shadowXl">...</div>
 ```
 {{/markdown}}
 
@@ -49,6 +49,20 @@ base_url: "../../"
 
 <section class="t-clear">
 {{#markdown}}
+### Install
+
+```
+npm install {{tools.shadow.pkg.name}} sircus-variables
+```
+
+### CSS import
+
+```css
+@import "{{tools.shadow.pkg.name}}";
+@import "{{tools.shadow.pkg.name}}/responsive";
+@import "sircus-variables";
+```
+
 ### CSS
 
 ```css

@@ -9,7 +9,7 @@ base_url: "../../"
 {{#content "content"}}
 
 <h2 class="t-mtXs t-mbMi t-fontMd t-normal">{{components.container.pkg.description}}</h2>
-<p class="t-mbGt t-mt0 t-fontSm"><a class="docs-link" href="https://github.com/sircus/{{file.meta.name}}" target="_blank">{{components.container.pkg.name}}</a> | v{{components.container.pkg.version}}</p>
+<p class="t-mbGt t-mt0 t-fontSm"><a class="docs-link" href="{{tools.align.pkg.repository}}" target="_blank">{{components.container.pkg.name}}</a> | v{{components.container.pkg.version}}</p>
 
 <section class="t-clear">
   <h3>Base</h3>
@@ -23,7 +23,7 @@ base_url: "../../"
   <div class="Container">...</div>
 ```
 {{/markdown}}
-  <h3>Modofier Slim</h3>
+  <h3>Modofier: Slim</h3>
   <div class="Demo-field">
     <div class="Container Container--slim Demo-fixture"  style="height:100px;">
       .Container.Container--slim
@@ -38,6 +38,18 @@ base_url: "../../"
 
 <section class="t-clear">
 {{#markdown}}
+### Install
+
+```
+npm install {{components.container.pkg.name}}
+```
+
+### CSS import
+
+```css
+@import "{{components.container.pkg.name}}";
+```
+
 ### CSS
 
 ```css
