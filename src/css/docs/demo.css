@@ -10,9 +10,14 @@ pre {
   word-break: break-all;
   border: var(--g-border);
   border-radius: var(--g-borderRadius);
+  font-size: 14px;
 }
 pre code[class*="language-"] {
   white-space: pre-wrap;
+}
+
+.Demo {
+  max-width: 1024px;
 }
 
 .Demo-field {
@@ -29,6 +34,8 @@ pre code[class*="language-"] {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   border-top: 0;
+  margin-bottom: var(--g-space-hg);
+
 }
 
 .Demo-fixture {

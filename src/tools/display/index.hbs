@@ -8,19 +8,26 @@ base_url: "../../"
 {{#extend "page"}}
 {{#content "content"}}
 
-<p class="t-mb0">v{{tools.display.pkg.version}}</p>
-<p class="docs-moduleName">{{tools.display.pkg.description}}</p>
+<h2 class="t-mtXs t-mbMi t-fontMd t-normal">{{tools.display.pkg.description}}</h2>
+<p class="t-mbGt t-mt0 t-fontSm"><a class="docs-link" href="https://github.com/sircus/{{file.meta.name}}" target="_blank">{{tools.display.pkg.name}}</a> | v{{tools.display.pkg.version}}</p>
+
 
 <section class="t-clear">
-  <h2>Rule Settings</h2>
 {{#markdown}}
+### CSS
+
 ```css
 {{{tools.display.css}}}
 ```
+
+### Responsive CSS
+
+```css
+{{{tools.display.sm}}}
+{{{tools.display.md}}}
+{{{tools.display.lg}}}
+```
 {{/markdown}}
-  <p>
-    <a href="responsive/">Responsive rules</a>
-  </p>
 </section>
 
 {{/content}}

@@ -8,11 +8,11 @@ base_url: "../../"
 {{#extend "page"}}
 {{#content "content"}}
 
-<p class="t-mb0">v{{components.table.pkg.version}}</p>
-<p class="docs-moduleName">{{components.table.pkg.description}}</p>
+<h2 class="t-mtXs t-mbMi t-fontMd t-normal">{{components.table.pkg.description}}</h2>
+<p class="t-mbGt t-mt0 t-fontSm"><a class="docs-link" href="https://github.com/sircus/{{file.meta.name}}" target="_blank">{{components.table.pkg.name}}</a> | v{{components.table.pkg.version}}</p>
 
 <section class="t-clear">
-  <h2>Example</h2>
+
   <h3>Nomal</h3>
   <div class="Demo-field">
     <table class="Table">
@@ -166,8 +166,9 @@ base_url: "../../"
 
 
 <section class="t-clear">
-  <h2>Rule Settings</h2>
 {{#markdown}}
+### CSS
+
 ```css
 {{{components.table.css}}}
 ```

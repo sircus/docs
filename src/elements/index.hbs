@@ -8,11 +8,11 @@ base_url: "../"
 {{#extend "page"}}
 {{#content "content"}}
 
-<p class="t-mb0">v{{elements.pkg.version}}</p>
-<p class="docs-moduleName">{{elements.pkg.description}}</p>
+<h2 class="t-mtXs t-mbMi t-fontMd t-normal">{{elements.pkg.description}}</h2>
+<p class="t-mbGt t-mt0 t-fontSm"><a class="docs-link" href="https://github.com/sircus/{{file.meta.name}}" target="_blank">{{elements.pkg.name}}</a> | v{{elements.pkg.version}}</p>
 
 <section class="t-clear">
-  <h2>Headdings</h2>
+  <h3>Headdings</h3>
   <div class="Demo-field t-clear">
     <h1>Heading 1</h1>
     <h2>Heading 2</h2>
@@ -35,7 +35,7 @@ base_url: "../"
 
 
 <section class="t-clear">
-  <h2>Paragraph</h2>
+  <h3>Paragraph</h3>
   <div class="Demo-field t-clear">
     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
@@ -50,7 +50,7 @@ base_url: "../"
 
 
 <section class="t-clear">
-  <h2>Links</h2>
+  <h3>Links</h3>
   <div class="Demo-field t-clear">
     <a href="#">navigation item #1</a>
   </div>
@@ -66,7 +66,7 @@ base_url: "../"
 <section class="t-clear">
   <div class="t-sm-flex Flex t-gutterReset">
     <div class="Flex-col t-gutter t-sm-widthHalf">
-      <h2>Unordered list</h2>
+      <h3>Unordered list</h3>
       <div class="Demo-field t-clear">
         <ul>
           <li>Elements</li>
@@ -93,7 +93,7 @@ base_url: "../"
     </div>
 
     <div class="Flex-col t-gutter t-sm-widthHalf">
-      <h2>Ordered list</h2>
+      <h3>Ordered list</h3>
       <div class="Demo-field t-clear">
         <ol>
           <li>Elements</li>
@@ -125,7 +125,7 @@ base_url: "../"
 <section class="t-clear">
   <div class="Flex t-sm-flex t-gutterReset">
     <div class="Flex-col t-sm-widthHalf">
-      <h2>Image</h2>
+      <h3>Image</h3>
       <div class="Demo-field t-clear">
         <img src="http://placehold.it/1024x1024">
       </div>
@@ -136,7 +136,7 @@ base_url: "../"
 {{/markdown}}
     </div>
     <div class="Flex-col t-sm-widthHalf">
-      <h2>Svg</h2>
+      <h3>Svg</h3>
       <div class="Demo-field t-clear">
         <svg viewBox='0 0 64 64' width="1024"  xmlns='http://www.w3.org/2000/svg'><path d='M32 1.134l7.555 23.25H64L44.225 38.75 51.777 62 32 47.63 12.223 62l7.554-23.25L0 24.384h24.447L32 1.134z'/></svg>
       </div>
@@ -151,28 +151,11 @@ base_url: "../"
 
 
 <section class="t-clear">
-  <h2>Rule Settings</h2>
 {{#markdown}}
-Body
-```css
-{{{elements.body.css}}}
-```
-Headings
-```css
-{{{elements.heading.css}}}
-```
-Image
-```css
-{{{elements.image.css}}}
-```
-Link
-```css
-{{{elements.link.css}}}
-```
+### CSS
 
-Vertical Space
 ```css
-{{{elements.space.css}}}
+{{{elements.css}}}
 ```
 {{/markdown}}
 </section>

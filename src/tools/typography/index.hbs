@@ -8,13 +8,191 @@ base_url: "../../"
 {{#extend "page"}}
 {{#content "content"}}
 
-<p class="t-mb0">v{{tools.typography.pkg.version}}</p>
-<p class="docs-moduleName">{{tools.typography.pkg.description}}</p>
+<h2 class="t-mtXs t-mbMi t-fontMd t-normal">{{tools.typography.pkg.description}}</h2>
+<p class="t-mbGt t-mt0 t-fontSm"><a class="docs-link" href="https://github.com/sircus/{{file.meta.name}}" target="_blank">{{tools.typography.pkg.name}}</a> | v{{tools.typography.pkg.version}}</p>
 
 <section class="t-clear">
-  <h2>Example</h2>
+  <h3>color</h3>
 
-  <h3 clss="Demo-comment">Font weight and style</h3>
+  <h4 class="t-uppercase t-normal t-fontSm t-letterSpacingLg">Primary</h4>
+  <div class="Demo-field">
+    <div class="t-colorPrimaryDark">t-colorPrimaryDark</div>
+    <div class="t-colorPrimary">t-colorPrimary</div>
+    <div class="t-colorPrimaryLight">t-colorPrimaryLight</div>
+  </div>
+{{#markdown}}
+```html
+<p class="t-colorPrimaryDark">...</p>
+<p class="t-colorPrimary">...</p>
+<p class="t-colorPrimaryLight">...</p>
+```
+{{/markdown}}
+
+
+  <h4 class="t-uppercase t-normal t-fontSm t-letterSpacingLg">Secondary</h4>
+  <div class="Demo-field">
+    <div class="t-colorSecondaryDark">t-colorSecondaryDark</div>
+    <div class="t-colorSecondary">t-colorSecondary</div>
+    <div class="t-colorSecondaryLight">t-colorSecondaryLight</div>
+  </div>
+{{#markdown}}
+```html
+<p class="t-colorSecondaryDark">...</p>
+<p class="t-colorSecondary">...</p>
+<p class="t-colorSecondaryLight">...</p>
+```
+{{/markdown}}
+
+
+  <h4 class="t-uppercase t-normal t-fontSm t-letterSpacingLg">Success</h4>
+  <div class="Demo-field">
+    <div class="t-colorSuccessDark">t-colorSuccessDark</div>
+    <div class="t-colorSuccess">t-colorSuccess</div>
+    <div class="t-colorSuccessLight">t-colorSuccessLight</div>
+  </div>
+{{#markdown}}
+```html
+<p class="t-colorSuccessDark">...</p>
+<p class="t-colorSuccess">...</p>
+<p class="t-colorSuccessLight">...</p>
+```
+{{/markdown}}
+
+
+  <h4 class="t-uppercase t-normal t-fontSm t-letterSpacingLg">Notice</h4>
+  <div class="Demo-field">
+    <div class="t-colorNoticeDark">t-colorNoticeDark</div>
+    <div class="t-colorNotice">t-colorNotice</div>
+    <div class="t-colorNoticeLight">t-colorNoticeLight</div>
+  </div>
+{{#markdown}}
+```html
+<p class="t-colorNoticeDark">...</p>
+<p class="t-colorNotice">...</p>
+<p class="t-colorNoticeLight">...</p>
+```
+{{/markdown}}
+
+
+  <h4 class="t-uppercase t-normal t-fontSm t-letterSpacingLg">Warning</h4>
+  <div class="Demo-field">
+    <div class="t-colorWarningDark">t-colorWarningDark</div>
+    <div class="t-colorWarning">t-colorWarning</div>
+    <div class="t-colorWarningLight">t-colorWarningLight</div>
+  </div>
+{{#markdown}}
+```html
+<p class="t-colorWarningDark">...</p>
+<p class="t-colorWarning">...</p>
+<p class="t-colorWarningLight">...</p>
+```
+{{/markdown}}
+
+  <h4 class="t-uppercase t-normal t-fontSm t-letterSpacingLg">Error</h4>
+  <div class="Demo-field">
+    <div class="t-colorErrorDark">t-colorErrorDark</div>
+    <div class="t-colorError">t-colorError</div>
+    <div class="t-colorErrorLight">t-colorErrorLight</div>
+  </div>
+{{#markdown}}
+```html
+<p class="t-colorErrorDark">...</p>
+<p class="t-colorError">...</p>
+<p class="t-colorErrorLight">...</p>
+```
+{{/markdown}}
+
+
+  <h4 class="t-uppercase t-normal t-fontSm t-letterSpacingLg">Gray scale</h4>
+  <div class="Demo-field">
+    <div class="t-colorBlack">t-colorBlack</div>
+    <div class="t-colorGray90">t-colorGray90</div>
+    <div class="t-colorGray80">t-colorGray80</div>
+    <div class="t-colorGray60">t-colorGray60</div>
+    <div class="t-colorGray40">t-colorGray40</div>
+    <div class="t-colorGray30">t-colorGray30</div>
+    <div class="t-colorGray20">t-colorGray20</div>
+    <div class="t-colorGray10">t-colorGray10</div>
+    <div class="t-colorGray5">t-colorGray5</div>
+    <div class="t-colorWhite">t-colorWhite</div>
+  </div>
+{{#markdown}}
+```html
+<p class="t-colorBlack">...</p>
+<p class="t-colorGray90">...</p>
+<p class="t-colorGray80">...</p>
+<p class="t-colorGray60">...</p>
+<p class="t-colorGray40">...</p>
+<p class="t-colorGray30">...</p>
+<p class="t-colorGray20">...</p>
+<p class="t-colorGray10">...</p>
+<p class="t-colorGray5">...</p>
+<p class="t-colorWhite">...</p>
+```
+{{/markdown}}
+
+</section>
+
+<section class="t-clear">
+
+  <h3>font-family</h3>
+
+  <h4 class="t-uppercase t-normal t-fontSm t-letterSpacingLg">EN</h4>
+  <div class="Demo-field">
+    <p class="t-enSans t-fontXl">Typography</p>
+    <p class="t-enSerif t-fontXl">Typography</p>
+    <p class="t-enMonospace t-fontXl">Typography</p>
+  </div>
+{{#markdown}}
+```html
+<p class="t-enSans">...</p>
+<p class="t-enSerif">...</p>
+<p class="t-enMonospace">...</p>
+```
+{{/markdown}}
+
+
+  <h4 class="t-uppercase t-normal t-fontSm t-letterSpacingLg">ja</h4>
+  <div class="Demo-field">
+    <p class="t-jaSans t-fontXl">アイデアは移動距離と比例する</p>
+    <p class="t-jaSerif t-fontXl">アイデアは移動距離と比例する</p>
+    <p class="t-jaMonospace t-fontXl">アイデアは移動距離と比例する</p>
+  </div>
+{{#markdown}}
+```html
+<p class="t-jaSans">...</p>
+<p class="t-jaSerif">...</p>
+<p class="t-jaMonospace">...</p>
+```
+{{/markdown}}
+
+
+  <h3>font-size</h3>
+
+  <div class="Demo-field">
+    <p class="t-fontGt">Font scale tool</p>
+    <p class="t-fontHg">Font scale tool</p>
+    <p class="t-fontXl">Font scale tool</p>
+    <p class="t-fontLg">Font scale tool</p>
+    <p class="t-fontMd">Font scale tool</p>
+    <p class="t-fontSm">Font scale tool</p>
+    <p class="t-fontXs">Font scale tool</p>
+  </div>
+{{#markdown}}
+```html
+<p class="t-fontGt">...</p>
+<p class="t-fontHg">...</p>
+<p class="t-fontXl">...</p>
+<p class="t-fontLg">...</p>
+<p class="t-fontMd">...</p>
+<p class="t-fontSm">...</p>
+<p class="t-fontXs">...</p>
+```
+{{/markdown}}
+
+
+
+  <h3 clss="t-uppercase t-normal t-fontSm t-letterSpacingLg">font-weight</h3>
   <div class="Demo-field">
     <span class="t-normal">normal</span>
     <span class="t-bold">bold</span>
@@ -32,7 +210,7 @@ base_url: "../../"
 ```
 {{/markdown}}
 
-  <h3 clss="Demo-comment">Decoration</h3>
+  <h3 clss="t-uppercase t-normal t-fontSm t-letterSpacingLg">text-decoration</h3>
   <div class="Demo-field">
     <span class="t-decoNone">decoNone</span>
     <span class="t-underline">underline</span>
@@ -62,76 +240,14 @@ base_url: "../../"
 ```
 {{/markdown}}
 
-  <h3 clss="Demo-comment">white-space</h3>
-  <div class="Demo-field">
-    <h3>nowrap</h3>
-    <p class="t-nowrap">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    </p>
-    <h3>pre</h3>
-    <p class="t-pre">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    </p>
-  </div>
-{{#markdown}}
-```html
-<p class="t-nowrap">...</p>
-<p class="t-pre">...</p>
-```
-{{/markdown}}
-
-  <h3 clss="Demo-comment">font-family En</h3>
-  <div class="Demo-field">
-    <h3>Sans <code>t-enSans</code></h3>
-    <p class="t-enSans">
-      Typography
-    </p>
-    <h3>Serif <code>t-enSerif</code></h3>
-    <p class="t-enSerif">
-      Typography
-    </p>
-    <h3>Monospace <code>t-enMonospace</code></h3>
-    <p class="t-enMonospace">
-      Typography
-    </p>
-  </div>
-{{#markdown}}
-```html
-<p class="t-enSans">...</p>
-<p class="t-enSerif">...</p>
-<p class="t-enMonospace">...</p>
-```
-{{/markdown}}
-
-  <h3 clss="Demo-comment">font-family Ja</h3>
-  <div class="Demo-field">
-    <h3>Sans <code>t-jaSans</code></h3>
-    <p class="t-jaSans">
-      アイデアと移動距離は比例する by 高城剛氏
-    </p>
-    <h3>Serif <code>t-jaSerif</code></h3>
-    <p class="t-jaSerif">
-      アイデアと移動距離は比例する by 高城剛氏
-    </p>
-    <h3>Monospace <code>t-jaMonospace</code></h3>
-    <p class="t-jaMonospace">
-      アイデアと移動距離は比例する by 高城剛氏
-    </p>
-  </div>
-{{#markdown}}
-```html
-<p class="t-jaSans">...</p>
-<p class="t-jaSerif">...</p>
-<p class="t-jaMonospace">...</p>
-```
-{{/markdown}}
-
 
   <h3 clss="Demo-comment">line-height</h3>
   <div class="Demo-field">
-    <p class="t-lineHeightSm Demo-fixture">sm</p>
-    <p class="t-lineHeightMd Demo-fixture">md</p>
-    <p class="t-lineHeightLg Demo-fixture">lg</p>
+    <p class="t-lineHeightXs Demo-fixture t-mbMi">t-lineHeightXs</p>
+    <p class="t-lineHeightSm Demo-fixture t-mbMi">t-lineHeightSm</p>
+    <p class="t-lineHeightMd Demo-fixture t-mbMi">t-lineHeightMd</p>
+    <p class="t-lineHeightLg Demo-fixture t-mbMi">t-lineHeightLg</p>
+    <p class="t-lineHeightXl Demo-fixture t-mbMi">t-lineHeightXl</p>
   </div>
 {{#markdown}}
 ```html
@@ -142,26 +258,44 @@ base_url: "../../"
 {{/markdown}}
 
 
-
-  <h3 clss="Demo-comment">Font scale</h3>
+  <h3 clss="Demo-comment">letter-spacing</h3>
   <div class="Demo-field">
-    <p class="t-fontGt">Font scale tool</p>
-    <p class="t-fontHg">Font scale tool</p>
-    <p class="t-fontXl">Font scale tool</p>
-    <p class="t-fontLg">Font scale tool</p>
-    <p class="t-fontMd">Font scale tool</p>
-    <p class="t-fontSm">Font scale tool</p>
-    <p class="t-fontXs">Font scale tool</p>
+    <p class="t-letterSpacingXs t-mbMi">t-letterSpacingXs</p>
+    <p class="t-letterSpacingSm t-mbMi">t-letterSpacingSm</p>
+    <p class="t-letterSpacingMd t-mbMi">t-letterSpacingMd</p>
+    <p class="t-letterSpacingLg t-mbMi">t-letterSpacingLg</p>
+    <p class="t-letterSpacingXl t-mbMi">t-letterSpacingXl</p>
   </div>
 {{#markdown}}
 ```html
-<p class="t-fontGt">...</p>
-<p class="t-fontHg">...</p>
-<p class="t-fontXl">...</p>
-<p class="t-fontLg">...</p>
-<p class="t-fontMd">...</p>
-<p class="t-fontSm">...</p>
-<p class="t-fontXs">...</p>
+<p class="t-letterSpacingXs">...</p>
+<p class="t-letterSpacingSm">...</p>
+<p class="t-letterSpacingMd">...</p>
+<p class="t-letterSpacingLg">...</p>
+<p class="t-letterSpacingXl">...</p>
+```
+{{/markdown}}
+
+
+  <h3 clss="Demo-comment">white-space</h3>
+  <div class="Demo-field">
+    <h4 class="t-uppercase t-normal t-fontSm t-letterSpacingLg">nowrap</h4>
+    <div class="t-overflow">
+      <p class="t-nowrap">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+    </div>
+    <h4 class="t-uppercase t-normal t-fontSm t-letterSpacingLg">pre</h4>
+    <div class="t-overflow">
+      <p class="t-pre">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+    </div>
+  </div>
+{{#markdown}}
+```html
+<p class="t-nowrap">...</p>
+<p class="t-pre">...</p>
 ```
 {{/markdown}}
 
@@ -170,10 +304,19 @@ base_url: "../../"
 
 
 <section class="t-clear">
-  <h2>Rule Settings</h2>
 {{#markdown}}
+### CSS
+
 ```css
 {{{tools.typography.css}}}
+```
+
+###  Responsive CSS
+
+```css
+{{{tools.typography.sm}}}
+{{{tools.typography.md}}}
+{{{tools.typography.lg}}}
 ```
 {{/markdown}}
 </section>

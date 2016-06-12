@@ -1,0 +1,69 @@
+---
+title: Tools Shadow
+description:
+name: tools-shadow
+layout: page
+base_url: "../../"
+---
+{{#extend "page"}}
+{{#content "content"}}
+
+<h2 class="t-mtXs t-mbMi t-fontMd t-normal">{{tools.shadow.pkg.description}}</h2>
+<p class="t-mbGt t-mt0 t-fontSm"><a class="docs-link" href="https://github.com/sircus/{{file.meta.name}}" target="_blank">{{tools.shadow.pkg.name}}</a> | v{{tools.shadow.pkg.version}}</p>
+
+
+<section class="t-clear">
+
+  <h3>box-shadow</h3>
+
+  <h4 class="t-uppercase t-normal t-fontSm t-letterSpacingLg">border-radius</h4>
+  <div class="Demo-field">
+    <div class="t-boxShadowXs t-gutter Demo-fixture--height4x">
+      <small><code>.t-boxShadowXs</code></small>
+    </div>
+    <div class="t-boxShadowSm t-gutter Demo-fixture--height4x t-mtLg">
+      <small><code>.t-boxShadowSm</code></small>
+    </div>
+    <div class="t-boxShadowMd t-gutter Demo-fixture--height4x t-mtLg">
+      <small><code>t-boxShadowMd</code></small>
+    </div>
+    <div class="t-boxShadowLg t-gutter Demo-fixture--height4x t-mtLg">
+      <small><code>t-boxShadowLg</code></small>
+    </div>
+    <div class="t-boxShadowXl t-gutter Demo-fixture--height4x t-mtLg">
+      <small><code>t-boxShadowXl</code></small>
+    </div>
+  </div>
+{{#markdown}}
+```html
+<div class="t-boxShadowXs">...</div>
+<div class="t-boxShadowSm">...</div>
+<div class="t-boxShadowMd">...</div>
+<div class="t-boxShadowLg">...</div>
+<div class="t-boxShadowXl">...</div>
+```
+{{/markdown}}
+
+</section>
+
+
+<section class="t-clear">
+{{#markdown}}
+### CSS
+
+```css
+{{{tools.shadow.css}}}
+```
+
+### Responsive CSS
+
+```css
+{{{tools.shadow.sm}}}
+{{{tools.shadow.md}}}
+{{{tools.shadow.lg}}}
+```
+{{/markdown}}
+</section>
+
+{{/content}}
+{{/extend}}

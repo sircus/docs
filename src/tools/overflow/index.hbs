@@ -8,11 +8,11 @@ base_url: "../../"
 {{#extend "page"}}
 {{#content "content"}}
 
-<p class="t-mb0">v{{tools.overflow.responsive.pkg.version}}</p>
-<p class="docs-moduleName">{{tools.overflow.responsive.pkg.description}}</p>
+<h2 class="t-mtXs t-mbMi t-fontMd t-normal">{{tools.overflow.pkg.description}}</h2>
+<p class="t-mbGt t-mt0 t-fontSm"><a class="docs-link" href="https://github.com/sircus/{{file.meta.name}}" target="_blank">{{tools.overflow.pkg.name}}</a> | v{{tools.overflow.pkg.version}}</p>
 
 <section class="t-clear">
-  <h2>Example</h2>
+  <h3>overflow</h3>
 
   <div class="Demo-field">
     <code>t-overflowScroll</code>
@@ -64,15 +64,20 @@ base_url: "../../"
 
 
 <section class="t-clear">
-  <h2>Rule Settings</h2>
 {{#markdown}}
+### CSS
+
 ```css
 {{{tools.overflow.css}}}
 ```
+### Responsive CSS
+
+```css
+{{{tools.overflow.sm}}}
+{{{tools.overflow.md}}}
+{{{tools.overflow.lg}}}
+```
 {{/markdown}}
-  <p>
-    <a href="responsive/">Responsive rules</a>
-  </p>
 </section>
 
 {{/content}}

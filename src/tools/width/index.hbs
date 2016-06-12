@@ -1,5 +1,5 @@
 ---
-title: Tools Width
+title: Tools width
 description:
 name: tools-width
 layout: page
@@ -8,73 +8,61 @@ base_url: "../../"
 {{#extend "page"}}
 {{#content "content"}}
 
-<p class="t-mb0">v{{tools.width.pkg.version}}</p>
-<p class="docs-moduleName">{{tools.width.pkg.description}}</p>
+<h2 class="t-mtXs t-mbMi t-fontMd t-normal">{{tools.width.pkg.description}}</h2>
+<p class="t-mbGt t-mt0 t-fontSm"><a class="docs-link" href="https://github.com/sircus/{{file.meta.name}}" target="_blank">{{tools.width.pkg.name}}</a> | v{{tools.width.pkg.version}}</p>
 
 <section class="t-clear">
-  <h2>Example</h2>
+  <h3>width</h3>
 
   <div class="Demo-field">
-    <div class="t-width1of12 Demo-fixture">1of12</div>
-    <div class="t-width1of10 Demo-fixture">1of10</div>
-    <div class="t-width2of12 Demo-fixture">2of12</div>
-    <div class="t-width2of10 Demo-fixture">2of10</div>
-    <div class="t-width3of12 Demo-fixture">3of12</div>
-    <div class="t-width3of10 Demo-fixture">3of10</div>
-    <div class="t-width4of12 Demo-fixture">4of12</div>
-    <div class="t-width4of10 Demo-fixture">4of10</div>
-    <div class="t-width5of12 Demo-fixture">5of12</div>
-    <div class="t-width5of10 Demo-fixture">2of10</div>
-    <div class="t-width6of12 Demo-fixture">6of12</div>
-    <div class="t-widthHalf Demo-fixture">Half</div>
-    <div class="t-width7of12 Demo-fixture">7of12</div>
-    <div class="t-width8of12 Demo-fixture">8of12</div>
-    <div class="t-width7of10 Demo-fixture">7of10</div>
-    <div class="t-width9of12 Demo-fixture">9of12</div>
-    <div class="t-width8of10 Demo-fixture">8of10</div>
-    <div class="t-width10of12 Demo-fixture">10of12</div>
-    <div class="t-width9of10 Demo-fixture">9of10</div>
-    <div class="t-width11of12 Demo-fixture">11of12</div>
-    <div class="t-widthFull Demo-fixture">Full</div>
+    <div class="t-width1of12 t-lineHeightXl Demo-fixture">1of12</div>
+    <div class="t-width2of12 t-lineHeightXl Demo-fixture">2of12</div>
+    <div class="t-width3of12 t-lineHeightXl Demo-fixture">3of12</div>
+    <div class="t-width4of12 t-lineHeightXl Demo-fixture">4of12</div>
+    <div class="t-width5of12 t-lineHeightXl Demo-fixture">5of12</div>
+    <div class="t-widthHalf t-lineHeightXl Demo-fixture">Half</div>
+    <div class="t-width7of12 t-lineHeightXl Demo-fixture">7of12</div>
+    <div class="t-width8of12 t-lineHeightXl Demo-fixture">8of12</div>
+    <div class="t-width9of12 t-lineHeightXl Demo-fixture">9of12</div>
+    <div class="t-width10of12 t-lineHeightXl Demo-fixture">10of12</div>
+    <div class="t-width11of12 t-lineHeightXl Demo-fixture">11of12</div>
+    <div class="t-widthFull t-lineHeightXl Demo-fixture">Full</div>
   </div>
 {{#markdown}}
 ```html
-<div class="t-width1of12">1of12</div>
-<div class="t-width1of10">1of10</div>
-<div class="t-width2of12">2of12</div>
-<div class="t-width2of10">2of10</div>
-<div class="t-width3of12">3of12</div>
-<div class="t-width3of10">3of10</div>
-<div class="t-width4of12">4of12</div>
-<div class="t-width4of10">4of10</div>
-<div class="t-width5of12">5of12</div>
-<div class="t-width5of10">2of10</div>
-<div class="t-width6of12">6of12</div>
-<div class="t-widthHalf">Half</div>
-<div class="t-width7of12">7of12</div>
-<div class="t-width8of12">8of12</div>
-<div class="t-width7of10">7of10</div>
-<div class="t-width9of12">9of12</div>
-<div class="t-width8of10">8of10</div>
-<div class="t-width10of12">10of12</div>
-<div class="t-width9of10">9of10</div>
-<div class="t-width11of12">11of12</div>
-<div class="t-widthFull">Full</div>
+<div class="t-width1of12">...</div>
+<div class="t-width2of12">...</div>
+<div class="t-width3of12">...</div>
+<div class="t-width4of12">...</div>
+<div class="t-width5of12">...</div>
+<div class="t-widthHalf">...</div>
+<div class="t-width7of12">...</div>
+<div class="t-width8of12">...</div>
+<div class="t-width9of12">...</div>
+<div class="t-width10of12">...</div>
+<div class="t-width11of12">...</div>
+<div class="t-widthFull">...</div>
 ```
 {{/markdown}}
 </section>
 
 
 <section class="t-clear">
-  <h2>Rule Settings</h2>
 {{#markdown}}
+### CSS
+
 ```css
 {{{tools.width.css}}}
 ```
+
+### Responsive CSS
+
+```css
+{{{tools.width.sm}}}
+{{{tools.width.md}}}
+{{{tools.width.lg}}}
+```
 {{/markdown}}
-  <p>
-    <a href="responsive/">Responsive rules</a>
-  </p>
 </section>
 
 {{/content}}

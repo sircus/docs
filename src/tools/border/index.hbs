@@ -8,85 +8,29 @@ base_url: "../../"
 {{#extend "page"}}
 {{#content "content"}}
 
-<p class="t-mb0">v{{tools.border.pkg.version}}</p>
-<p class="docs-moduleName">{{tools.border.pkg.description}}</p>
+<h2 class="t-mtXs t-mbMi t-fontMd t-normal">{{tools.border.pkg.description}}</h2>
+<p class="t-mbGt t-mt0 t-fontSm"><a class="docs-link" href="https://github.com/sircus/{{file.meta.name}}" target="_blank">{{tools.border.pkg.name}}</a> | v{{tools.border.pkg.version}}</p>
 
 <section class="t-clear">
-  <h2>Example</h2>
 
-  <h3>Borders</h3>
+  <h3>border</h3>
+
+  <h4 class="t-uppercase t-normal t-fontSm t-letterSpacingLg">1px solid</h4>
   <div class="Demo-field">
-
-    <div class="Grid t-gutterReset t-mbMd">
-      <div class="Grid-col t-md-width2of10">
-        <div class="t-border">border</div>
-      </div>
-      <div class="Grid-col t-md-width2of10">
-        <div class="t-borderTop">borderTop</div>
-      </div>
-      <div class="Grid-col t-md-width2of10">
-        <div class="t-borderLeft">borderLeft</div>
-      </div>
-      <div class="Grid-col t-md-width2of10">
-        <div class="t-borderBottom">borderBottom</div>
-      </div>
-      <div class="Grid-col t-md-width2of10">
-        <div class="t-borderRight">borderRight</div>
-      </div>
+    <div class="t-border t-gutter Demo-fixture--height4x">
+      <small><code>.t-border</code></small>
     </div>
-
-    <div class="Grid t-gutterReset t-mbMd">
-      <div class="Grid-col t-md-width2of10">
-        <div class="t-border2x">border2x</div>
-      </div>
-      <div class="Grid-col t-md-width2of10">
-        <div class="t-borderTop2x">borderTop2x</div>
-      </div>
-      <div class="Grid-col t-md-width2of10">
-        <div class="t-borderLeft2x">borderLeft2x</div>
-      </div>
-      <div class="Grid-col t-md-width2of10">
-        <div class="t-borderBottom2x">borderBottom2x</div>
-      </div>
-      <div class="Grid-col t-md-width2of10">
-        <div class="t-borderRight2x">borderRight2x</div>
-      </div>
+    <div class="t-borderTop t-gutter t-mtXs Demo-fixture--height4x">
+      <small><code>.t-borderTop</code></small>
     </div>
-
-    <div class="Grid t-gutterReset t-mbMd">
-      <div class="Grid-col t-md-width2of10">
-        <div class="t-border3x">border3x</div>
-      </div>
-      <div class="Grid-col t-md-width2of10">
-        <div class="t-borderTop3x">borderTop3x</div>
-      </div>
-      <div class="Grid-col t-md-width2of10">
-        <div class="t-borderLeft3x">borderLeft3x</div>
-      </div>
-      <div class="Grid-col t-md-width2of10">
-        <div class="t-borderBottom3x">borderBottom3x</div>
-      </div>
-      <div class="Grid-col t-md-width2of10">
-        <div class="t-borderRight3x">borderRight3x</div>
-      </div>
+    <div class="t-borderLeft t-gutter t-mtXs Demo-fixture--height4x">
+      <small><code>t-borderLeft</code></small>
     </div>
-
-    <div class="Grid t-gutterReset t-mbMd">
-      <div class="Grid-col t-md-width2of10">
-        <div class="t-border4x">border4x</div>
-      </div>
-      <div class="Grid-col t-md-width2of10">
-        <div class="t-borderTop4x">borderTop4x</div>
-      </div>
-      <div class="Grid-col t-md-width2of10">
-        <div class="t-borderLeft4x">borderLeft4x</div>
-      </div>
-      <div class="Grid-col t-md-width2of10">
-        <div class="t-borderBottom4x">borderBottom4x</div>
-      </div>
-      <div class="Grid-col t-md-width2of10">
-        <div class="t-borderRight4x">borderRight4x</div>
-      </div>
+    <div class="t-borderBottom t-gutter t-mtXs Demo-fixture--height4x">
+      <small><code>t-borderBottom</code></small>
+    </div>
+    <div class="t-borderRight t-gutter t-mtXs Demo-fixture--height4x">
+      <small><code>t-borderRight</code></small>
     </div>
   </div>
 {{#markdown}}
@@ -96,81 +40,275 @@ base_url: "../../"
 <div class="t-borderLeft">...</div>
 <div class="t-borderBottom">...</div>
 <div class="t-borderRight">...</div>
+```
+{{/markdown}}
 
+  <h4 class="t-uppercase t-normal t-fontSm t-letterSpacingLg">2px solid</h4>
+  <div class="Demo-field">
+    <div class="t-border2x t-gutter Demo-fixture--height4x">
+      <small><code>.t-border2x</code></small>
+    </div>
+    <div class="t-borderTop2x t-gutter t-mtXs Demo-fixture--height4x">
+      <small><code>.t-borderTop2x</code></small>
+    </div>
+    <div class="t-borderLeft2x t-gutter t-mtXs Demo-fixture--height4x">
+      <small><code>t-borderLeft2x</code></small>
+    </div>
+    <div class="t-borderBottom2x t-gutter t-mtXs Demo-fixture--height4x">
+      <small><code>t-borderBottom2x</code></small>
+    </div>
+    <div class="t-borderRight2x t-gutter t-mtXs Demo-fixture--height4x">
+      <small><code>t-borderRight2x</code></small>
+    </div>
+  </div>
+{{#markdown}}
+```html
 <div class="t-border2x">...</div>
 <div class="t-borderTop2x">...</div>
 <div class="t-borderLeft2x">...</div>
 <div class="t-borderBottom2x">...</div>
 <div class="t-borderRight2x">...</div>
+```
+{{/markdown}}
 
+
+  <h4 class="t-uppercase t-normal t-fontSm t-letterSpacingLg">3px solid</h4>
+  <div class="Demo-field">
+    <div class="t-border3x t-gutter Demo-fixture--height4x">
+      <small><code>.t-border3x</code></small>
+    </div>
+    <div class="t-borderTop3x t-gutter t-mtXs Demo-fixture--height4x">
+      <small><code>.t-borderTop3x</code></small>
+    </div>
+    <div class="t-borderLeft3x t-gutter t-mtXs Demo-fixture--height4x">
+      <small><code>t-borderLeft3x</code></small>
+    </div>
+    <div class="t-borderBottom3x t-gutter t-mtXs Demo-fixture--height4x">
+      <small><code>t-borderBottom3x</code></small>
+    </div>
+    <div class="t-borderRight3x t-gutter t-mtXs Demo-fixture--height4x">
+      <small><code>t-borderRight3x</code></small>
+    </div>
+  </div>
+{{#markdown}}
+```html
 <div class="t-border3x">...</div>
 <div class="t-borderTop3x">...</div>
 <div class="t-borderLeft3x">...</div>
 <div class="t-borderBottom3x">...</div>
 <div class="t-borderRight3x">...</div>
+```
+{{/markdown}}
 
+
+  <h4 class="t-uppercase t-normal t-fontSm t-letterSpacingLg">4px solid</h4>
+  <div class="Demo-field">
+    <div class="t-border4x t-gutter Demo-fixture--height4x">
+      <small><code>.t-border4x</code></small>
+    </div>
+    <div class="t-borderTop4x t-gutter t-mtXs Demo-fixture--height4x">
+      <small><code>.t-borderTop4x</code></small>
+    </div>
+    <div class="t-borderLeft4x t-gutter t-mtXs Demo-fixture--height4x">
+      <small><code>t-borderLeft4x</code></small>
+    </div>
+    <div class="t-borderBottom4x t-gutter t-mtXs Demo-fixture--height4x">
+      <small><code>t-borderBottom4x</code></small>
+    </div>
+    <div class="t-borderRight4x t-gutter t-mtXs Demo-fixture--height4x">
+      <small><code>t-borderRight4x</code></small>
+    </div>
+  </div>
+{{#markdown}}
+```html
 <div class="t-border4x">...</div>
 <div class="t-borderTop4x">...</div>
 <div class="t-borderLeft4x">...</div>
 <div class="t-borderBottom4x">...</div>
 <div class="t-borderRight4x">...</div>
-
-<div class="t-border0">...</div>
-<div class="t-borderTop0">...</div>
-<div class="t-borderLeft0">...</div>
-<div class="t-borderBottom0">...</div>
-<div class="t-borderRight0">...</div>
 ```
 {{/markdown}}
 
+  <h3>border-color</h3>
 
-  <h3>Border radius</h3>
+  <h4 class="t-uppercase t-normal t-fontSm t-letterSpacingLg">Primary</h4>
   <div class="Demo-field">
-    <div class="Grid t-gutterReset t-mbMd">
-      <div class="Grid-col t-md-widthHalf">
-        <div class="t-borderRadiusXs Demo-fixture t-gutter t-mbMd" style="height:100px;">borderRadiusXs</div>
-      </div>
-      <div class="Grid-col t-md-widthHalf">
-        <div class="t-borderRadiusSm Demo-fixture  t-gutter t-mbMd" style="height:100px;">borderRadiusSm</div>
-      </div>
-      <div class="Grid-col t-md-widthHalf">
-        <div class="t-borderRadiusMd Demo-fixture  t-gutter t-mbMd" style="height:100px;">borderRadius(or borderRadiusMd)</div>
-      </div>
-      <div class="Grid-col t-md-widthHalf">
-        <div class="t-borderRadiusLg Demo-fixture  t-gutter t-mbMd" style="height:100px;">borderRadiusLg</div>
-      </div>
-      <div class="Grid-col t-md-widthHalf">
-        <div class="t-borderRadiusXl Demo-fixture t-gutter  t-mbMd" style="height:100px;">borderRadiusXl</div>
-      </div>
-      <div class="Grid-col t-md-widthHalf">
-        <div class="t-borderRadiusCircle Demo-fixture t-mbMd" style="width:100px; height:100px;"></div>
-      </div>
+    <div class="t-border t-borderPrimaryDark t-gutter Demo-fixture--height4x t-mbXs">
+      <small><code>.t-border.t-borderPrimaryDark</code></small>
+    </div>
+    <div class="t-border t-borderPrimary t-gutter t-mtXs Demo-fixture--height4x">
+      <small><code>.t-border.t-borderPrimary</code></small>
+    </div>
+    <div class="t-border t-borderPrimaryLight t-gutter t-mtXs Demo-fixture--height4x">
+      <small><code>t-border.t-borderPrimaryLight</code></small>
     </div>
   </div>
 {{#markdown}}
 ```html
-<div class="t-borderRadius">...</div>
+<div class="t-border t-borderPrimaryDark">...</div>
+<div class="t-border t-borderPrimary">...</div>
+<div class="t-border t-borderPrimaryLight">...</div>
+```
+{{/markdown}}
+
+
+  <h4 class="t-uppercase t-normal t-fontSm t-letterSpacingLg">Secondary</h4>
+  <div class="Demo-field">
+    <div class="t-border t-borderSecondaryDark t-gutter Demo-fixture--height4x t-mbXs">
+      <small><code>.t-border.t-borderSecondaryDark</code></small>
+    </div>
+    <div class="t-border t-borderSecondary t-gutter t-mtXs Demo-fixture--height4x">
+      <small><code>.t-border.t-borderSecondary</code></small>
+    </div>
+    <div class="t-border t-borderSecondaryLight t-gutter t-mtXs Demo-fixture--height4x">
+      <small><code>t-border.t-borderSecondaryLight</code></small>
+    </div>
+  </div>
+{{#markdown}}
+```html
+<div class="t-border t-borderSecondaryDark">...</div>
+<div class="t-border t-borderSecondary">...</div>
+<div class="t-border t-borderSecondaryLight">...</div>
+```
+{{/markdown}}
+
+
+  <h4 class="t-uppercase t-normal t-fontSm t-letterSpacingLg">Success</h4>
+  <div class="Demo-field">
+    <div class="t-border t-borderSuccessDark t-gutter Demo-fixture--height4x t-mbXs">
+      <small><code>.t-border.t-borderSuccessDark</code></small>
+    </div>
+    <div class="t-border t-borderSuccess t-gutter t-mtXs Demo-fixture--height4x">
+      <small><code>.t-border.t-borderSuccess</code></small>
+    </div>
+    <div class="t-border t-borderSuccessLight t-gutter t-mtXs Demo-fixture--height4x">
+      <small><code>t-border.t-borderSuccessLight</code></small>
+    </div>
+  </div>
+{{#markdown}}
+```html
+<div class="t-border t-borderSuccessDark">...</div>
+<div class="t-border t-borderSuccess">...</div>
+<div class="t-border t-borderSuccessLight">...</div>
+```
+{{/markdown}}
+
+
+  <h4 class="t-uppercase t-normal t-fontSm t-letterSpacingLg">Notice</h4>
+  <div class="Demo-field">
+    <div class="t-border t-borderNoticeDark t-gutter Demo-fixture--height4x t-mbXs">
+      <small><code>.t-border.t-borderNoticeDark</code></small>
+    </div>
+    <div class="t-border t-borderNotice t-gutter t-mtXs Demo-fixture--height4x">
+      <small><code>.t-border.t-borderNotice</code></small>
+    </div>
+    <div class="t-border t-borderNoticeLight t-gutter t-mtXs Demo-fixture--height4x">
+      <small><code>t-border.t-borderNoticeLight</code></small>
+    </div>
+  </div>
+{{#markdown}}
+```html
+<div class="t-border t-borderNoticeDark">...</div>
+<div class="t-border t-borderNotice">...</div>
+<div class="t-border t-borderNoticeLight">...</div>
+```
+{{/markdown}}
+
+
+  <h4 class="t-uppercase t-normal t-fontSm t-letterSpacingLg">Warning</h4>
+  <div class="Demo-field">
+    <div class="t-border t-borderWarningDark t-gutter Demo-fixture--height4x t-mbXs">
+      <small><code>.t-border.t-borderWarningDark</code></small>
+    </div>
+    <div class="t-border t-borderWarning t-gutter t-mtXs Demo-fixture--height4x">
+      <small><code>.t-border.t-borderWarning</code></small>
+    </div>
+    <div class="t-border t-borderWarningLight t-gutter t-mtXs Demo-fixture--height4x">
+      <small><code>t-border.t-borderWarningLight</code></small>
+    </div>
+  </div>
+{{#markdown}}
+```html
+<div class="t-border t-borderWarningDark">...</div>
+<div class="t-border t-borderWarning">...</div>
+<div class="t-border t-borderWarningLight">...</div>
+```
+{{/markdown}}
+
+
+  <h4 class="t-uppercase t-normal t-fontSm t-letterSpacingLg">Error</h4>
+  <div class="Demo-field">
+    <div class="t-border t-borderErrorDark t-gutter Demo-fixture--height4x t-mbXs">
+      <small><code>.t-border.t-borderErrorDark</code></small>
+    </div>
+    <div class="t-border t-borderError t-gutter t-mtXs Demo-fixture--height4x">
+      <small><code>.t-border.t-borderError</code></small>
+    </div>
+    <div class="t-border t-borderErrorLight t-gutter t-mtXs Demo-fixture--height4x">
+      <small><code>t-border.t-borderErrorLight</code></small>
+    </div>
+  </div>
+{{#markdown}}
+```html
+<div class="t-border t-borderErrorDark">...</div>
+<div class="t-border t-borderError">...</div>
+<div class="t-border t-borderErrorLight">...</div>
+```
+{{/markdown}}
+
+  <h3>border-radius</h3>
+
+  <h4 class="t-uppercase t-normal t-fontSm t-letterSpacingLg">border-radius</h4>
+  <div class="Demo-field">
+    <div class="t-borderRadiusXs t-gutter Demo-fixture Demo-fixture--height4x">
+      <small><code>.t-borderRadiusXs</code></small>
+    </div>
+    <div class="t-borderRadiusSm t-gutter Demo-fixture Demo-fixture--height4x t-mtXs">
+      <small><code>.t-borderRadiusSm</code></small>
+    </div>
+    <div class="t-borderRadiusMd t-gutter Demo-fixture Demo-fixture--height4x t-mtXs">
+      <small><code>t-borderRadiusMd</code></small>
+    </div>
+    <div class="t-borderRadiusLg t-gutter Demo-fixture Demo-fixture--height4x t-mtXs">
+      <small><code>t-borderRadiusLg</code></small>
+    </div>
+    <div class="t-borderRadiusXl t-gutter Demo-fixture Demo-fixture--height4x t-mtXs">
+      <small><code>t-borderRadiusXl</code></small>
+    </div>
+    <div class="t-borderRadiusCircle t-borderBox t-alignCenter t-gutter Demo-fixture Demo-fixture--height4x t-mtXs" style="width:140px; height:140px; padding-top: 50px;">
+      <small><code>t-borderRadiusCircle</code></small>
+    </div>
+  </div>
+{{#markdown}}
+```html
 <div class="t-borderRadiusXs">...</div>
 <div class="t-borderRadiusSm">...</div>
 <div class="t-borderRadiusMd">...</div>
 <div class="t-borderRadiusLg">...</div>
 <div class="t-borderRadiusXl">...</div>
-<div class="t-borderRadiusCircle" style="width:100px; height:100px;">...</div>
+<div class="t-borderRadiusCircle" style="width:140px; height:140px;">...</div>
 ```
 {{/markdown}}
+
 </section>
 
 
 <section class="t-clear">
-  <h2>Rule Settings</h2>
 {{#markdown}}
+### CSS
+
 ```css
 {{{tools.border.css}}}
 ```
+
+### Responsive CSS
+
+```css
+{{{tools.border.sm}}}
+{{{tools.border.md}}}
+{{{tools.border.lg}}}
+```
 {{/markdown}}
-  <p>
-    <a href="responsive/">Responsive rules</a>
-  </p>
 </section>
 
 {{/content}}

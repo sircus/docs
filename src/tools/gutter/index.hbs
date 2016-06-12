@@ -8,25 +8,16 @@ base_url: "../../"
 {{#extend "page"}}
 {{#content "content"}}
 
-<p class="t-mb0">v{{tools.gutter.pkg.version}}</p>
-<p class="docs-moduleName">{{tools.gutter.pkg.description}}</p>
+<h2 class="t-mtXs t-mbMi t-fontMd t-normal">{{tools.gutter.pkg.description}}</h2>
+<p class="t-mbGt t-mt0 t-fontSm"><a class="docs-link" href="https://github.com/sircus/{{file.meta.name}}" target="_blank">{{tools.gutter.pkg.name}}</a> | v{{tools.gutter.pkg.version}}</p>
+
 
 <section class="t-clear">
-  <h2>Example</h2>
+  <h3>gutter</h3>
   <div class="Demo-field">
-    <div class="Demo-fixture">
-      <div class="Demo-fixture">
-        <p>none</p>
-      </div>
-    </div>
     <div class="t-gutter Demo-fixture">
       <div class="Demo-fixture">
         <p>gutter</p>
-      </div>
-    </div>
-    <div class="t-gutterReset Demo-fixture">
-      <div class="Demo-fixture">
-        <p>gutterReset</p>
       </div>
     </div>
     <div class="t-gutter2x Demo-fixture">
@@ -34,32 +25,76 @@ base_url: "../../"
         <p>gutter2x</p>
       </div>
     </div>
-    <div class="t-gutter2xReset Demo-fixture">
+    <div class="t-gutter3x Demo-fixture">
       <div class="Demo-fixture">
-        <p>gutter2xReset</p>
+        <p>gutter3x</p>
+      </div>
+    </div>
+    <div class="t-gutter4x Demo-fixture">
+      <div class="Demo-fixture">
+        <p>gutter4x</p>
       </div>
     </div>
   </div>
 {{#markdown}}
 ```html
 <div class="t-gutter">...</div>
-<div class="t-gutterReset">...</div>
 <div class="t-gutter2x">...</div>
-<div class="t-gutter2xReset">...</div>
+<div class="t-gutter3x">...</div>
+<div class="t-gutter4x">...</div>
+```
+{{/markdown}}
+
+
+  <h3>reset gutter</h3>
+  <div class="Demo-field">
+    <div class="t-gutterReset Demo-fixture">
+      <div class="Demo-fixture">
+        <p>gutterReset</p>
+      </div>
+    </div>
+    <div class="t-gutterReset2x Demo-fixture">
+      <div class="Demo-fixture">
+        <p>gutterReset2x</p>
+      </div>
+    </div>
+    <div class="t-gutterReset3x Demo-fixture">
+      <div class="Demo-fixture">
+        <p>gutterReset3x</p>
+      </div>
+    </div>
+    <div class="t-gutterReset4x Demo-fixture">
+      <div class="Demo-fixture">
+        <p>gutterReset4x</p>
+      </div>
+    </div>
+  </div>
+{{#markdown}}
+```html
+<div class="t-gutterReset">...</div>
+<div class="t-gutterReset2x">...</div>
+<div class="t-gutterReset3x">...</div>
+<div class="t-gutterReset4x">...</div>
 ```
 {{/markdown}}
 </section>
 
 <section class="t-clear">
-  <h2>Rule Settings</h2>
 {{#markdown}}
+### CSS
+
 ```css
 {{{tools.gutter.css}}}
 ```
+
+### Responsive CSS
+
+```css
+{{{tools.gutter.sm}}}
+{{{tools.gutter.md}}}
+{{{tools.gutter.lg}}}
+```
 {{/markdown}}
-  <p>
-    <a href="responsive/">Responsive rules</a>
-  </p>
 </section>
 
 {{/content}}

@@ -8,12 +8,12 @@ base_url: "../../"
 {{#extend "page"}}
 {{#content "content"}}
 
-<p class="t-mb0">v{{tools.layout.pkg.version}}</p>
-<p class="docs-moduleName">{{tools.layout.pkg.description}}</p>
+<h2 class="t-mtXs t-mbMi t-fontMd t-normal">{{tools.layout.pkg.description}}</h2>
+<p class="t-mbGt t-mt0 t-fontSm"><a class="docs-link" href="https://github.com/sircus/{{file.meta.name}}" target="_blank">{{tools.layout.pkg.name}}</a> | v{{tools.layout.pkg.version}}</p>
 
 <section class="t-clear">
-  <h2>Example</h2>
-  <h3>Float</h3>
+
+  <h3>float</h3>
   <div class="Demo-field">
     <div class="t-clear">
       <div class="t-pullLeft t-gutter Demo-fixture">Left</div>
@@ -61,15 +61,21 @@ base_url: "../../"
 
 
 <section class="t-clear">
-  <h2>Rule Settings</h2>
 {{#markdown}}
+### CSS
+
 ```css
 {{{tools.layout.css}}}
 ```
+
+### Responsice CSS
+
+```css
+{{{tools.layout.sm}}}
+{{{tools.layout.md}}}
+{{{tools.layout.lg}}}
+```
 {{/markdown}}
-  <p>
-    <a href="responsive/">Responsive rules</a>
-  </p>
 </section>
 
 {{/content}}

@@ -8,65 +8,210 @@ base_url: "../../"
 {{#extend "page"}}
 {{#content "content"}}
 
-<p class="t-mb0">v{{components.button.pkg.version}}</p>
-<p class="docs-moduleName">{{components.button.pkg.description}}</p>
+<h2 class="t-mtXs t-mbMi t-fontMd t-normal">{{components.button.pkg.description}}</h2>
+<p class="t-mbGt t-mt0 t-fontSm"><a class="docs-link" href="https://github.com/sircus/{{file.meta.name}}" target="_blank">{{components.button.pkg.name}}</a> | v{{components.button.pkg.version}}</p>
 
 <section class="t-clear">
-<h2>Example</h2>
 
-<h3>Base</h3>
-<div class="Demo-field">
-  <a class="Button" href="#">Button</a>
-  <button type="button" class="Button t-borderRadiusPill">Button</button>
-  <button type="button" class="Button is-active">active</button>
-  <button type="button" class="Button is-disabled">disabled</button>
-</div>
+  <h3>color</h3>
+
+  <div class="Demo-field">
+    <h4 class="t-uppercase t-normal t-fontSm t-letterSpacingLg">Default</h4>
+    <p>
+      <a class="Button" href="#">a.Button</a>
+      <button type="button" class="Button is-active">active</button>
+      <button type="button" class="Button is-disabled">disabled</button>
+    </p>
+    <h4 class="t-uppercase t-normal t-fontSm t-letterSpacingLg">Primary</h4>
+    <p>
+      <a class="Button Button--primary" href="#">a.Button</a>
+      <button type="button" class="Button Button--primary is-active">active</button>
+      <button type="button" class="Button Button--primary is-disabled">disabled</button>
+    </p>
+    <h4 class="t-uppercase t-normal t-fontSm t-letterSpacingLg">secondary</h4>
+    <p>
+      <a class="Button Button--secondary" href="#">a.Button</a>
+      <button type="button" class="Button Button--secondary is-active">active</button>
+      <button type="button" class="Button Button--secondary is-disabled">disabled</button>
+    </p>
+    <h4 class="t-uppercase t-normal t-fontSm t-letterSpacingLg">notice</h4>
+    <p>
+      <a class="Button Button--notice" href="#">a.Button</a>
+      <button type="button" class="Button Button--notice is-active">active</button>
+      <button type="button" class="Button Button--notice is-disabled">disabled</button>
+    </p>
+    <h4 class="t-uppercase t-normal t-fontSm t-letterSpacingLg">success</h4>
+    <p>
+      <a class="Button Button--success" href="#">a.Button</a>
+      <button type="button" class="Button Button--success is-active">active</button>
+      <button type="button" class="Button Button--success is-disabled">disabled</button>
+    </p>
+    <h4 class="t-uppercase t-normal t-fontSm t-letterSpacingLg">warning</h4>
+    <p>
+      <a class="Button Button--warning" href="#">a.Button</a>
+      <button type="button" class="Button Button--warning is-active">active</button>
+      <button type="button" class="Button Button--warning is-disabled">disabled</button>
+    </p>
+    <h4 class="t-uppercase t-normal t-fontSm t-letterSpacingLg">error</h4>
+    <p>
+      <a class="Button Button--error" href="#">a.Button</a>
+      <button type="button" class="Button Button--error is-active">active</button>
+      <button type="button" class="Button Button--error is-disabled">disabled</button>
+    </p>
+  </div>
 {{#markdown}}
 ```html
-<a class="Button" href="#">Button</a>
-<button type="button" class="Button">Button</button>
-<button type="button" class="Button is-active">Active</button>
-<button type="button" class="Button is-disabled">Disabled</button>
+<a class="Button" href="#">a.Button</a>
+<button type="button" class="Button is-active">active</button>
+<button type="button" class="Button is-disabled">disabled</button>
+<!-- Primary -->
+<a class="Button Button--primary" href="#">a.Button</a>
+<button type="button" class="Button Button--primary is-active">active</button>
+<button type="button" class="Button Button--primary is-disabled">disabled</button>
+<!-- Secondary -->
+<a class="Button Button--secondary" href="#">a.Button</a>
+<button type="button" class="Button Button--secondary is-active">active</button>
+<button type="button" class="Button Button--secondary is-disabled">disabled</button>
+<!-- Notice -->
+<a class="Button Button--notice" href="#">a.Button</a>
+<button type="button" class="Button Button--notice is-active">active</button>
+<button type="button" class="Button Button--notice is-disabled">disabled</button>
+<!-- Success -->
+<a class="Button Button--success" href="#">a.Button</a>
+<button type="button" class="Button Button--success is-active">active</button>
+<button type="button" class="Button Button--success is-disabled">disabled</button>
+<!-- Warning -->
+<a class="Button Button--warning" href="#">a.Button</a>
+<button type="button" class="Button Button--warning is-active">active</button>
+<button type="button" class="Button Button--warning is-disabled">disabled</button>
+<!-- Error -->
+<a class="Button Button--error" href="#">a.Button</a>
+<button type="button" class="Button Button--error is-active">active</button>
+<button type="button" class="Button Button--error is-disabled">disabled</button>
 ```
 {{/markdown}}
 
 
-<h3>Color</h3>
-<div class="Demo-field">
-  <a class="Button Button--primary" href="#">Button</a>
-  <button type="button" class="Button Button--primary">Button</button>
-  <button type="button" class="Button Button--primary is-active">Active</button>
-  <button type="button" class="Button Button--primary is-disabled">Disabled</button>
-</div>
+  <h3>fill</h3>
+  <div class="Demo-field">
+    <h4 class="t-uppercase t-normal t-fontSm t-letterSpacingLg">default</h4>
+    <p>
+      <a class="Button Button--fill" href="#">a.Button</a>
+      <button type="button" class="Button Button--fill is-active">active</button>
+      <button type="button" class="Button Button--fill is-disabled">disabled</button>
+    </p>
+    <h4 class="t-uppercase t-normal t-fontSm t-letterSpacingLg">primary</h4>
+    <p>
+      <a class="Button Button--fill Button--primary" href="#">a.Button</a>
+      <button type="button" class="Button Button--fill Button--primary is-active">active</button>
+      <button type="button" class="Button Button--fill Button--primary is-disabled">disabled</button>
+    </p>
+    <h4 class="t-uppercase t-normal t-fontSm t-letterSpacingLg">secondary</h4>
+    <p>
+      <a class="Button Button--fill Button--secondary" href="#">a.Button</a>
+      <button type="button" class="Button Button--fill Button--secondary is-active">active</button>
+      <button type="button" class="Button Button--fill Button--secondary is-disabled">disabled</button>
+    </p>
+    <h4 class="t-uppercase t-normal t-fontSm t-letterSpacingLg">notice</h4>
+    <p>
+      <a class="Button Button--fill Button--notice" href="#">a.Button</a>
+      <button type="button" class="Button Button--fill Button--notice is-active">active</button>
+      <button type="button" class="Button Button--fill Button--notice is-disabled">disabled</button>
+    </p>
+    <h4 class="t-uppercase t-normal t-fontSm t-letterSpacingLg">success</h4>
+    <p>
+      <a class="Button Button--fill Button--success" href="#">a.Button</a>
+      <button type="button" class="Button Button--fill Button--success is-active">active</button>
+      <button type="button" class="Button Button--fill Button--success is-disabled">disabled</button>
+    </p>
+    <h4 class="t-uppercase t-normal t-fontSm t-letterSpacingLg">warning</h4>
+    <p>
+      <a class="Button Button--fill Button--warning" href="#">a.Button</a>
+      <button type="button" class="Button Button--fill Button--warning is-active">active</button>
+      <button type="button" class="Button Button--fill Button--warning is-disabled">disabled</button>
+    </p>
+    <h4 class="t-uppercase t-normal t-fontSm t-letterSpacingLg">error</h4>
+    <p>
+      <a class="Button Button--fill Button--error" href="#">a.Button</a>
+      <button type="button" class="Button Button--fill Button--error is-active">active</button>
+      <button type="button" class="Button Button--fill Button--error is-disabled">disabled</button>
+    </p>
+  </div>
 {{#markdown}}
 ```html
-<a class="Button Button--primary" href="#">Button</a>
-<button type="button" class="Button Button--primary">Button</button>
-<button type="button" class="Button Button--primary is-active">Active</button>
-<button type="button" class="Button Button--primary is-disabled">Disabled</button>
+<a class="Button" href="#">a.Button</a>
+<button type="button" class="Button Button--fill is-active">active</button>
+<button type="button" class="Button Button--fill is-disabled">disabled</button>
+<!-- Primary -->
+<a class="Button Button--fill Button--primary" href="#">a.Button</a>
+<button type="button" class="Button Button--fill Button--primary is-active">active</button>
+<button type="button" class="Button Button--fill Button--primary is-disabled">disabled</button>
+<!-- Secondary -->
+<a class="Button Button--fill Button--secondary" href="#">a.Button</a>
+<button type="button" class="Button Button--fill Button--secondary is-active">active</button>
+<button type="button" class="Button Button--fill Button--secondary is-disabled">disabled</button>
+<!-- Notice -->
+<a class="Button Button--fill Button--notice" href="#">a.Button</a>
+<button type="button" class="Button Button--fill Button--notice is-active">active</button>
+<button type="button" class="Button Button--fill Button--notice is-disabled">disabled</button>
+<!-- Success -->
+<a class="Button Button--fill Button--success" href="#">a.Button</a>
+<button type="button" class="Button Button--fill Button--success is-active">active</button>
+<button type="button" class="Button Button--fill Button--success is-disabled">disabled</button>
+<!-- Warning -->
+<a class="Button Button--fill Button--warning" href="#">a.Button</a>
+<button type="button" class="Button Button--fill Button--warning is-active">active</button>
+<button type="button" class="Button Button--fill Button--warning is-disabled">disabled</button>
+<!-- Error -->
+<a class="Button Button--fill Button--error" href="#">a.Button</a>
+<button type="button" class="Button Button--fill Button--error is-active">active</button>
+<button type="button" class="Button Button--fill Button--error is-disabled">disabled</button>
 ```
 {{/markdown}}
 
 
-<h3>Full width</h3>
-<div class="Demo-field">
-  <button type="button" class="Button t-widthFull t-mbMi">Button</button>
-  <button type="button" class="Button t-widthFull t-mbMi is-active">Active</button>
-  <button type="button" class="Button t-widthFull t-mbMi is-disabled">Disabled</button>
-</div>
+  <h3>Size</h3>
+  <div class="Demo-field">
+    <p>
+      <a class="Button Button--sm" href="#">Small</a>
+      <a class="Button" href="#">Normal</a>
+      <a class="Button Button--lg" href="#">Large</a>
+      <a class="Button Button--xl" href="#">Extra Large</a>
+    </p>
+    <button type="button" class="Button t-widthFull t-mbMi">Full width</button>
+  </div>
 {{#markdown}}
 ```html
+<a class="Button Button--sm" href="#">Small</a>
+<a class="Button" href="#">Normal</a>
+<a class="Button Button--lg" href="#">Large</a>
+<a class="Button Button--xl" href="#">Extra Large</a>
 <button type="button" class="Button t-widthFull t-mbMi">Button</button>
-<button type="button" class="Button t-widthFull t-mbMi is-active">Active</button>
-<button type="button" class="Button t-widthFull t-mbMi is-disabled">Disabled</button>
 ```
 {{/markdown}}
+
+
+  <h3>Reset</h3>
+  <div class="Demo-field">
+    <a class="Button Button--reset" href="#">Normal</a>
+    <a class="Button Button--reset is-active" href="#">Active</a>
+    <a class="Button Button--reset is-disabled" href="#">Disable</a>
+  </div>
+{{#markdown}}
+```html
+<a class="Button Button--reset" href="#">Normal</a>
+<a class="Button Button--reset is-active" href="#">Active</a>
+<a class="Button Button--reset is-disabled" href="#">Disable</a>
+```
+{{/markdown}}
+
 </section>
 
 
 <section class="t-clear">
-<h2>Rule Settings</h2>
 {{#markdown}}
+### CSS
+
 ```css
 {{{components.button.css}}}
 ```

@@ -7,16 +7,16 @@
 
   <div class="Flex-col Flex-col--fit t-gutter">
     <main role="main">
-      <p class="t-mtXs t-fontSm">
+      <p class="t-mt0 t-fontSm">
         {{#isnot file.meta.name ""}}
-        <a class="docs-link" href="https://github.com/sircus/{{file.meta.name}}" target="_blank">
+        <!-- <a class="docs-link" href="https://github.com/sircus/{{file.meta.name}}" target="_blank">
           Repository
-        </a>
+        </a> -->
         {{else}}
         {{file.meta.description}}
         {{/isnot}}
-
       </p>
+
       <div class="Demo">
         {{{block "content"}}}
       </div><!-- /.Container -->
@@ -27,9 +27,11 @@
     {{> nav}}
   </div><!-- /.FLex-col -->
 
-  <div class="Flex-col Flex-col--last t-gutter t-fontXs t-ptXl" style="width:160px">
+  <!-- <div class="Flex-col Flex-col--last t-gutter t-fontXs t-ptGt" style="width:160px">
   {{> carbon}}
-  </div><!-- /.FLex-col -->
+  </div> -->
+
+  <!-- /.FLex-col -->
 
 </div><!-- /.FLex -->
 

@@ -8,59 +8,55 @@ base_url: "../"
 {{#content "content"}}
 
 <section class="t-clear">
-  <h1 class="t-mbGt">{{sircus.pkg.description}}</h1>
-  <h2>Download <small>v{{sircus.pkg.version}}</small></h2>
-  <div class="Flex t-flex t-gutterReset">
-    <div class="Flex-col t-gutter t-widthFull t-sm-width4of12">
-      <p class="t-mb0">Github:</p>
-      <p>
-        <a href="{{site.repo_url}}" target="_blank" class="Button Button--lg t-fontMd t-widthFull">Download</a>
-      </p>
-    </div>
-    <div class="Flex-col t-gutter t-widthFull t-sm-width4of12">
-      <p class="t-mb0">npm:</p>
+  <h2 class="t-mtXs t-mbMi t-fontMd t-normal">{{sircus.pkg.description}}</h2>
+  <p class="t-mbGt t-mt0 t-fontSm"><a class="docs-link" href="https://github.com/sircus/{{file.meta.name}}" target="_blank">sircus</a> | v{{sircus.pkg.version}}</p>
+
+  <h3>Download:</h3>
+  <p>
+    <a href="{{site.repo_url}}" target="_blank" class="Button t-fontMd">Download on GitHub</a>
+  </p>
+
 {{#markdown}}
+### Install:
+
+##### install PostCss Plugin
+
+```
+$ npm install --save-dev postcss-import postcss-custom-properties postcss-custom-media postcss-calc postcss-color-function
+// or
+$ npm install --save-dev postcss-import postcss-cssnext
+```
+
+##### install sircus
+
 ```html
 $ npm install sircus
 ```
-{{/markdown}}
-    </div>
-    <div class="Flex-col t-gutter t-widthFull t-sm-width4of12">
-      <p class="t-mb0">bower:</p>
-{{#markdown}}
-```html
-$ bower install sircus
+
+##### CSS:
+
+```CSS
+@import "sircus";
+```
+
+#### Sircus is a wrapper modules that summarizes the following modules.<br>You can import individually by using the postcss plugins and npm.
+
+e.g:
+
+##### install sircus modules
+
+```
+$ npm install --save-dev sircus-variables sircus-components-flex sircus-components-display sircus-tools-width
+```
+```CSS
+@import "sircus-components-flex";
+@import "sircus-tools-display";
+@import "sircus-tools-display/responsive";
+@import "sircus-tools-width";
+@import "sircus-tools-width/responsive";
+@import "sircus-variables";
 ```
 {{/markdown}}
-    </div>
-  </div>
-
-
-  <h2>What's included</h2>
-  <ul class="ListReset">
-    <li><a href="https://github.com/necolas/normalize.css" target="_blank">normalize.css</a></li>
-  </ul>
-{{#markdown}}
-```html
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
-<link rel="stylesheet" href="./dist/sircus.min.css">
-```
-{{/markdown}}
-
-
-
-  <h2>Example</h2>
-  <ul class="List">
-    <li><a href="{{file.meta.base_url}}example/card/">Card</a></li>
-    <li><a href="{{file.meta.base_url}}components/button/">Button</a></li>
-    <li><a href="{{file.meta.base_url}}components/container/">Container block</a></li>
-    <li><a href="{{file.meta.base_url}}components/flex/">Grid (flex)</a></li>
-    <li><a href="{{file.meta.base_url}}components/form/">Form</a></li>
-    <li><a href="{{file.meta.base_url}}components/fullembed/">Fluid Width Video</a></li>
-    <li><a href="{{file.meta.base_url}}components/grid/">Grid (inline-block)</a></li>
-    <li><a href="{{file.meta.base_url}}components/list/">List</a></li>
-    <li><a href="{{file.meta.base_url}}components/table/">Table</a></li>
-  </ul>
 </section>
 
 

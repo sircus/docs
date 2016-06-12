@@ -1,0 +1,380 @@
+---
+title: Tools background
+description:
+name: tools-background
+layout: page
+base_url: "../../"
+---
+{{#extend "page"}}
+{{#content "content"}}
+
+<h2 class="t-mtXs t-mbMi t-fontMd t-normal">{{tools.background.pkg.description}}</h2>
+<p class="t-mbGt t-mt0 t-fontSm"><a class="docs-link" href="https://github.com/sircus/{{file.meta.name}}" target="_blank">{{tools.background.pkg.name}}</a> | v{{tools.background.pkg.version}}</p>
+
+<section class="t-clear">
+  <h3>background-color</h3>
+
+  <h4 class="t-uppercase t-normal t-fontSm t-letterSpacingLg">Primary</h4>
+  <div class="Demo-field">
+    <div class="t-bgPrimaryDark t-ptXs t-colorWhite t-gutter Demo-fixture--height4x">
+      <small><code>.t-bgPrimaryDark</code></small>
+    </div>
+    <div class="t-bgPrimary t-ptXs t-colorWhite t-gutter Demo-fixture--height4x">
+      <small><code>.t-bgPrimary</code></small>
+    </div>
+    <div class="t-bgPrimaryLight t-ptXs t-gutter Demo-fixture--height4x">
+      <small><code>t-bgPrimaryLight</code></small>
+    </div>
+  </div>
+{{#markdown}}
+```html
+<div class="t-bgPrimaryDark">.t-[sm-|md-|lg-]bgPrimaryDark</div>
+<div class="t-bgPrimary">.t-[sm-|md-|lg-]bgPrimary</div>
+<div class="t-bgPrimaryLight">.t-[sm-|md-|lg-]bgPrimaryLight</div>
+```
+{{/markdown}}
+
+  <h4 class="t-uppercase t-normal t-fontSm t-letterSpacingLg">Secondary</h4>
+  <div class="Demo-field">
+    <div class="t-bgSecondaryDark t-ptXs t-colorWhite t-gutter Demo-fixture--height4x">
+      <small><code>.t-bgSecondaryDark</code></small>
+    </div>
+    <div class="t-bgSecondary t-ptXs t-colorWhite t-gutter Demo-fixture--height4x">
+      <small><code>.t-bgSecondary</code></small>
+    </div>
+    <div class="t-bgSecondaryLight t-ptXs t-gutter Demo-fixture--height4x">
+      <small><code>.t-bgSecondaryLight</code></small>
+    </div>
+  </div>
+{{#markdown}}
+```html
+<div class="t-bgSecondaryDark">...</div>
+<div class="t-bgSecondary">...</div>
+<div class="t-bgSecondaryLight">...</div>
+```
+{{/markdown}}
+
+  <h4 class="t-uppercase t-normal t-fontSm t-letterSpacingLg">Notice</h4>
+  <div class="Demo-field">
+    <div class="t-bgNoticeDark t-ptXs t-colorWhite t-gutter Demo-fixture--height4x">
+      <small><code>.t-bgNoticeDark</code></small>
+    </div>
+    <div class="t-bgNotice t-ptXs  t-colorWhite t-gutter Demo-fixture--height4x">
+      <small><code>.t-bgNotice</code></small>
+    </div>
+    <div class="t-bgNoticeLight t-ptXs t-gutter Demo-fixture--height4x">
+      <small><code>.t-bgNoticeLight</code></small>
+    </div>
+  </div>
+{{#markdown}}
+```html
+<div class="t-bgNoticeDark">...</div>
+<div class="t-bgNotice">...</div>
+<div class="t-bgNoticeLight">...</div>
+```
+{{/markdown}}
+
+  <h4 class="t-uppercase t-normal t-fontSm t-letterSpacingLg">Success</h4>
+  <div class="Demo-field">
+    <div class="t-bgSuccessDark t-ptXs t-gutter t-colorWhite Demo-fixture--height4x">
+      <small><code>.t-bgSuccessDark</code></small>
+    </div>
+    <div class="t-bgSuccess t-ptXs t-gutter t-colorWhite Demo-fixture--height4x">
+      <small><code>.t-bgSuccess</code></small>
+    </div>
+    <div class="t-bgSuccessLight t-ptXs t-gutter Demo-fixture--height4x">
+      <small><code>.t-bgSuccessLight</code></small>
+    </div>
+  </div>
+{{#markdown}}
+```html
+<div class="t-bgSuccessDark">...</div>
+<div class="t-bgSuccess">...</div>
+<div class="t-bgSuccessLight">...</div>
+```
+{{/markdown}}
+
+  <h4 class="t-uppercase t-normal t-fontSm t-letterSpacingLg">Warning</h4>
+  <div class="Demo-field">
+    <div class="t-bgWarningDark t-ptXs t-colorWhite t-gutter Demo-fixture--height4x">
+      <small><code>.t-bgWarningDark</code></small>
+    </div>
+    <div class="t-bgWarning t-ptXs t-gutter t-colorWhite Demo-fixture--height4x">
+      <small><code>.t-bgWarning</code></small>
+    </div>
+    <div class="t-bgWarningLight t-ptXs t-gutter Demo-fixture--height4x">
+      <small><code>.t-bgWarningLight</code></small>
+    </div>
+  </div>
+{{#markdown}}
+```html
+<div class="t-bgWarningDark">...</div>
+<div class="t-bgWarning">...</div>
+<div class="t-bgWarningLight">...</div>
+```
+{{/markdown}}
+
+  <h4 class="t-uppercase t-normal t-fontSm t-letterSpacingLg">Error</h4>
+  <div class="Demo-field">
+    <div class="t-bgErrorDark t-ptXs t-colorWhite t-gutter Demo-fixture--height4x">
+      <small><code>.t-bgErrorDark</code></small>
+    </div>
+    <div class="t-bgError t-ptXs t-gutter t-colorWhite Demo-fixture--height4x">
+      <small><code>.t-bgError</code></small>
+    </div>
+    <div class="t-bgErrorLight t-ptXs t-gutter Demo-fixture--height4x">
+      <small><code>.t-bgErrorLight</code></small>
+    </div>
+  </div>
+{{#markdown}}
+```html
+<div class="t-bgErrorDark">...</div>
+<div class="t-bgError">...</div>
+<div class="t-bgErrorLight">...</div>
+```
+{{/markdown}}
+
+
+  <h4 class="t-uppercase t-normal t-fontSm t-letterSpacingLg">Gray scale</h4>
+  <div class="Demo-field">
+    <div class="t-bgBlack t-colorWhite t-ptXs t-gutter Demo-fixture--height4x">
+      <small><code>.t-bgBlack</code></small>
+    </div>
+    <div class="t-bgGray90 t-colorWhite t-ptXs t-gutter Demo-fixture--height4x">
+      <small><code>.t-bgGray90</code></small>
+    </div>
+    <div class="t-bgGray80 t-colorWhite t-ptXs t-gutter Demo-fixture--height4x">
+      <small><code>.t-bgGray80</code></small>
+    </div>
+    <div class="t-bgGray70 t-colorWhite t-ptXs t-gutter Demo-fixture--height4x">
+      <small><code>.t-bgGray70</code></small>
+    </div>
+    <div class="t-bgGray60 t-colorWhite t-ptXs t-gutter Demo-fixture--height4x">
+      <small><code>.t-bgGray60</code></small>
+    </div>
+    <div class="t-bgGray50 t-colorWhite t-ptXs t-gutter Demo-fixture--height4x">
+      <small><code>.t-bgGray40</code></small>
+    </div>
+    <div class="t-bgGray40 t-colorWhite t-ptXs t-gutter Demo-fixture--height4x">
+      <small><code>.t-bgGray40</code></small>
+    </div>
+    <div class="t-bgGray30 t-colorWhite t-ptXs t-gutter Demo-fixture--height4x">
+      <small><code>.t-bgGray30</code></small>
+    </div>
+    <div class="t-bgGray20 t-ptXs t-gutter Demo-fixture--height4x">
+      <small><code>.t-bgGray20</code></small>
+    </div>
+    <div class="t-bgGray10 t-ptXs t-gutter Demo-fixture--height4x">
+      <small><code>.t-bgGray10</code></small>
+    </div>
+    <div class="t-bgGray5 t-ptXs t-gutter Demo-fixture--height4x">
+      <small><code>.t-bgGray5</code></small>
+    </div>
+    <div class="t-bgWhite t-ptXs t-gutter Demo-fixture--height4x">
+      <small><code>.t-bgWhite</code></small>
+    </div>
+  </div>
+{{#markdown}}
+```html
+<div class="t-bgBlack">...</div>
+<div class="t-bgGray90">...</div>
+<div class="t-bgGray80">...</div>
+<div class="t-bgGray70">...</div>
+<div class="t-bgGray60">...</div>
+<div class="t-bgGray50">...</div>
+<div class="t-bgGray40">...</div>
+<div class="t-bgGray30">...</div>
+<div class="t-bgGray20">...</div>
+<div class="t-bgGray10">...</div>
+<div class="t-bgGray5">...</div>
+<div class="t-bgWhite">...</div>
+```
+{{/markdown}}
+
+  <h3>background-repeat</h3>
+  <h4 class="t-uppercase t-normal t-fontSm t-letterSpacingLg">no-repeat</h4>
+  <div class="Demo-field">
+    <div class="t-bgNoRepeat t-height3of12" style="background-image: url('http://lorempixel.com/g/400/200/');"></div>
+  </div>
+{{#markdown}}
+```html
+<div class="t-bgNoRepeat" style="background-image: url('IMAGE_PATH');"></div>
+```
+{{/markdown}}
+
+
+  <h3>background-attachment</h3>
+  <h4 class="t-uppercase t-normal t-fontSm t-letterSpacingLg">fixed</h4>
+  <div class="Demo-field">
+    <div class="t-bgFixed t-height3of12" style="background-image: url('http://lorempixel.com/g/400/200/');"></div>
+  </div>
+{{#markdown}}
+```html
+<div class="t-bgFixed" style="background-image: url('IMAGE_PATH');"></div>
+```
+{{/markdown}}
+
+
+  <h3>background-size</h3>
+  <h4 class="t-uppercase t-normal t-fontSm t-letterSpacingLg">cover</h4>
+  <div class="Demo-field">
+    <div class="t-bgCover t-height3of12" style="background-image: url('http://lorempixel.com/g/400/200/');"></div>
+  </div>
+{{#markdown}}
+```html
+<div class="t-bgCover" style="background-image: url('IMAGE_PATH');"></div>
+```
+{{/markdown}}
+
+  <h4 class="t-uppercase t-normal t-fontSm t-letterSpacingLg">Contain</h4>
+  <div class="Demo-field">
+    <div class="t-bgContain t-height3of12" style="background-image: url('http://lorempixel.com/g/400/200/');"></div>
+  </div>
+{{#markdown}}
+```html
+<div class="t-bgContain" style="background-image: url('IMAGE_PATH');"></div>
+```
+{{/markdown}}
+
+
+  <h3>background-position</h3>
+
+  <h4 class="t-uppercase t-normal t-fontSm t-letterSpacingLg">left</h4>
+  <div class="Demo-field">
+    <p class="t-mbMi t-mtMi">
+      background-position: left top
+    </p>
+    <div class="t-bgLeftTop t-height3of12" style="background-image: url('http://lorempixel.com/g/800/400/');"></div>
+  </div>
+{{#markdown}}
+```html
+<div class="t-bgLeftTop" style="background-image: url('IMAGE_PATH');"></div>
+```
+{{/markdown}}
+
+  <div class="Demo-field">
+    <p class="t-mbMi t-mtMi">
+      background-position: left center
+    </p>
+    <div class="t-bgLeft t-height3of12" style="background-image: url('http://lorempixel.com/g/800/400/');"></div>
+  </div>
+{{#markdown}}
+```html
+<div class="t-bgLeft" style="background-image: url('IMAGE_PATH');"></div>
+```
+{{/markdown}}
+
+
+  <div class="Demo-field">
+    <p class="t-mbMi t-mtMi">
+      background-position: left bottom
+    </p>
+    <div class="t-bgLeftBottom t-height3of12" style="background-image: url('http://lorempixel.com/g/800/400/');"></div>
+  </div>
+{{#markdown}}
+```html
+<div class="t-bgLeftBottom" style="background-image: url('IMAGE_PATH');"></div>
+```
+{{/markdown}}
+
+
+  <h4 class="t-uppercase t-normal t-fontSm t-letterSpacingLg">center</h4>
+
+  <div class="Demo-field">
+    <p class="t-mbMi t-mtMi">
+      background-position: center top
+    </p>
+    <div class="t-bgCenterTop t-height3of12" style="background-image: url('http://lorempixel.com/g/800/400/');"></div>
+  </div>
+{{#markdown}}
+```html
+<div class="t-bgCenterTop" style="background-image: url('IMAGE_PATH');"></div>
+```
+{{/markdown}}
+
+  <div class="Demo-field">
+    <p class="t-mbMi t-mtMi">
+      background-position: center center
+    </p>
+    <div class="t-bgCenter t-height3of12" style="background-image: url('http://lorempixel.com/g/800/400/');"></div>
+  </div>
+{{#markdown}}
+```html
+<div class="t-bgCenter" style="background-image: url('IMAGE_PATH');"></div>
+```
+{{/markdown}}
+
+  <div class="Demo-field">
+    <p class="t-mbMi t-mtMi">
+      background-position: center bottom
+    </p>
+    <div class="t-bgCenterBottom t-height3of12" style="background-image: url('http://lorempixel.com/g/800/400/');"></div>
+  </div>
+{{#markdown}}
+```html
+<div class="t-bgCenterBottom" style="background-image: url('IMAGE_PATH');"></div>
+```
+{{/markdown}}
+
+
+  <h4 class="t-uppercase t-normal t-fontSm t-letterSpacingLg">right</h4>
+
+  <div class="Demo-field">
+    <p class="t-mbMi t-mtMi">
+      background-position: right top
+    </p>
+    <div class="t-bgRightTop t-height3of12" style="background-image: url('http://lorempixel.com/g/800/400/');"></div>
+  </div>
+{{#markdown}}
+```html
+<div class="t-bgRightTop" style="background-image: url('IMAGE_PATH');"></div>
+```
+{{/markdown}}
+
+  <div class="Demo-field">
+    <p class="t-mbMi t-mtMi">
+      background-position: right center
+    </p>
+    <div class="t-bgRight t-height3of12" style="background-image: url('http://lorempixel.com/g/800/400/');"></div>
+  </div>
+{{#markdown}}
+```html
+<div class="t-bgRight" style="background-image: url('IMAGE_PATH');"></div>
+```
+{{/markdown}}
+
+  <div class="Demo-field">
+    <p class="t-mbMi t-mtMi">
+      background-position: right bottom
+    </p>
+    <div class="t-bgRightBottom t-height3of12" style="background-image: url('http://lorempixel.com/g/800/400/');"></div>
+  </div>
+{{#markdown}}
+```html
+<div class="t-bgRightBottom" style="background-image: url('IMAGE_PATH');"></div>
+```
+{{/markdown}}
+
+</section>
+
+
+<section class="t-clear">
+{{#markdown}}
+### CSS
+
+```css
+{{{tools.background.css}}}
+```
+
+### Responsive CSS
+
+```css
+{{{tools.background.sm}}}
+{{{tools.background.md}}}
+{{{tools.background.lg}}}
+```
+{{/markdown}}
+</section>
+
+{{/content}}
+{{/extend}}

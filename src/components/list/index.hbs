@@ -8,10 +8,8 @@ base_url: "../../"
 {{#extend "page"}}
 {{#content "content"}}
 
-<p class="t-mb0">v{{components.list.pkg.version}}</p>
-<p class="docs-moduleName">{{components.list.pkg.description}}</p>
-
-<h2>Example</h2>
+<h2 class="t-mtXs t-mbMi t-fontMd t-normal">{{components.list.pkg.description}}</h2>
+<p class="t-mbGt t-mt0 t-fontSm"><a class="docs-link" href="https://github.com/sircus/{{file.meta.name}}" target="_blank">{{components.list.pkg.name}}</a> | v{{components.list.pkg.version}}</p>
 
 <section class="t-clear">
 
@@ -114,8 +112,9 @@ base_url: "../../"
 
 
 <section class="t-clear">
-  <h2>Rule Settings</h2>
 {{#markdown}}
+### CSS
+
 ```css
 {{{components.list.css}}}
 ```

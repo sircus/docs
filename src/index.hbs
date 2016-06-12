@@ -12,10 +12,10 @@ base_url: "./"
 
   <div class="Flex Flex--middle t-flex t-gutterReset t-ptGt t-pbXs t-borderGray30 t-borderTop2x ">
     <div class="Flex-col t-widthFull t-sm-width3of12">
-      <a class="docs-link" href="{{file.meta.base_url}}get-started/">Get Started</a>
+      <a class="docs-link Button" href="{{file.meta.base_url}}get-started/">Get Started</a>
     </div>
     <div class="Flex-col t-widthFull t-sm-width3of12">
-      <a class="docs-link" href="https://github.com/sircus/sircus" target="_blank">Download on GitHub</a>
+      <a class="docs-link Button" href="https://github.com/sircus/sircus" target="_blank">Download on GitHub</a>
     </div>
     <div class="Flex-col t-widthFull t-sm-width6of12 t-ptTn">
       {{> social-buttons}}
@@ -55,23 +55,26 @@ base_url: "./"
         <div class="Flex-col t-sm-widthHalf">
           <div class="Flex t-flex t-gutterReset">
             <div class="Flex-col t-widthHalf">
+              <h4 class="t-uppercase t-normal t-fontMd t-letterSpacingLg">Variables</h4>
+
               <ul class="ListReset ListInline docs-homeList">
                 {{> links/link-variables}}
               </ul>
             </div>
             <div class="Flex-col t-widthHalf">
+              <h4 class="t-uppercase t-normal t-fontMd t-letterSpacingLg">Elements</h4>
               <ul class="ListReset ListInline docs-homeList">
                 {{> links/link-elements}}
               </ul>
             </div>
           </div>
-          <h4>Components</h4>
+          <h4 class="t-uppercase t-normal t-fontMd t-letterSpacingLg">Components</h4>
           <ul class="ListReset ListInline docs-homeList">
             {{> links/link-components}}
           </ul>
         </div>
         <div class="Flex-col t-sm-widthHalf">
-          <h4>Tools</h4>
+          <h4 class="t-uppercase t-normal t-fontMd t-letterSpacingLg">Tools</h4>
           <ul class="ListReset ListInline docs-homeList">
             {{> links/link-tools}}
           </ul>

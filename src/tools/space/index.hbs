@@ -8,27 +8,279 @@ base_url: "../../"
 {{#extend "page"}}
 {{#content "content"}}
 
-<p class="t-mb0">v{{tools.space.pkg.version}}</p>
-<p class="docs-moduleName">{{tools.space.pkg.description}}</p>
+<h2 class="t-mtXs t-mbMi t-fontMd t-normal">{{tools.space.pkg.description}}</h2>
+<p class="t-mbGt t-mt0 t-fontSm"><a class="docs-link" href="https://github.com/sircus/{{file.meta.name}}" target="_blank">{{tools.space.pkg.name}}</a> | v{{tools.space.pkg.version}}</p>
+
+
+<section class="t-clear">
+  <h3>margin: [top|left|bottom|right]</h3>
+  <div class="Demo-field">
+    <div class="Demo-fixture">
+      <div class="t-ma0 Demo-fixture">
+        <p>t-ma0</p>
+      </div>
+      <div class="t-maMi Demo-fixture">
+        <p>t-maMi</p>
+      </div>
+      <div class="t-maTn Demo-fixture">
+          <p>t-maTn</p>
+      </div>
+      <div class="t-maXs Demo-fixture">
+        <p>t-maXs</p>
+      </div>
+      <div class="t-maSm Demo-fixture">
+        <p>t-maSm</p>
+      </div>
+      <div class="t-maMd Demo-fixture">
+        <p>t-maMd</p>
+      </div>
+      <div class="t-maLg Demo-fixture">
+        <p>t-maLg</p>
+      </div>
+      <div class="t-maXl Demo-fixture">
+        <p>t-maXl</p>
+      </div>
+      <div class="t-maHg Demo-fixture">
+        <p>t-maHg</p>
+      </div>
+      <div class="t-maGt Demo-fixture">
+        <p>t-maGt</p>
+      </div>
+
+    </div>
+  </div>
+{{#markdown}}
+```html
+<div class="t-ma0">...</div>
+<div class="t-maXs">...</div>
+<div class="t-maSm">...</div>
+<div class="t-maMd">...</div>
+<div class="t-maLg">...</div>
+<div class="t-maXl">...</div>
+<div class="t-maHg">...</div>
+<div class="t-maGt">...</div>
+```
+{{/markdown}}
+
+
+  <h3>margin: top</h3>
+  <div class="Demo-field">
+    <div class="Demo-fixture">
+      <div class="t-mt0 Demo-fixture">
+        <p>t-mt0</p>
+      </div>
+      <div class="t-mtMi Demo-fixture">
+        <p>t-mtMi</p>
+      </div>
+      <div class="t-mtTn Demo-fixture">
+          <p>t-mtTn</p>
+      </div>
+      <div class="t-mtXs Demo-fixture">
+        <p>t-mtXs</p>
+      </div>
+      <div class="t-mtSm Demo-fixture">
+        <p>t-mtSm</p>
+      </div>
+      <div class="t-mtMd Demo-fixture">
+        <p>t-mtMd</p>
+      </div>
+      <div class="t-mtLg Demo-fixture">
+        <p>t-mtLg</p>
+      </div>
+      <div class="t-mtXl Demo-fixture">
+        <p>t-mtXl</p>
+      </div>
+      <div class="t-mtHg Demo-fixture">
+        <p>t-mtHg</p>
+      </div>
+      <div class="t-mtGt Demo-fixture">
+        <p>t-mtGt</p>
+      </div>
+
+    </div>
+  </div>
+{{#markdown}}
+```html
+<div class="t-mt0">...</div>
+<div class="t-mtXs">...</div>
+<div class="t-mtSm">...</div>
+<div class="t-mtMd">...</div>
+<div class="t-mtLg">...</div>
+<div class="t-mtXl">...</div>
+<div class="t-mtHg">...</div>
+<div class="t-mtGt">...</div>
+```
+{{/markdown}}
+
+
+  <h3>margin: bottom</h3>
+  <div class="Demo-field">
+    <div class="Demo-fixture">
+      <div class="t-mb0 Demo-fixture">
+        <p>t-mb0</p>
+      </div>
+      <div class="t-mbMi Demo-fixture">
+        <p>t-mbMi</p>
+      </div>
+      <div class="t-mbTn Demo-fixture">
+          <p>t-mbTn</p>
+      </div>
+      <div class="t-mbXs Demo-fixture">
+        <p>t-mbXs</p>
+      </div>
+      <div class="t-mbSm Demo-fixture">
+        <p>t-mbSm</p>
+      </div>
+      <div class="t-mbMd Demo-fixture">
+        <p>t-mbMd</p>
+      </div>
+      <div class="t-mbLg Demo-fixture">
+        <p>t-mbLg</p>
+      </div>
+      <div class="t-mbXl Demo-fixture">
+        <p>t-mbXl</p>
+      </div>
+      <div class="t-mbHg Demo-fixture">
+        <p>t-mbHg</p>
+      </div>
+      <div class="t-mbGt Demo-fixture">
+        <p>t-mbGt</p>
+      </div>
+
+    </div>
+  </div>
+{{#markdown}}
+```html
+<div class="t-mb0">...</div>
+<div class="t-mbXs">...</div>
+<div class="t-mbSm">...</div>
+<div class="t-mbMd">...</div>
+<div class="t-mbLg">...</div>
+<div class="t-mbXl">...</div>
+<div class="t-mbHg">...</div>
+<div class="t-mbGt">...</div>
+```
+{{/markdown}}
+
+</section>
+
+
+<section class="t-clear">
+  <h3>padding: [top|left|bottom|right]</h3>
+  <div class="Demo-field">
+    <div class="Demo-fixture">
+      <div class="t-pa0 Demo-fixture">t-pa0</div>
+      <div class="t-paMi Demo-fixture">t-paMi</div>
+      <div class="t-paTn Demo-fixture">t-paTn</div>
+      <div class="t-paXs Demo-fixture">t-paXs</div>
+      <div class="t-paSm Demo-fixture">t-paSm</div>
+      <div class="t-paMd Demo-fixture">t-paMd</div>
+      <div class="t-paLg Demo-fixture">t-paLg</div>
+      <div class="t-paXl Demo-fixture">t-paXl</div>
+      <div class="t-paHg Demo-fixture">t-paHg</div>
+      <div class="t-paGt Demo-fixture">t-paGt</div>
+
+    </div>
+  </div>
+{{#markdown}}
+```html
+<div class="t-pa0">...</div>
+<div class="t-paXs">...</div>
+<div class="t-paSm">...</div>
+<div class="t-paMd">...</div>
+<div class="t-paLg">...</div>
+<div class="t-paXl">...</div>
+<div class="t-paHg">...</div>
+<div class="t-paGt">...</div>
+```
+{{/markdown}}
+
+
+  <h3>padding: top</h3>
+  <div class="Demo-field">
+    <div class="Demo-fixture">
+      <div class="t-pt0 Demo-fixture">t-pt0</div>
+      <div class="t-ptMi Demo-fixture">t-ptMi</div>
+      <div class="t-ptTn Demo-fixture">t-ptTn</div>
+      <div class="t-ptXs Demo-fixture">t-ptXs</div>
+      <div class="t-ptSm Demo-fixture">t-ptSm</div>
+      <div class="t-ptMd Demo-fixture">t-ptMd</div>
+      <div class="t-ptLg Demo-fixture">t-ptLg</div>
+      <div class="t-ptXl Demo-fixture">t-ptXl</div>
+      <div class="t-ptHg Demo-fixture">t-ptHg</div>
+      <div class="t-ptGt Demo-fixture">t-ptGt</div>
+
+    </div>
+  </div>
+{{#markdown}}
+```html
+<div class="t-pt0">...</div>
+<div class="t-ptXs">...</div>
+<div class="t-ptSm">...</div>
+<div class="t-ptMd">...</div>
+<div class="t-ptLg">...</div>
+<div class="t-ptXl">...</div>
+<div class="t-ptHg">...</div>
+<div class="t-ptGt">...</div>
+```
+{{/markdown}}
+
+
+  <h3>padding: bottom</h3>
+  <div class="Demo-field">
+    <div class="Demo-fixture">
+      <div class="t-pb0 Demo-fixture">t-pb0</div>
+      <div class="t-pbMi Demo-fixture">t-pbMi</div>
+      <div class="t-pbTn Demo-fixture">t-pbTn</div>
+      <div class="t-pbXs Demo-fixture">t-pbXs</div>
+      <div class="t-pbSm Demo-fixture">t-pbSm</div>
+      <div class="t-pbMd Demo-fixture">t-pbMd</div>
+      <div class="t-pbLg Demo-fixture">t-pbLg</div>
+      <div class="t-pbXl Demo-fixture">t-pbXl</div>
+      <div class="t-pbHg Demo-fixture">t-pbHg</div>
+      <div class="t-pbGt Demo-fixture">t-pbGt</div>
+
+    </div>
+  </div>
+{{#markdown}}
+```html
+<div class="t-pb0">...</div>
+<div class="t-pbXs">...</div>
+<div class="t-pbSm">...</div>
+<div class="t-pbMd">...</div>
+<div class="t-pbLg">...</div>
+<div class="t-pbXl">...</div>
+<div class="t-pbHg">...</div>
+<div class="t-pbGt">...</div>
+```
+{{/markdown}}
+</section>
+
 
 <section class="t-clear">
   <h2>Abbreviations</h2>
   <p>
-    <a href="{{file.meta.base_url}}rules/abbreviations/">Size level Suffix</a>
+    <a href="{{file.meta.base_url}}documentation/rules/#abbreviations">Size level Suffix</a>
   </p>
 </section>
 
 
 <section class="t-clear">
-  <h2>Rule Settings</h2>
 {{#markdown}}
+### CSS
+
 ```css
 {{{tools.space.css}}}
 ```
+
+### Responsive CSS
+
+```css
+{{{tools.space.sm}}}
+{{{tools.space.md}}}
+{{{tools.space.lg}}}
+```
 {{/markdown}}
-  <p>
-    <a href="responsive/">Responsive rules</a>
-  </p>
 </section>
 
 {{/content}}

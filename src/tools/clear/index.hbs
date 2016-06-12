@@ -8,26 +8,18 @@ base_url: "../../"
 {{#extend "page"}}
 {{#content "content"}}
 
-<p class="t-mb0">v{{tools.clear.pkg.version}}</p>
-<p class="docs-moduleName">{{tools.clear.pkg.description}}</p>
+<h2 class="t-mtXs t-mbMi t-fontMd t-normal">{{tools.clear.pkg.description}}</h2>
+<p class="t-mbGt t-mt0 t-fontSm"><a class="docs-link" href="https://github.com/sircus/{{file.meta.name}}" target="_blank">{{tools.clear.pkg.name}}</a> | v{{tools.clear.pkg.version}}</p>
+
 
 <section class="t-clear">
-  <h2>Example</h2>
 {{#markdown}}
-```html
-<p class="t-clear">Clear</p>
-```
-{{/markdown}}
-</section>
+### CSS
 
-<section class="t-clear">
-    <h2>Rule Settings</h2>
-{{#markdown}}
 ```css
 {{{tools.clear.css}}}
 ```
 {{/markdown}}
-
 </section>
 
 {{/content}}

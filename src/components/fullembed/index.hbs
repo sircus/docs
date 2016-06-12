@@ -8,12 +8,10 @@ base_url: "../../"
 {{#extend "page"}}
 {{#content "content"}}
 
-<p class="t-mb0">v{{components.fullembed.pkg.version}}</p>
-<p class="docs-moduleName">{{components.fullembed.pkg.description}}</p>
+<h2 class="t-mtXs t-mbMi t-fontMd t-normal">{{components.fullembed.pkg.description}}</h2>
+<p class="t-mbGt t-mt0 t-fontSm"><a class="docs-link" href="https://github.com/sircus/{{file.meta.name}}" target="_blank">{{components.fullembed.pkg.name}}</a> | v{{components.fullembed.pkg.version}}</p>
 
 <section class="t-clear">
-
-  <h2>Example</h2>
 
   <h3>16:9</h3>
   <div class="Demo-field">
@@ -78,10 +76,11 @@ base_url: "../../"
 
 
 <section class="t-clear">
-  <h2>Rule Settings</h2>
 {{#markdown}}
+### CSS
+
 ```css
-{{{components.fillembed.css}}}
+{{{components.fullembed.css}}}
 ```
 {{/markdown}}
 </section>

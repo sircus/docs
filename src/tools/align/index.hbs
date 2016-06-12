@@ -8,11 +8,12 @@ base_url: "../../"
 {{#extend "page"}}
 {{#content "content"}}
 
-<p class="t-mb0">v{{tools.align.pkg.version}}</p>
-<p class="docs-moduleName">{{tools.align.pkg.description}}</p>
+<h2 class="t-mtXs t-mbMi t-fontMd t-normal">{{tools.align.pkg.description}}</h2>
+<p class="t-mbGt t-mt0 t-fontSm"><a class="docs-link" href="https://github.com/sircus/{{file.meta.name}}" target="_blank">{{tools.align.pkg.name}}</a> | v{{tools.layout.pkg.version}}</p>
+
 
 <section class="t-clear">
-  <h2>Example</h2>
+  <h3>text-align</h3>
   <div class="Demo-field">
     <p class="t-alignLeft">Left</p>
     <p class="t-alignRight">Right</p>
@@ -26,10 +27,12 @@ base_url: "../../"
 ```
 {{/markdown}}
 
+  <h3>text-align: justfy</h3>
+
   <div class="Demo-field">
-    <h4>Default</h4>
+    <h4 class="t-uppercase t-normal t-fontSm t-letterSpacingLg">Default</h4>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <h4>Justify</h4>
+    <h4 class="t-uppercase t-normal t-fontSm t-letterSpacingLg">Justify</h4>
     <p class="t-alignJustify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
   </div>
 {{#markdown}}
@@ -38,6 +41,8 @@ base_url: "../../"
 ```
 {{/markdown}}
 
+
+  <h3>vertical-align</h3>
   <div class="Demo-field">
     <span class="t-alignTop">Top</span>
     <span class="t-alignMiddle ">Middle</span>
@@ -45,6 +50,8 @@ base_url: "../../"
     <span class="t-alignBaseline">Baseline</span>
     <span class="t-alignTextTop">TextTop</span>
     <span class="t-alignTextBottom">TextBottom</span>
+    <span class="t-alignSuper">Super</span>
+    <span class="t-alignSub">Sub</span>
   </div>
 {{#markdown}}
 ```html
@@ -54,21 +61,29 @@ base_url: "../../"
 <span class="t-alignBaseline">Baseline</span>
 <span class="t-alignTextTop">TextTop</span>
 <span class="t-alignTextBottom">TextBottom</span>
+<span class="t-alignSuper">Super</span>
+<span class="t-alignSub">Sub</span>
 ```
 {{/markdown}}
 </section>
 
 
 <section class="t-clear">
-  <h2>Rule Settings</h2>
 {{#markdown}}
+### CSS
+
 ```css
 {{{tools.align.css}}}
 ```
+
+### Responsive CSS
+
+```css
+{{{tools.align.sm}}}
+{{{tools.align.md}}}
+{{{tools.align.lg}}}
+```
 {{/markdown}}
-  <p>
-    <a href="responsive/">Tools Align Responsive</a>
-  </p>
 </section>
 
 {{/content}}

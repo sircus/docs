@@ -8,12 +8,10 @@ base_url: "../../"
 {{#extend "page"}}
 {{#content "content"}}
 
-<p class="t-mb0">v{{components.form.pkg.version}}</p>
-<p class="docs-moduleName">{{components.form.pkg.description}}</p>
+<h2 class="t-mtXs t-mbMi t-fontMd t-normal">{{components.form.pkg.description}}</h2>
+<p class="t-mbGt t-mt0 t-fontSm"><a class="docs-link" href="https://github.com/sircus/{{file.meta.name}}" target="_blank">{{components.form.pkg.name}}</a> | v{{components.form.pkg.version}}</p>
 
 <section class="t-clear">
-
-  <h2>Example</h2>
 
   <h3>Form</h3>
   <div class="Demo-field">
@@ -93,12 +91,100 @@ base_url: "../../"
 <textarea class="Textarea is-disabled"></textarea>
 ```
 {{/markdown}}
+
+
+
+  <h3>Form</h3>
+  <div class="Demo-field">
+    <div class="Flex t-sm-flex t-gutterReset">
+      <div class="Flex-col t-sm-width4of12">
+        <input type="text" class="Input Input--sm" value="Small">
+      </div>
+      <div class="Flex-col t-sm-width4of12">
+        <input type="text" class="Input" value="Default">
+      </div>
+      <div class="Flex-col t-sm-width4of12">
+        <input type="text" class="Input Input--lg" value="Large">
+      </div>
+    </div>
+  </div>
+{{#markdown}}
+```html
+<input type="text" class="Input Input--sm" value="Small">
+<input type="text" class="Input" value="Default">
+<input type="text" class="Input Input--lg" value="Large">
+```
+{{/markdown}}
+
+  <h3>Select</h3>
+  <div class="Demo-field">
+    <div class="Flex t-sm-flex t-gutterReset">
+      <div class="Flex-col t-sm-width4of12">
+        <select class="Select Select--sm"><option>Small</option><option>Option 02</option></select>
+      </div>
+      <div class="Flex-col t-sm-width4of12">
+        <select class="Select"><option>Default</option><option>Option 02</option></select>
+      </div>
+      <div class="Flex-col t-sm-width4of12">
+        <select class="Select Select--lg"><option>Large</option><option>Option 02</option></select>
+      </div>
+    </div>
+  </div>
+{{#markdown}}
+```html
+<select class="Select Select--sm">
+  <option>Active</option>
+  <option>...</option>
+</select>
+
+<select class="Select">
+  <option>Default</option>
+  <option>Option 02</option>
+</select>
+
+<select class="Select Select--lg">
+  <option>Disabled</option>
+  <option>Option 02</option>
+</select>
+```
+{{/markdown}}
+
+
+  <h3>Full width</h3>
+  <div class="Demo-field">
+    <input type="text" class="Input Input--sm t-mbXs" value="Small full">
+    <input type="text" class="Input t-mbXs" value="Full">
+    <input type="text" class="Input Input--lg t-mbXs" value="Large full">
+  </div>
+{{#markdown}}
+```html
+<input type="text" class="Input Input--sm" value="Small full">
+<input type="text" class="Input" value="Full">
+<input type="text" class="Input Input--lg" value="Large full">
+```
+{{/markdown}}
+
+  <div class="Demo-field">
+    <select class="Select Select--sm t-mbXs"><option>Small</option><option>Option 02</option></select>
+    <select class="Select t-mbXs"><option>Default</option><option>Option 02</option></select>
+    <select class="Select Select--lg t-mbXs"><option>Large</option><option>Option 02</option></select>
+  </div>
+{{#markdown}}
+```html
+<select class="Select Select--sm">...</select>
+<select class="Select">...</select>
+<select class="Select Select--lg">...</select>
+```
+{{/markdown}}
+
+
 </section>
 
 
 <section class="t-clear">
-  <h2>Rule Settings</h2>
 {{#markdown}}
+### CSS
+
 ```css
 {{{components.form.css}}}
 ```

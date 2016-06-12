@@ -1,0 +1,70 @@
+---
+title: Tools height
+description:
+name: tools-height
+layout: page
+base_url: "../../"
+---
+{{#extend "page"}}
+{{#content "content"}}
+
+<h2 class="t-mtXs t-mbMi t-fontMd t-normal">{{tools.height.pkg.description}}</h2>
+<p class="t-mbGt t-mt0 t-fontSm"><a class="docs-link" href="https://github.com/sircus/{{file.meta.name}}" target="_blank">{{tools.height.pkg.name}}</a> | v{{tools.height.pkg.version}}</p>
+
+<section class="t-clear">
+  <h3>height</h3>
+
+  <div class="Demo-field Flex t-flex">
+    <div class="Flex-col t-height1of12 t-width1of12 Demo-fixture">1of12</div>
+    <div class="Flex-col t-height2of12 t-width1of12 Demo-fixture">2of12</div>
+    <div class="Flex-col t-height3of12 t-width1of12 Demo-fixture">3of12</div>
+    <div class="Flex-col t-height4of12 t-width1of12 Demo-fixture">4of12</div>
+    <div class="Flex-col t-height5of12 t-width1of12 Demo-fixture">5of12</div>
+    <div class="Flex-col t-heightHalf t-width1of12 Demo-fixture">Half</div>
+    <div class="Flex-col t-height7of12 t-width1of12 Demo-fixture">7of12</div>
+    <div class="Flex-col t-height8of12 t-width1of12 Demo-fixture">8of12</div>
+    <div class="Flex-col t-height9of12 t-width1of12 Demo-fixture">9of12</div>
+    <div class="Flex-col t-height10of12 t-width1of12 Demo-fixture">10of12</div>
+    <div class="Flex-col t-height11of12 t-width1of12 Demo-fixture">11of12</div>
+    <div class="Flex-col t-heightFull t-width1of12 Demo-fixture">Full</div>
+  </div>
+{{#markdown}}
+```html
+<div class="t-height1of12">...</div>
+<div class="t-height2of12">...</div>
+<div class="t-height3of12">...</div>
+<div class="t-height4of12">...</div>
+<div class="t-height5of12">...</div>
+<div class="t-height6of12">...</div>
+<div class="t-heightHalf">...</div>
+<div class="t-height7of12">...</div>
+<div class="t-height8of12">...</div>
+<div class="t-height9of12">...</div>
+<div class="t-height10of12">...</div>
+<div class="t-height11of12">...</div>
+<div class="t-heightFull">...</div>
+```
+{{/markdown}}
+</section>
+
+
+<section class="t-clear">
+{{#markdown}}
+### CSS
+
+```css
+{{{tools.height.css}}}
+```
+
+### Responsive CSS
+
+```css
+{{{tools.height.sm}}}
+{{{tools.height.md}}}
+{{{tools.height.lg}}}
+```
+{{/markdown}}
+</section>
+
+{{/content}}
+{{/extend}}

@@ -8,11 +8,10 @@ base_url: "../../"
 {{#extend "page"}}
 {{#content "content"}}
 
-<p class="t-mb0">v{{components.flex.pkg.version}}</p>
-<p class="docs-moduleName">{{components.flex.pkg.description}}</p>
+<h2 class="t-mtXs t-mbMi t-fontMd t-normal">{{components.flex.pkg.description}}</h2>
+<p class="t-mbGt t-mt0 t-fontSm"><a class="docs-link" href="https://github.com/sircus/{{file.meta.name}}" target="_blank">{{components.flex.pkg.name}}</a> | v{{components.flex.pkg.version}}</p>
 
 <section class="t-clear">
-  <h2>Example</h2>
   <h3>Base</h3>
   <div class="Demo-field">
     <div class="Flex t-flex t-gutterReset">
@@ -46,21 +45,6 @@ base_url: "../../"
       <div class="Flex-col t-width3of12">
         <div class="Demo-fixture Demo-fixture--height4x">10</div>
       </div>
-      <div class="Flex-col t-width2of10">
-        <div class="Demo-fixture Demo-fixture--height4x">11</div>
-      </div>
-      <div class="Flex-col t-width2of10">
-        <div class="Demo-fixture Demo-fixture--height4x">12</div>
-      </div>
-      <div class="Flex-col t-width2of10">
-        <div class="Demo-fixture Demo-fixture--height4x">13</div>
-      </div>
-      <div class="Flex-col t-width2of10">
-        <div class="Demo-fixture Demo-fixture--height4x">14</div>
-      </div>
-      <div class="Flex-col t-width2of10">
-        <div class="Demo-fixture Demo-fixture--height4x">15</div>
-      </div>
       <div class="Flex-col t-width2of12">
         <div class="Demo-fixture Demo-fixture--height4x">16</div>
       </div>
@@ -78,36 +62,6 @@ base_url: "../../"
       </div>
       <div class="Flex-col t-width2of12">
         <div class="Demo-fixture Demo-fixture--height4x">21</div>
-      </div>
-      <div class="Flex-col t-width1of10">
-        <div class="Demo-fixture Demo-fixture--height4x">22</div>
-      </div>
-      <div class="Flex-col t-width1of10">
-        <div class="Demo-fixture Demo-fixture--height4x">23</div>
-      </div>
-      <div class="Flex-col t-width1of10">
-        <div class="Demo-fixture Demo-fixture--height4x">24</div>
-      </div>
-      <div class="Flex-col t-width1of10">
-        <div class="Demo-fixture Demo-fixture--height4x">25</div>
-      </div>
-      <div class="Flex-col t-width1of10">
-        <div class="Demo-fixture Demo-fixture--height4x">26</div>
-      </div>
-      <div class="Flex-col t-width1of10">
-        <div class="Demo-fixture Demo-fixture--height4x">27</div>
-      </div>
-      <div class="Flex-col t-width1of10">
-        <div class="Demo-fixture Demo-fixture--height4x">28</div>
-      </div>
-      <div class="Flex-col t-width1of10">
-        <div class="Demo-fixture Demo-fixture--height4x">29</div>
-      </div>
-      <div class="Flex-col t-width1of10">
-        <div class="Demo-fixture Demo-fixture--height4x">30</div>
-      </div>
-      <div class="Flex-col t-width1of10">
-        <div class="Demo-fixture Demo-fixture--height4x">31</div>
       </div>
       <div class="Flex-col t-width1of12">
         <div class="Demo-fixture Demo-fixture--height4x">32</div>
@@ -489,17 +443,17 @@ base_url: "../../"
 
 
 <section class="t-clear">
-
-<h2>Rule Settings</h2>
 {{#markdown}}
+### CSS
+
 ```css
-{{{components.container.css}}}
+{{{components.flex.css}}}
 ```
+
+#### sircus-tools-width
+
 ```css
 {{{tools.width.css}}}
-{{{tools.width.responsive.sm}}}
-{{{tools.width.responsive.md}}}
-{{{tools.width.responsive.lg}}}
 ```
 {{/markdown}}
 
