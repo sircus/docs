@@ -121,7 +121,7 @@ gulp.task('css:min', function() {
 
 gulp.task('stylestats', function() {
   gulp
-    .src('./node_modules/sircus/dist/sircus.min.css')
+    .src('./node_modules/sircus/css/sircus.min.css')
     .pipe(stylestats({
       type: 'json',
       outfile: true,

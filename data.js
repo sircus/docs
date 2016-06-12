@@ -3,14 +3,14 @@
 var fs = require('fs')
 var yaml = require('js-yaml')
 var paths = {
-  modules: './node_modules/sircus/node_modules/sircus-'
+  modules: './node_modules/sircus-'
 }
 
 module.exports = {
   pkg: require('./package.json'),
   site: yaml.safeLoad(fs.readFileSync('./site.yml', 'utf8')),
   sircus: {
-    pkg: require('sircus/package.json'),
+    pkg: require('/Users/blivesta/repo/sircus/package.json'),
     stats: require('./sircus.json'),
   },
   variables: {
@@ -19,38 +19,12 @@ module.exports = {
   },
   elements: {
     pkg: require(paths.modules + 'elements/package.json'),
-    body: {
-      css: fs.readFileSync(paths.modules + 'elements/lib/body.css', 'utf8')
-    },
-    heading: {
-      css: fs.readFileSync(paths.modules + 'elements/lib/heading.css', 'utf8')
-    },
-    image: {
-      css: fs.readFileSync(paths.modules + 'elements/lib/image.css', 'utf8')
-    },
-    link: {
-      css: fs.readFileSync(paths.modules + 'elements/lib/link.css', 'utf8')
-    },
-    space: {
-      css: fs.readFileSync(paths.modules + 'elements/lib/space.css', 'utf8')
-    },
+    css: fs.readFileSync(paths.modules + 'elements/index.css', 'utf8')
   },
   components: {
     button: {
       pkg: require(paths.modules + 'components-button/package.json'),
       css: fs.readFileSync(paths.modules + 'components-button/index.css', 'utf8'),
-      fill: {
-        pkg: require(paths.modules + 'components-button-fill/package.json'),
-        css: fs.readFileSync(paths.modules + 'components-button-fill/index.css', 'utf8'),
-      },
-      size: {
-        pkg: require(paths.modules + 'components-button-size/package.json'),
-        css: fs.readFileSync(paths.modules + 'components-button-size/index.css', 'utf8'),
-      },
-      reset: {
-        pkg: require(paths.modules + 'components-button-reset/package.json'),
-        css: fs.readFileSync(paths.modules + 'components-button-reset/index.css', 'utf8'),
-      }
     },
     container: {
       pkg: require(paths.modules + 'components-container/package.json'),
@@ -67,10 +41,6 @@ module.exports = {
     form: {
       pkg: require(paths.modules + 'components-form/package.json'),
       css: fs.readFileSync(paths.modules + 'components-form/index.css', 'utf8'),
-      size: {
-        pkg: require(paths.modules + 'components-form-size/package.json'),
-        css: fs.readFileSync(paths.modules + 'components-form-size/index.css', 'utf8'),
-      }
     },
     fullembed: {
       pkg: require(paths.modules + 'components-fullembed/package.json'),
@@ -92,23 +62,24 @@ module.exports = {
   tools: {
     align: {
       pkg: require(paths.modules + 'tools-align/package.json'),
-      css: fs.readFileSync(paths.modules + 'tools-align/index.css', 'utf8'),
-      responsive: {
-        pkg: require(paths.modules + 'tools-align-responsive/package.json'),
-        sm: fs.readFileSync(paths.modules + 'tools-align-responsive/lib/sm-align.css', 'utf8'),
-        md: fs.readFileSync(paths.modules + 'tools-align-responsive/lib/md-align.css', 'utf8'),
-        lg: fs.readFileSync(paths.modules + 'tools-align-responsive/lib/lg-align.css', 'utf8'),
-      }
+      css: fs.readFileSync(paths.modules + 'tools-align/lib/align.css', 'utf8'),
+      sm: fs.readFileSync(paths.modules + 'tools-align/lib/sm-align.css', 'utf8'),
+      md: fs.readFileSync(paths.modules + 'tools-align/lib/md-align.css', 'utf8'),
+      lg: fs.readFileSync(paths.modules + 'tools-align/lib/lg-align.css', 'utf8'),
+    },
+    background: {
+      pkg: require(paths.modules + 'tools-background/package.json'),
+      css: fs.readFileSync(paths.modules + 'tools-background/lib/background.css', 'utf8'),
+      sm: fs.readFileSync(paths.modules + 'tools-background/lib/sm-background.css', 'utf8'),
+      md: fs.readFileSync(paths.modules + 'tools-background/lib/md-background.css', 'utf8'),
+      lg: fs.readFileSync(paths.modules + 'tools-background/lib/lg-background.css', 'utf8'),
     },
     border: {
       pkg: require(paths.modules + 'tools-border/package.json'),
-      css: fs.readFileSync(paths.modules + 'tools-border/index.css', 'utf8'),
-      responsive: {
-        pkg: require(paths.modules + 'tools-border-responsive/package.json'),
-        sm: fs.readFileSync(paths.modules + 'tools-border-responsive/lib/sm-border.css', 'utf8'),
-        md: fs.readFileSync(paths.modules + 'tools-border-responsive/lib/md-border.css', 'utf8'),
-        lg: fs.readFileSync(paths.modules + 'tools-border-responsive/lib/lg-border.css', 'utf8'),
-      }
+      css: fs.readFileSync(paths.modules + 'tools-border/lib/border.css', 'utf8'),
+      sm: fs.readFileSync(paths.modules + 'tools-border/lib/sm-border.css', 'utf8'),
+      md: fs.readFileSync(paths.modules + 'tools-border/lib/md-border.css', 'utf8'),
+      lg: fs.readFileSync(paths.modules + 'tools-border/lib/lg-border.css', 'utf8'),
     },
     boxsizing: {
       pkg: require(paths.modules + 'tools-boxsizing/package.json'),
@@ -118,83 +89,68 @@ module.exports = {
       pkg: require(paths.modules + 'tools-clear/package.json'),
       css: fs.readFileSync(paths.modules + 'tools-clear/index.css', 'utf8'),
     },
-    color: {
-      pkg: require(paths.modules + 'tools-color/package.json'),
-      css: fs.readFileSync(paths.modules + 'tools-color/index.css', 'utf8'),
-    },
-    border: {
-      pkg: require(paths.modules + 'tools-border/package.json'),
-      css: fs.readFileSync(paths.modules + 'tools-border/index.css', 'utf8'),
-      responsive: {
-        pkg: require(paths.modules + 'tools-border-responsive/package.json'),
-        sm: fs.readFileSync(paths.modules + 'tools-border-responsive/lib/sm-border.css', 'utf8'),
-        md: fs.readFileSync(paths.modules + 'tools-border-responsive/lib/md-border.css', 'utf8'),
-        lg: fs.readFileSync(paths.modules + 'tools-border-responsive/lib/lg-border.css', 'utf8'),
-      }
-    },
     display: {
       pkg: require(paths.modules + 'tools-display/package.json'),
-      css: fs.readFileSync(paths.modules + 'tools-display/index.css', 'utf8'),
-      responsive: {
-        pkg: require(paths.modules + 'tools-display-responsive/package.json'),
-        sm: fs.readFileSync(paths.modules + 'tools-display-responsive/lib/sm-display.css', 'utf8'),
-        md: fs.readFileSync(paths.modules + 'tools-display-responsive/lib/md-display.css', 'utf8'),
-        lg: fs.readFileSync(paths.modules + 'tools-display-responsive/lib/lg-display.css', 'utf8'),
-      }
+      css: fs.readFileSync(paths.modules + 'tools-display/lib/display.css', 'utf8'),
+      sm: fs.readFileSync(paths.modules + 'tools-display/lib/sm-display.css', 'utf8'),
+      md: fs.readFileSync(paths.modules + 'tools-display/lib/md-display.css', 'utf8'),
+      lg: fs.readFileSync(paths.modules + 'tools-display/lib/lg-display.css', 'utf8'),
     },
     gutter: {
       pkg: require(paths.modules + 'tools-gutter/package.json'),
-      css: fs.readFileSync(paths.modules + 'tools-gutter/index.css', 'utf8'),
-      responsive: {
-        pkg: require(paths.modules + 'tools-gutter-responsive/package.json'),
-        sm: fs.readFileSync(paths.modules + 'tools-gutter-responsive/lib/sm-gutter.css', 'utf8'),
-        md: fs.readFileSync(paths.modules + 'tools-gutter-responsive/lib/md-gutter.css', 'utf8'),
-        lg: fs.readFileSync(paths.modules + 'tools-gutter-responsive/lib/lg-gutter.css', 'utf8'),
-      }
+      css: fs.readFileSync(paths.modules + 'tools-gutter/lib/gutter.css', 'utf8'),
+      sm: fs.readFileSync(paths.modules + 'tools-gutter/lib/sm-gutter.css', 'utf8'),
+      md: fs.readFileSync(paths.modules + 'tools-gutter/lib/md-gutter.css', 'utf8'),
+      lg: fs.readFileSync(paths.modules + 'tools-gutter/lib/lg-gutter.css', 'utf8'),
+    },
+    height: {
+      pkg: require(paths.modules + 'tools-height/package.json'),
+      css: fs.readFileSync(paths.modules + 'tools-height/lib/height.css', 'utf8'),
+      sm: fs.readFileSync(paths.modules + 'tools-height/lib/sm-height.css', 'utf8'),
+      md: fs.readFileSync(paths.modules + 'tools-height/lib/md-height.css', 'utf8'),
+      lg: fs.readFileSync(paths.modules + 'tools-height/lib/lg-height.css', 'utf8'),
     },
     layout: {
       pkg: require(paths.modules + 'tools-layout/package.json'),
-      css: fs.readFileSync(paths.modules + 'tools-layout/index.css', 'utf8'),
-      responsive: {
-        pkg: require(paths.modules + 'tools-layout-responsive/package.json'),
-        sm: fs.readFileSync(paths.modules + 'tools-layout-responsive/lib/sm-layout.css', 'utf8'),
-        md: fs.readFileSync(paths.modules + 'tools-layout-responsive/lib/md-layout.css', 'utf8'),
-        lg: fs.readFileSync(paths.modules + 'tools-layout-responsive/lib/lg-layout.css', 'utf8'),
-      }
+      css: fs.readFileSync(paths.modules + 'tools-layout/lib/layout.css', 'utf8'),
+      sm: fs.readFileSync(paths.modules + 'tools-layout/lib/sm-layout.css', 'utf8'),
+      md: fs.readFileSync(paths.modules + 'tools-layout/lib/md-layout.css', 'utf8'),
+      lg: fs.readFileSync(paths.modules + 'tools-layout/lib/lg-layout.css', 'utf8'),
     },
     overflow: {
       pkg: require(paths.modules + 'tools-overflow/package.json'),
-      css: fs.readFileSync(paths.modules + 'tools-overflow/index.css', 'utf8'),
-      responsive: {
-        pkg: require(paths.modules + 'tools-overflow-responsive/package.json'),
-        sm: fs.readFileSync(paths.modules + 'tools-overflow-responsive/lib/sm-overflow.css', 'utf8'),
-        md: fs.readFileSync(paths.modules + 'tools-overflow-responsive/lib/md-overflow.css', 'utf8'),
-        lg: fs.readFileSync(paths.modules + 'tools-overflow-responsive/lib/lg-overflow.css', 'utf8'),
-      }
+      css: fs.readFileSync(paths.modules + 'tools-overflow/lib/overflow.css', 'utf8'),
+      sm: fs.readFileSync(paths.modules + 'tools-overflow/lib/sm-overflow.css', 'utf8'),
+      md: fs.readFileSync(paths.modules + 'tools-overflow/lib/md-overflow.css', 'utf8'),
+      lg: fs.readFileSync(paths.modules + 'tools-overflow/lib/lg-overflow.css', 'utf8'),
     },
     typography: {
       pkg: require(paths.modules + 'tools-typography/package.json'),
-      css: fs.readFileSync(paths.modules + 'tools-typography/index.css', 'utf8'),
+      css: fs.readFileSync(paths.modules + 'tools-typography/lib/typography.css', 'utf8'),
+      sm: fs.readFileSync(paths.modules + 'tools-typography/lib/sm-typography.css', 'utf8'),
+      md: fs.readFileSync(paths.modules + 'tools-typography/lib/md-typography.css', 'utf8'),
+      lg: fs.readFileSync(paths.modules + 'tools-typography/lib/lg-typography.css', 'utf8'),
     },
     space: {
       pkg: require(paths.modules + 'tools-space/package.json'),
-      css: fs.readFileSync(paths.modules + 'tools-space/index.css', 'utf8'),
-      responsive: {
-        pkg: require(paths.modules + 'tools-space-responsive/package.json'),
-        sm: fs.readFileSync(paths.modules + 'tools-space-responsive/lib/sm-space.css', 'utf8'),
-        md: fs.readFileSync(paths.modules + 'tools-space-responsive/lib/md-space.css', 'utf8'),
-        lg: fs.readFileSync(paths.modules + 'tools-space-responsive/lib/lg-space.css', 'utf8'),
-      }
+      css: fs.readFileSync(paths.modules + 'tools-space/lib/space.css', 'utf8'),
+      sm: fs.readFileSync(paths.modules + 'tools-space/lib/sm-space.css', 'utf8'),
+      md: fs.readFileSync(paths.modules + 'tools-space/lib/md-space.css', 'utf8'),
+      lg: fs.readFileSync(paths.modules + 'tools-space/lib/lg-space.css', 'utf8'),
+    },
+    shadow: {
+      pkg: require(paths.modules + 'tools-shadow/package.json'),
+      css: fs.readFileSync(paths.modules + 'tools-shadow/lib/shadow.css', 'utf8'),
+      sm: fs.readFileSync(paths.modules + 'tools-shadow/lib/sm-shadow.css', 'utf8'),
+      md: fs.readFileSync(paths.modules + 'tools-shadow/lib/md-shadow.css', 'utf8'),
+      lg: fs.readFileSync(paths.modules + 'tools-shadow/lib/lg-shadow.css', 'utf8'),
     },
     width: {
       pkg: require(paths.modules + 'tools-width/package.json'),
-      css: fs.readFileSync(paths.modules + 'tools-width/index.css', 'utf8'),
-      responsive: {
-        pkg: require(paths.modules + 'tools-width-responsive/package.json'),
-        sm: fs.readFileSync(paths.modules + 'tools-width-responsive/lib/sm-width.css', 'utf8'),
-        md: fs.readFileSync(paths.modules + 'tools-width-responsive/lib/md-width.css', 'utf8'),
-        lg: fs.readFileSync(paths.modules + 'tools-width-responsive/lib/lg-width.css', 'utf8'),
-      }
+      css: fs.readFileSync(paths.modules + 'tools-width/lib/width.css', 'utf8'),
+      sm: fs.readFileSync(paths.modules + 'tools-width/lib/sm-width.css', 'utf8'),
+      md: fs.readFileSync(paths.modules + 'tools-width/lib/md-width.css', 'utf8'),
+      lg: fs.readFileSync(paths.modules + 'tools-width/lib/lg-width.css', 'utf8'),
     },
   }
 }

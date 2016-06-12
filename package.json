@@ -37,7 +37,7 @@
     "postcss-import": "^8.1.2",
     "postcss-reporter": "^1.3.3",
     "run-sequence": "^1.2.1",
-    "sircus": "git@github.com:sircus/sircus.git#v2",
+    "sircus": "git@github.com:sircus/sircus.git#v3-dev",
     "site-boilerplate-helpers": "^1.0.1"
   },
   "author": {
