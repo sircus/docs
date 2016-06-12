@@ -92,6 +92,7 @@ gulp.task('css', function() {
   const processors = [
     require('postcss-import'),
     require('postcss-cssnext'),
+    require('css-mqpacker'),
     require('postcss-browser-reporter')({ selector: 'body:before' }),
     require('postcss-reporter')({ clearMessages: true }),
   ]
