@@ -1,5 +1,5 @@
 pre {
-  font-family: var(--g-fontFamily-monospaceEn);
+  font-family: var(--g-fontFamily-monospace);
   display: block;
   padding-top: var(--g-space-xs);
   padding-bottom: var(--g-space-xs);
