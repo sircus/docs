@@ -1,7 +1,7 @@
 'use strict'
 var browserSync = require('browser-sync')
 var reload = browserSync.reload
-var cssnext = require('gulp-cssnext')
+var csswring = require('csswring')
 var del = require('del')
 var fm = require('gulp-front-matter')
 var ghpages = require('gulp-gh-pages')
@@ -111,10 +111,7 @@ gulp.task('css', function() {
 gulp.task('css:min', function() {
   return gulp
     .src(dirs.src + '/css/' + pkg.name + '.css')
-    .pipe(cssnext({
-      browsers: ['last 2 versions'],
-      compress: true
-    }))
+    .pipe(postcss([csswring]))
     .pipe(gulp.dest(dirs.dist + 'css'))
 })
 
