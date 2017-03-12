@@ -110,7 +110,7 @@ gulp.task('css', function() {
 
 gulp.task('css:min', function() {
   return gulp
-    .src(dirs.src + '/css/' + pkg.name + '.css')
+    .src(dirs.dist + '/css/' + pkg.name + '.css')
     .pipe(postcss([csswring]))
     .pipe(gulp.dest(dirs.dist + 'css'))
 })
