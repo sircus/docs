@@ -1,15 +1,15 @@
 pre {
-  font-family: var(--g-fontFamily-monospace);
+  font-family: var(--fontFamily-monospace);
   display: block;
-  padding-top: var(--g-space-xs);
-  padding-bottom: var(--g-space-xs);
-  padding-left: var(--g-gutter);
-  padding-right: var(--g-gutter);
+  padding-top: var(--space-xs);
+  padding-bottom: var(--space-xs);
+  padding-left: var(--gutter);
+  padding-right: var(--gutter);
   text-align: left;
   word-wrap: break-word;
   word-break: break-all;
-  border: var(--g-border);
-  border-radius: var(--g-borderRadius);
+  border: var(--border);
+  border-radius: var(--borderRadius);
   font-size: 14px;
 }
 pre code[class*="language-"] {
@@ -21,9 +21,9 @@ pre code[class*="language-"] {
 }
 
 .Demo-field {
-  border: var(--g-border);
-  padding: var(--g-gutter);
-  border-radius: var(--g-borderRadius);
+  border: var(--border);
+  padding: var(--gutter);
+  border-radius: var(--borderRadius);
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
@@ -34,7 +34,7 @@ pre code[class*="language-"] {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   border-top: 0;
-  margin-bottom: var(--g-space-hg);
+  margin-bottom: var(--space-hg);
 
 }
 
