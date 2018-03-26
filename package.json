@@ -64,7 +64,7 @@
     "sircus-tools-typography": "^3.0.0",
     "sircus-tools-width": "^3.0.0",
     "sircus-variables": "^2.0.1",
-    "sircus": "^4.0.0",
+    "sircus": "^4.0.1",
     "site-boilerplate-helpers": "^1.0.1"
   },
   "author": {
