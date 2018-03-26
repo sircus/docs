@@ -10,7 +10,7 @@ module.exports = {
   pkg: require('./package.json'),
   site: yaml.safeLoad(fs.readFileSync('./site.yml', 'utf8')),
   sircus: {
-    pkg: require('/Users/blivesta/repo/sircus/package.json'),
+    pkg: require('sircus/package.json'),
     stats: require('./sircus.json'),
   },
   variables: {
