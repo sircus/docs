@@ -4981,9 +4981,9 @@ sircus-components-container@2.0.0:
   dependencies:
     sircus-variables "^2.0.0"
 
-sircus-components-flex@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/sircus-components-flex/-/sircus-components-flex-2.0.0.tgz#b87a974a786696281ef7d313ca604fb4b6b9a9e1"
+sircus-components-flex@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/sircus-components-flex/-/sircus-components-flex-2.0.1.tgz#5b5cd813e864547d5be6232fa20a3320f3b9899b"
   dependencies:
     sircus-variables "^2.0.0"
 
@@ -5053,9 +5053,9 @@ sircus-tools-display@^3.0.0:
   dependencies:
     sircus-variables "^2.0.0"
 
-sircus-tools-gutter@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/sircus-tools-gutter/-/sircus-tools-gutter-3.0.0.tgz#c8632734c091d4694b1acab1689398e685b37aa9"
+sircus-tools-gutter@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/sircus-tools-gutter/-/sircus-tools-gutter-3.1.1.tgz#b77d0f4b6bebf6b5f746f2f62d83b55ca342b2e1"
   dependencies:
     sircus-variables "^2.0.0"
 
@@ -5105,13 +5105,13 @@ sircus-variables@^2.0.0, sircus-variables@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/sircus-variables/-/sircus-variables-2.0.1.tgz#6312bda2e09921cc03d34adb257c88c23427a959"
 
-sircus@^4.0.1:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/sircus/-/sircus-4.0.1.tgz#2c58b0b63501b96aa079b89270fb5883dba19506"
+sircus@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/sircus/-/sircus-4.1.0.tgz#c2e6d87fb7305c89b2f6315ef3da2a99a037afaa"
   dependencies:
     sircus-components-button "^4.0.0"
     sircus-components-container "2.0.0"
-    sircus-components-flex "^2.0.0"
+    sircus-components-flex "^2.0.1"
     sircus-components-form "^3.0.0"
     sircus-components-fullembed "^1.0.0"
     sircus-components-grid "2.0.0"
@@ -5124,7 +5124,7 @@ sircus@^4.0.1:
     sircus-tools-boxsizing "^2.0.0"
     sircus-tools-clear "^2.0.0"
     sircus-tools-display "^3.0.0"
-    sircus-tools-gutter "^3.0.0"
+    sircus-tools-gutter "^3.1.1"
     sircus-tools-height "^1.0.0"
     sircus-tools-layout "^3.0.0"
     sircus-tools-overflow "^3.0.0"
